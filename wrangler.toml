@@ -1,0 +1,7 @@
+name = "pangolin-landing"
+type = "javascript"
+
+route = "pangolin.exchange/*"
+
+[site]
+bucket = "./build" 
