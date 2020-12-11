@@ -266,7 +266,7 @@ onMount(async () => {
 
                   <a
                     on:click="{() => (community_open = false)}"
-                    href="https://discord.gg/KpcFZShZEy"
+                    href="https://discord.gg/PARrDYYbfw"
                     class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
                     <svg
@@ -460,7 +460,7 @@ onMount(async () => {
 
               <a
                 on:click="{() => (mobile_open = false)}"
-                href="https://discord.gg/KpcFZShZEy"
+                href="https://discord.gg/PARrDYYbfw"
                 class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
               >
                 <svg
