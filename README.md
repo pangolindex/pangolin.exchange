@@ -1,3 +1,7 @@
+This is the code for the pangolin.exchange website. 
+
+The app code can be found [here](http://github.com/pangolindex/app.pangolin.exchange).
+
 ## Getting Started
 
 First, install dependencies
