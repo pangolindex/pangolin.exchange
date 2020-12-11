@@ -240,11 +240,7 @@ onMount(async () => {
             >
               <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
                 <div class="grid relative z-20 gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
-                  <a
-                    on:click="{() => (community_open = false)}"
-                    href="https://github.com/pangolindex/pangolin.exchange/discussions"
-                    class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
-                  >
+                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg cursor-not-allowed">
                     <svg
                       class="flex-shrink-0 w-6 h-6 text-gray-600"
                       fill="none"
@@ -260,7 +256,7 @@ onMount(async () => {
                       ></path>
                     </svg>
                     <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Discuss</p>
+                      <p class="text-base font-medium text-gray-900">Discuss (Coming Soon)</p>
                     </div>
                   </a>
 
@@ -436,11 +432,7 @@ onMount(async () => {
                 <span class="ml-3 text-base font-medium text-gray-900">Litepaper</span>
               </a>
 
-              <a
-                on:click="{() => (mobile_open = false)}"
-                href="https://github.com/pangolindex/pangolin.exchange/discussions"
-                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
-              >
+              <a href="#" class="flex items-center p-3 -m-3 rounded-md cursor-not-allowed">
                 <svg
                   class="flex-shrink-0 w-6 h-6 text-gray-600"
                   fill="none"
@@ -455,7 +447,7 @@ onMount(async () => {
                     d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
                   ></path>
                 </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Discuss</span>
+                <span class="ml-3 text-base font-medium text-gray-900">Discuss (Coming Soon)</span>
               </a>
 
               <a
