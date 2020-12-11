@@ -1,6 +1,6 @@
 This is the code for the pangolin.exchange website.
 
-The app code can be found [here](http://github.com/pangolindex/app.pangolin.exchange).
+The app's smart contract code can be found [here](http://github.com/pangolindex/exchange-contracts).
 
 ## Getting Started
 
