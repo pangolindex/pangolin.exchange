@@ -283,6 +283,7 @@ onMount(async () => {
 
                   <a
                     on:click="{() => (community_open = false)}"
+                    target="_blank"
                     href="https://discord.gg/PARrDYYbfw"
                     class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
