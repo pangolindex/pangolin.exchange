@@ -7,7 +7,6 @@ let Transition;
 let tools_open = false;
 let docs_open = false;
 let mobile_open = false;
-let community_open = false;
 
 const socials = [
   {
@@ -15,6 +14,12 @@ const socials = [
     href: "https://t.me/pangolindex",
     d:
       "M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7.85 12c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z",
+  },
+  {
+    name: "Discord",
+    href: "https://discord.gg/PARrDYYbfw",
+    d:
+      "M20.22 0c1.4 0 2.54 1.14 2.6 2.48V24l-2.67-2.27-1.47-1.34-1.6-1.4.67 2.2H3.7a2.48 2.48 0 01-2.54-2.47V2.48A2.53 2.53 0 013.71 0h16.51zM14.1 5.68h-.03l-.2.2a8.06 8.06 0 013.08 1.54 10.88 10.88 0 00-6.22-1.14h-.2c-.47 0-1.47.2-2.81.74l-.74.33s1-1 3.21-1.53l-.13-.14s-1.67-.06-3.48 1.27c0 0-1.8 3.15-1.8 7.02 0 0 1 1.74 3.74 1.8 0 0 .4-.53.8-1-1.53-.46-2.13-1.4-2.13-1.4s.13.07.33.2h.06c.03 0 .04.02.06.03.02.02.03.04.06.04.33.13.66.27.93.4.47.2 1.06.4 1.8.53.93.14 2 .2 3.21 0 .6-.13 1.2-.26 1.8-.53.39-.2.87-.4 1.4-.74 0 0-.6.94-2.2 1.4.32.47.79 1 .79 1 2.74-.05 3.8-1.8 3.87-1.72 0-3.87-1.82-7.02-1.82-7.02a6.01 6.01 0 00-3.43-1.26l.05-.02zm.17 4.42c.7 0 1.27.6 1.27 1.33a1.3 1.3 0 01-1.27 1.34c-.7 0-1.27-.6-1.27-1.33 0-.74.58-1.34 1.27-1.34zm-4.54 0c.7 0 1.26.6 1.26 1.33a1.3 1.3 0 01-1.27 1.34c-.7 0-1.27-.6-1.27-1.33 0-.74.58-1.34 1.28-1.34z",
   },
   {
     name: "Twitter",
@@ -35,7 +40,6 @@ function handleKeydown({key}) {
     tools_open = false;
     docs_open = false;
     mobile_open = false;
-    community_open = false;
   }
 }
 
@@ -224,92 +228,6 @@ onMount(async () => {
             </div>
           </svelte:component>
         </div>
-
-        <div class="relative" use:clickOutside on:click_outside="{() => (community_open = false)}">
-          <button
-            on:click="{() => (community_open = !community_open)}"
-            type="button"
-            class="{community_open ? 'text-gray-900' : 'text-gray-500'} transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
-          >
-            <span>Community</span>
-            <svg
-              class="{community_open ? 'text-gray-600' : 'text-gray-400'} transition-colors ml-2 w-5 h-5 text-gray-400 group-hover:text-gray-500"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
-          <svelte:component
-            this="{Transition}"
-            toggle="{community_open}"
-            transitions="transition"
-            inTransition="ease-out duration-200"
-            inState="opacity-0 translate-y-1"
-            onState="opacity-100 translate-y-0"
-            outState="opacity-0 translate-y-1"
-            outTransition="ease-in duration-150"
-          >
-            <div
-              class="absolute -ml-4 mt-3 px-2 w-screen max-w-md transform sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2"
-            >
-              <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
-                <div class="grid relative z-20 gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
-                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg cursor-not-allowed">
-                    <svg
-                      class="flex-shrink-0 w-6 h-6 text-gray-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                      ></path>
-                    </svg>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Discuss (Coming Soon)</p>
-                    </div>
-                  </a>
-
-                  <a
-                    on:click="{() => (community_open = false)}"
-                    target="_blank"
-                    href="https://discord.gg/PARrDYYbfw"
-                    class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
-                  >
-                    <svg
-                      class="flex-shrink-0 w-6 h-6 text-gray-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                      ></path>
-                    </svg>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Support</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </svelte:component>
-        </div>
       </nav>
       <div class="hidden justify-end items-center space-x-4 md:flex md:flex-1 lg:w-0">
         {#each socials as {name, href, d}}
@@ -431,46 +349,6 @@ onMount(async () => {
                   ></path>
                 </svg>
                 <span class="ml-3 text-base font-medium text-gray-900">Litepaper</span>
-              </a>
-
-              <a href="#" class="flex items-center p-3 -m-3 rounded-md cursor-not-allowed">
-                <svg
-                  class="flex-shrink-0 w-6 h-6 text-gray-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                  ></path>
-                </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Discuss (Coming Soon)</span>
-              </a>
-
-              <a
-                on:click="{() => (mobile_open = false)}"
-                href="https://discord.gg/PARrDYYbfw"
-                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
-              >
-                <svg
-                  class="flex-shrink-0 w-6 h-6 text-gray-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                  ></path>
-                </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Support</span>
               </a>
             </nav>
           </div>
