@@ -4,7 +4,6 @@ import {onMount} from "svelte";
 
 let Transition;
 
-let tools_open = false;
 let docs_open = false;
 let mobile_open = false;
 
@@ -37,7 +36,6 @@ const socials = [
 
 function handleKeydown({key}) {
   if (key === "Escape") {
-    tools_open = false;
     docs_open = false;
     mobile_open = false;
   }
@@ -84,86 +82,19 @@ onMount(async () => {
         </button>
       </div>
       <nav class="hidden space-x-10 md:flex">
-        <div class="relative" use:clickOutside on:click_outside="{() => (tools_open = false)}">
-          <button
-            on:click="{() => (tools_open = !tools_open)}"
-            type="button"
-            class="{tools_open ? 'text-gray-900' : 'text-gray-500'} transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
-          >
-            <span>Tools</span>
-            <svg
-              class="{tools_open ? 'text-gray-600' : 'text-gray-400'} transition-colors ml-2 w-5 h-5 text-gray-400 group-hover:text-gray-500"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+        <a
+          href="#"
+          class="cursor-not-allowed transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+        >
+          Exchange
+        </a>
 
-          <svelte:component
-            this="{Transition}"
-            toggle="{tools_open}"
-            transitions="transition"
-            inTransition="ease-out duration-200"
-            inState="opacity-0 translate-y-1"
-            onState="opacity-100 translate-y-0"
-            outState="opacity-0 translate-y-1"
-            outTransition="ease-in duration-150"
-          >
-            <div
-              class="absolute -ml-4 mt-3 px-2 w-screen max-w-md transform sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2"
-            >
-              <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
-                <div class="grid relative z-20 gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
-                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg cursor-not-allowed">
-                    <svg
-                      class="flex-shrink-0 w-6 h-6 text-gray-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                      ></path>
-                    </svg>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Exchange (Coming Soon)</p>
-                    </div>
-                  </a>
-
-                  <a href="#" class="flex items-start p-3 -m-3 rounded-lg cursor-not-allowed">
-                    <svg
-                      class="flex-shrink-0 w-6 h-6 text-gray-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                      ></path>
-                    </svg>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Charts (Coming Soon)</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </svelte:component>
-        </div>
+        <a
+          href="#"
+          class="cursor-not-allowed transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+        >
+          Analytics
+        </a>
 
         <div class="relative" use:clickOutside on:click_outside="{() => (docs_open = false)}">
           <button
@@ -326,7 +257,7 @@ onMount(async () => {
                     d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                   ></path>
                 </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Charts (Coming Soon)</span>
+                <span class="ml-3 text-base font-medium text-gray-900">Analytics (Coming Soon)</span>
               </a>
 
               <a
