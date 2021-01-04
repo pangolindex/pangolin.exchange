@@ -84,14 +84,14 @@ onMount(async () => {
       <nav class="hidden space-x-10 md:flex">
         <a
           href="#"
-          class="cursor-not-allowed transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
           Exchange
         </a>
 
         <a
           href="#"
-          class="cursor-not-allowed transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
           Analytics
         </a>
