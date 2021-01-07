@@ -49,9 +49,7 @@ onMount(async () => {
 
 <div class="relative bg-white">
   <div class="mx-auto max-w-7xl">
-    <div
-      class="flex justify-between items-center py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10"
-    >
+    <div class="flex justify-between items-center py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
       <div class="flex justify-start lg:flex-1 lg:w-0">
         <a href="/">
           <span class="sr-only">Pangolin</span>
@@ -62,37 +60,23 @@ onMount(async () => {
         <button
           on:click="{() => (mobile_open = true)}"
           type="button"
-          class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset"
-        >
+          class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset">
           <span class="sr-only">Open menu</span>
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
       <nav class="hidden space-x-10 md:flex">
         <a
           href="#"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
-        >
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">
           Exchange
         </a>
 
         <a
           href="#"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
-        >
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">
           Analytics
         </a>
 
@@ -100,15 +84,17 @@ onMount(async () => {
           <button
             on:click="{() => (docs_open = !docs_open)}"
             type="button"
-            class="{docs_open ? 'text-gray-900' : 'text-gray-500'} transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
-          >
+            class="{docs_open
+              ? 'text-gray-900'
+              : 'text-gray-500'} transition-colors group inline-flex items-center text-gray-500 hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">
             <span>Docs</span>
             <svg
-              class="{docs_open ? 'text-gray-600' : 'text-gray-400'} transition-colors ml-2 w-5 h-5 text-gray-400 group-hover:text-gray-500"
+              class="{docs_open
+                ? 'text-gray-600'
+                : 'text-gray-400'} transition-colors ml-2 w-5 h-5 text-gray-400 group-hover:text-gray-500"
               viewBox="0 0 20 20"
               fill="currentColor"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <path
                 fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -126,23 +112,19 @@ onMount(async () => {
             outState="opacity-0 translate-y-1"
             outTransition="ease-in duration-150"
           >
-            <div
-              class="absolute left-1/2 mt-3 px-2 w-screen max-w-md transform -translate-x-1/2 sm:px-0"
-            >
+            <div class="absolute left-1/2 mt-3 px-2 w-screen max-w-md transform -translate-x-1/2 sm:px-0">
               <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
                 <div class="grid relative z-20 gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
                   <a
                     on:click="{() => (docs_open = false)}"
                     href="/litepaper"
-                    class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
-                  >
+                    class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                     <svg
                       class="flex-shrink-0 w-6 h-6 text-gray-600"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -161,8 +143,7 @@ onMount(async () => {
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -182,11 +163,7 @@ onMount(async () => {
       </nav>
       <div class="hidden justify-end items-center space-x-4 md:flex md:flex-1 lg:w-0">
         {#each socials as {name, href, d}}
-          <a
-            class="text-gray-400 transition-colors duration-200 hover:text-gray-500"
-            href="{href}"
-            target="_blank"
-          >
+          <a class="text-gray-400 transition-colors duration-200 hover:text-gray-500" href="{href}" target="_blank">
             <span class="sr-only">Pangolin on {name}</span>
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
               <path d="{d}"></path>
@@ -212,9 +189,7 @@ onMount(async () => {
       on:click_outside="{() => (mobile_open = false)}"
       class="absolute inset-x-0 top-0 p-2 transition transform origin-top-right md:hidden"
     >
-      <div
-        class="bg-white rounded-lg divide-y-2 divide-gray-50 ring-1 ring-black ring-opacity-5 shadow-lg"
-      >
+      <div class="bg-white rounded-lg divide-y-2 divide-gray-50 ring-1 ring-black ring-opacity-5 shadow-lg">
         <div class="px-5 pt-5 pb-6">
           <div class="flex justify-between items-center">
             <div><img class="w-auto h-8" src="/icon.svg" alt="Pangolin" /></div>
@@ -222,22 +197,10 @@ onMount(async () => {
               <button
                 on:click="{() => (mobile_open = false)}"
                 type="button"
-                class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset"
-              >
+                class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset">
                 <span class="sr-only">Close menu</span>
-                <svg
-                  class="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
@@ -250,8 +213,7 @@ onMount(async () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -268,8 +230,7 @@ onMount(async () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -283,15 +244,13 @@ onMount(async () => {
               <a
                 on:click="{() => (mobile_open = false)}"
                 href="/litepaper"
-                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
-              >
+                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50">
                 <svg
                   class="flex-shrink-0 w-6 h-6 text-gray-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -308,8 +267,7 @@ onMount(async () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
