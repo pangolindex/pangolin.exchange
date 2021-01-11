@@ -2,6 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* TODO: Figure out how to disable this properly */
+#svelte-announcer {
+  @apply hidden;
+}
 </style>
 
 <script>
