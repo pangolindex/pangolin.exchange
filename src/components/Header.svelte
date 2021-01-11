@@ -187,7 +187,7 @@ onMount(async () => {
     <div
       use:clickOutside
       on:click_outside="{() => (mobile_open = false)}"
-      class="absolute inset-x-0 top-0 p-2 transition transform origin-top-right md:hidden"
+      class="absolute inset-x-0 top-0 z-50 p-2 transition transform origin-top-right md:hidden"
     >
       <div class="bg-white rounded-lg divide-y-2 divide-gray-50 ring-1 ring-black ring-opacity-5 shadow-lg">
         <div class="px-5 pt-5 pb-6">
