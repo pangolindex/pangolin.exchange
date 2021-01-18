@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: Is there a config option in svelte-kit to disable this? */
+#svelte-announcer {
+  @apply hidden;
+}
