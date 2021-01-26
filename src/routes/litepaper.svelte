@@ -154,7 +154,7 @@
         <li>AVAX/WBTC</li>
         <li>AVAX/PNG</li>
         <li>AVAX/LINK</li>
-        <li>AVAX/CDAI</li>
+        <li>AVAX/DAI</li>
         <li>AVAX/UNI</li>
         <li>AVAX/SUSHI</li>
         <li>AVAX/AAVE</li>
@@ -168,7 +168,7 @@
         <li>PNG/USDT</li>
         <li>PNG/WBTC</li>
         <li>PNG/LINK</li>
-        <li>PNG/CDAI</li>
+        <li>PNG/DAI</li>
         <li>PNG/UNI</li>
         <li>PNG/SUSHI</li>
         <li>PNG/AAVE</li>
