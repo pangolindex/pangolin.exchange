@@ -19,7 +19,7 @@ jobs:
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: actions/setup-node@v2.1.2
+      - uses: actions/setup-node@v2.1.4
         with:
           node-version: ${{ env.node_version }}
       - run: yarn --frozen-lockfile
