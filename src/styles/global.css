@@ -6,3 +6,11 @@
 #svelte-announcer {
   @apply hidden;
 }
+
+.after\:hash {
+  @apply no-underline !important;
+}
+
+.after\:hash::after {
+  content: '#';
+}

@@ -1,90 +1,96 @@
 <script>
-import {onMount} from "svelte";
+  import {onMount} from "svelte";
 
-let coins = [
-  {
-    symbol: "AVAX",
-    id: "avalanche-2",
-    name: "Avalanche",
-    img: "/avax.png",
-  },
-  {
-    symbol: "ETH",
-    id: "ethereum",
-    img: "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png",
-    name: "Ether (Wrapped)",
-  },
-  {
-    symbol: "USDT",
-    id: "tether",
-    name: "Tether USD",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
-  },
-  {
-    symbol: "WBTC",
-    id: "wrapped-bitcoin",
-    name: "Wrapped BTC",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
-  },
-  {
-    symbol: "LINK",
-    id: "chainlink",
-    name: "Chainlink Token",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
-  },
-  {
-    symbol: "Dai",
-    id: "dai",
-    name: "Dai Stablecoin",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
-  },
-  {
-    symbol: "UNI",
-    id: "uniswap",
-    name: "Uniswap",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png",
-  },
-  {
-    symbol: "AAVE",
-    id: "aave",
-    name: "Aave Token",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9/logo.png",
-  },
-  {
-    symbol: "YFI",
-    id: "yearn-finance",
-    name: "yearn.finance",
-    img:
-      "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
-  },
-];
+  let coins = [
+    {
+      symbol: "AVAX",
+      id: "avalanche-2",
+      name: "Avalanche",
+      img:
+        "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/ethereum-tokens/0x9dEbca6eA3af87Bf422Cea9ac955618ceb56EfB4/logo.png",
+    },
+    {
+      symbol: "ETH",
+      id: "ethereum",
+      name: "Ether (Wrapped)",
+      addr: "0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15",
+    },
+    {
+      symbol: "USDT",
+      id: "tether",
+      name: "Tether USD",
+      addr: "0xde3A24028580884448a5397872046a019649b084",
+    },
+    {
+      symbol: "WBTC",
+      id: "wrapped-bitcoin",
+      name: "Wrapped BTC",
+      addr: "0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB",
+    },
+    {
+      symbol: "LINK",
+      id: "chainlink",
+      name: "Chainlink Token",
+      addr: "0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651",
+    },
+    {
+      symbol: "DAI",
+      id: "dai",
+      name: "Dai Stablecoin",
+      addr: "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
+    },
+    {
+      symbol: "UNI",
+      id: "uniswap",
+      name: "Uniswap",
+      addr: "0xf39f9671906d8630812f9d9863bBEf5D523c84Ab",
+    },
+    {
+      symbol: "SUSHI",
+      id: "sushi",
+      name: "SushiToken",
+      addr: "0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc",
+    },
+    {
+      symbol: "AAVE",
+      id: "aave",
+      name: "Aave Token",
+      addr: "0x8cE2Dee54bB9921a2AE0A63dBb2DF8eD88B91dD9",
+    },
+    {
+      symbol: "YFI",
+      id: "yearn-finance",
+      name: "yearn.finance",
+      addr: "0x99519AcB025a0e0d44c3875A4BbF03af65933627",
+    },
+  ];
 
-onMount(async () => {
-  await Promise.all(
-    coins.map(({id}, i) => {
-      fetch(
-        "https://api.coingecko.com/api/v3/coins/" +
-          id +
-          "?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false",
-      )
-        .then((res) => res.json())
-        .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
-          coins[i] = {
-            ...coins[i],
-            price: "$" + current_price.usd.toLocaleString("en-US"),
-            price_change: price_change_percentage_24h,
-            volume: "$" + total_volume.usd.toLocaleString("en-US"),
-          };
-        });
-    }),
-  );
-});
+  onMount(async () => {
+    await Promise.all(
+      coins.map(({id}, i) => {
+        fetch(
+          "https://api.coingecko.com/api/v3/coins/" +
+            id +
+            "?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false",
+        )
+          .then((res) => res.json())
+          .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
+            coins[i] = {
+              ...coins[i],
+              ...(!("img" in coins[i]) && {
+                img:
+                  "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/" +
+                  coins[i].addr +
+                  "/logo.png",
+              }),
+              price: "$" + current_price.usd.toLocaleString("en-US"),
+              price_change: price_change_percentage_24h,
+              volume: "$" + total_volume.usd.toLocaleString("en-US"),
+            };
+          });
+      }),
+    );
+  });
 </script>
 
 <svelte:head>
@@ -102,16 +108,18 @@ onMount(async () => {
     property="og:description"
     content="A community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution–powered by Avalanche."
   />
-  <meta name="twitter:title" content="Pangolin: Scale Your DeFi Trading" />
-  <meta property="og:title" content="Pangolin: Scale Your DeFi Trading" />
-  <title>Pangolin: Scale Your DeFi Trading</title>
+  <meta name="twitter:title" content="Pangolin - Scale Your DeFi Trading" />
+  <meta property="og:title" content="Pangolin - Scale Your DeFi Trading" />
+  <title>Pangolin - Scale Your DeFi Trading</title>
 </svelte:head>
 
 <section class="mt-8">
   <div>
     <h1
       class="mt-10 mb-8 max-w-screen-lg text-4xl font-extrabold tracking-tight leading-none text-gray-900 sm:mb-10 sm:mt-14 sm:text-6xl lg:text-7xl"
-    >Scale Your DeFi Trading with Pangolin</h1>
+    >
+      Scale Your DeFi Trading with Pangolin
+    </h1>
     <p class="mb-10 max-w-screen-lg text-lg font-medium text-gray-700 sm:mb-11 sm:text-2xl sm:leading-10">
       A community-driven decentralized exchange for Avalanche and Ethereum assets with
       <strong class="text-gray-900">fast settlement</strong>,
@@ -127,8 +135,9 @@ onMount(async () => {
       >
 
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
-        href="/litepaper"> Litepaper </a>
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
+        href="/litepaper">Litepaper</a
+      >
     </div>
   </div>
 
@@ -142,7 +151,8 @@ onMount(async () => {
                 {#each ["Name", "Volume (24 hrs)", "Price", "Price Change"] as col}
                   <th
                     scope="col"
-                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-500 uppercase whitespace-nowrap bg-gray-50">
+                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-500 uppercase whitespace-nowrap bg-gray-50"
+                  >
                     {col}
                   </th>
                 {/each}
@@ -155,7 +165,7 @@ onMount(async () => {
                     <td class="py-4 px-6 whitespace-nowrap">
                       <div class="flex items-center space-x-4">
                         <div class="flex-shrink-0 w-10 h-10">
-                          <img class="w-10 h-10 rounded-full" src="{coin.img}" alt="" />
+                          <img class="w-10 h-10 rounded-full" src="{coin.img}" alt="{coin.symbol}" />
                         </div>
                         <div>
                           <div class="text-sm font-medium text-gray-900">{coin.symbol}</div>
@@ -173,15 +183,15 @@ onMount(async () => {
                       <span
                         class="{coin.price_change >= 0
                           ? 'bg-green-100 text-green-800'
-                          : 'bg-red-100 text-red-800'} inline-flex items-center px-2 py-1 text-xs font-semibold leading-5 rounded-full space-x-1">
+                          : 'bg-red-100 text-red-800'} inline-flex items-center px-2 py-1 text-xs font-semibold leading-5 rounded-full space-x-1"
+                      >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4" fill="currentColor">
                           <path
                             fill-rule="evenodd"
                             d="{coin.price_change >= 0
                               ? 'M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z'
                               : 'M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z'}"
-                            clip-rule="evenodd"
-                          ></path>
+                            clip-rule="evenodd"></path>
                         </svg>
                         <span>{Math.abs(coin.price_change).toFixed(2)}%</span>
                       </span>
