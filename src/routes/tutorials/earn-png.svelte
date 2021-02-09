@@ -63,6 +63,42 @@
       <li>Select "Deposit" and confirm the transaction</li>
     </ol>
 
+    <h3 class="flex whitespace-pre-wrap group" id="claim-png-without-withdrawing">
+      <a
+        href="#claim-png-without-withdrawing"
+        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        aria-label="Anchor"
+        style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
+        >Claiming PNG Tokens without Withdrawing PGL Tokens
+      </span>
+    </h3>
+
+    <p>
+      After depositing your PGL tokens into a pool, you will accrue PNG tokens. You can claim your earned PNG tokens
+      without having to remove your PGL tokens.
+    </p>
+
+    <ol>
+      <li>
+        Select "PNG"
+        <img src="/tutorials/earn-png/005.png" />
+      </li>
+      <li>
+        Select "Manage" on the pool you would like to claim your PNG tokens from
+        <img src="/tutorials/earn-png/006.png" />
+      </li>
+      <li>
+        Select "Claim"
+        <img src="/tutorials/earn-png/007.png" />
+      </li>
+      <li>
+        Select "Claim" again and confirm the transaction through MetaMask
+        <img src="/tutorials/earn-png/008.png" />
+      </li>
+    </ol>
+
+    <p>Congratulations! You have just received your PNG rewards without removing your PGL tokens.</p>
+
     <h3 class="flex whitespace-pre-wrap group" id="withdrawing-pgl-tokens">
       <a
         href="#withdrawing-pgl-tokens"
@@ -78,19 +114,19 @@
     <ol>
       <li>
         Select "PNG"
-        <img src="/tutorials/earn-png/005.png" />
+        <img src="/tutorials/earn-png/009.png" />
       </li>
       <li>
         Select "Manage" on the pool you would like to withdraw from
-        <img src="/tutorials/earn-png/006.png" />
+        <img src="/tutorials/earn-png/010.png" />
       </li>
       <li>
         Select "Withdraw"
-        <img src="/tutorials/earn-png/007.png" />
+        <img src="/tutorials/earn-png/011.png" />
       </li>
       <li>
         Select "Withdraw & Claim"
-        <img src="/tutorials/earn-png/008.png" />
+        <img src="/tutorials/earn-png/012.png" />
       </li>
       <li>Confirm the transaction on MetaMask</li>
     </ol>
