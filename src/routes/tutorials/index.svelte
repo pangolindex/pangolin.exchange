@@ -22,9 +22,9 @@
 </svelte:head>
 
 <div class="mt-10 mb-8 sm:mb-10 sm:mt-14">
-  <h2 class="font-bold text-2xl lg:text-4xl">Tutorials</h2>
+  <h2 class="text-2xl font-bold lg:text-4xl">Tutorials</h2>
 
-  <p class="mt-5 lg:mt-8 leading-8 text-md lg:text-xl max-w-2xl text-gray-600 mb-8">
+  <p class="mt-5 mb-8 max-w-2xl leading-8 text-gray-600 lg:mt-8 text-md lg:text-xl">
     Here are some tutorials you might find helpful. Feel free to suggest new ones through any of the social channels!
   </p>
 
