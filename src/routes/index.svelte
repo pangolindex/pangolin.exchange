@@ -130,8 +130,9 @@
 
     <div class="flex flex-wrap space-y-4 text-center sm:space-x-4 sm:space-y-0">
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-center text-gray-500 bg-gray-100 rounded-xl border border-transparent transition-colors duration-200 cursor-not-allowed focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
-        href="#">Launching Soon</a
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
+        href="https://app.pangolin.exchange"
+        target="_blank">Launch App</a
       >
 
       <a

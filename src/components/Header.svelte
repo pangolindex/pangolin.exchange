@@ -70,15 +70,17 @@
       </div>
       <nav class="hidden space-x-10 md:flex">
         <a
-          href="#"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          href="https://app.pangolin.exchange"
+          target="_blank"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
           Exchange
         </a>
 
         <a
-          href="#"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors cursor-not-allowed group hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          href="https://info.pangolin.exchange"
+          target="_blank"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
         >
           Analytics
         </a>
@@ -219,7 +221,12 @@
           </div>
           <div class="mt-6">
             <nav class="grid gap-y-8">
-              <a href="#" class="flex items-center p-3 -m-3 rounded-md cursor-not-allowed">
+              <a
+                on:click="{() => (mobile_open = false)}"
+                href="https://app.pangolin.exchange"
+                target="_blank"
+                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
+              >
                 <svg
                   class="flex-shrink-0 w-6 h-6 text-gray-600"
                   fill="none"
@@ -234,10 +241,15 @@
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                   ></path>
                 </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Exchange (Coming Soon)</span>
+                <span class="ml-3 text-base font-medium text-gray-900">Exchange</span>
               </a>
 
-              <a href="#" class="flex items-center p-3 -m-3 rounded-md cursor-not-allowed">
+              <a
+                on:click="{() => (mobile_open = false)}"
+                href="https://info.pangolin.exchange"
+                target="_blank"
+                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
+              >
                 <svg
                   class="flex-shrink-0 w-6 h-6 text-gray-600"
                   fill="none"
@@ -252,7 +264,7 @@
                     d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                   ></path>
                 </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Analytics (Coming Soon)</span>
+                <span class="ml-3 text-base font-medium text-gray-900">Analytics</span>
               </a>
 
               <a
