@@ -246,9 +246,7 @@
     </ol>
 
     <p>
-      The details for this claim will be provided
-      <a href="/tutorials/claim-png" class="hover:no-underline">here</a>
-      after the official Pangolin launch.
+      The details for this claim can be found <a href="/tutorials/claim-png" class="hover:no-underline">here</a>.
     </p>
 
     <p>
