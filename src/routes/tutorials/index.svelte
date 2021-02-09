@@ -1,3 +1,7 @@
+<script>
+  import TutorialCard from "$components/TutorialCard.svelte";
+</script>
+
 <svelte:head>
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content="https://pangolin.exchange/" />
@@ -17,31 +21,62 @@
   <title>Tutorials - Pangolin</title>
 </svelte:head>
 
-<article class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
-  <h2>Tutorials</h2>
+<div class="mt-10 mb-8 sm:mb-10 sm:mt-14">
+  <h2 class="font-bold text-2xl lg:text-4xl">Tutorials</h2>
 
-  <p>
+  <p class="mt-5 lg:mt-8 leading-8 text-md lg:text-xl max-w-2xl text-gray-600 mb-8">
     Here are some tutorials you might find helpful. Feel free to suggest new ones through any of the social channels!
   </p>
 
-  <ul class="pb-16">
-    <li>
-      <a class="hover:no-underline" href="/tutorials/getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a class="hover:no-underline" href="/tutorials/manage-liquidity">Manage Liquidity</a>
-    </li>
-    <li>
-      <a class="hover:no-underline" href="/tutorials/swap-tokens">Swap Tokens</a>
-    </li>
-    <li>
-      <a class="hover:no-underline" href="/tutorials/transfer-from-ethereum">Transfer from Ethereum</a>
-    </li>
-    <li>
-      <a class="hover:no-underline" href="/tutorials/earn-png">Earn PNG</a>
-    </li>
-    <li>
-      <a class="hover:no-underline" href="/tutorials/claim-png">Claim PNG</a>
-    </li>
-  </ul>
-</article>
+  <div class="flex flex-col sm:flex-row sm:flex-wrap">
+    <TutorialCard
+      href="/tutorials/getting-started"
+      class="bg-gradient-to-br from-fuchsia-500 to-purple-600"
+      texture="black-felt"
+    >
+      <span slot="title">Getting Started</span>
+      <span slot="description">Set up your MetaMask wallet, and fund it with AVAX</span>
+    </TutorialCard>
+
+    <TutorialCard
+      href="/tutorials/manage-liquidity"
+      class="bg-gradient-to-br from-cyan-400 to-light-blue-500"
+      texture="cartographer"
+    >
+      <span slot="title">Manage Liquidity</span>
+      <span slot="description">Create new liquidity pools, or add and remove liquidity on existing pools</span>
+    </TutorialCard>
+
+    <TutorialCard
+      href="/tutorials/swap-tokens"
+      class="bg-gradient-to-br from-orange-400 to-pink-600"
+      texture="concrete-wall-2"
+    >
+      <span slot="title">Swap Tokens</span>
+      <span slot="description">Exchange tokens blazingly fast on Pangolin</span>
+    </TutorialCard>
+
+    <TutorialCard
+      href="/tutorials/transfer-from-ethereum"
+      class="bg-gradient-to-br from-purple-500 to-indigo-600"
+      texture="foggy-birds"
+    >
+      <span slot="title">Transfer from Ethereum</span>
+      <span slot="description">Transfer ETH or ERC-20 tokens to use on Pangolin</span>
+    </TutorialCard>
+
+    <TutorialCard href="/tutorials/earn-png" class="bg-gradient-to-br from-green-400 to-cyan-500" texture="food">
+      <span slot="title">Earn PNG</span>
+      <span slot="description">Learn what PGL tokens are and how to use them to earn PNG</span>
+    </TutorialCard>
+
+    <TutorialCard
+      href="/tutorials/claim-png"
+      class="bg-gradient-to-br from-yellow-400 to-orange-500"
+      texture="purty-wood"
+    >
+      <span slot="title">Claim PNG</span>
+      <span slot="description">Claim your PNG airdrop tokens as a UniSwap or SushiSwap token holder</span>
+    </TutorialCard>
+  </div>
+</div>

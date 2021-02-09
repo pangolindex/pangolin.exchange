@@ -14,3 +14,27 @@
 .after\:hash::after {
   content: '#';
 }
+
+.texture-black-felt {
+  background-image: url("/textures/black-felt.png");
+}
+
+.texture-cartographer {
+  background-image: url("/textures/cartographer.png");
+}
+
+.texture-concrete-wall-2 {
+  background-image: url("/textures/concrete-wall-2.png");
+}
+
+.texture-foggy-birds {
+  background-image: url("/textures/foggy-birds.png");
+}
+
+.texture-food {
+  background-image: url("/textures/food.png");
+}
+
+.texture-purty-wood {
+  background-image: url("/textures/purty-wood.png");
+}
