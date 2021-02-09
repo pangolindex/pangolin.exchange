@@ -261,9 +261,9 @@
     </pre>
 
     <p>
-      These conversion rates were chosen in order to reduce wealth concentration onto large holders of SUSHI and UNI and redistribute
-      more evenly onto smaller holders of SUSHI and UNI. 70% of the airdrop allocation -- or 18.2M PNG -- will be distributed to UNI holders and
-      30% -- or 7.8M PNG -- to SUSHI holders.
+      These conversion rates were chosen in order to reduce wealth concentration onto large holders of SUSHI and UNI and
+      redistribute more evenly onto smaller holders of SUSHI and UNI. 70% of the airdrop allocation -- or 18.2M PNG --
+      will be distributed to UNI holders and 30% -- or 7.8M PNG -- to SUSHI holders.
     </p>
 
     <h2 class="flex whitespace-pre-wrap group" id="png-governance">
