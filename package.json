@@ -12,7 +12,7 @@
 		"@snowpack/plugin-postcss": "1.1.0",
 		"@sveltejs/adapter-static": "1.0.0-next.1",
 		"@sveltejs/kit": "1.0.0-next.31",
-		"@sveltejs/snowpack-config": "1.0.0-next.1",
+		"@sveltejs/snowpack-config": "1.0.0-next.2",
 		"@tailwindcss/typography": "0.4.0",
 		"autoprefixer": "10.2.4",
 		"cssnano": "4.1.10",
