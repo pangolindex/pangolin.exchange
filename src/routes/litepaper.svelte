@@ -251,26 +251,18 @@
 
     <p>
       The conversion formula from SUSHI or UNI onto PNG is not linear, but rather slightly quadratic. Specifically, PNG
-      will be claimable pro-rata based on
+      will be claimable pro-rata based on the following formula:
     </p>
 
     <pre>
       <code>
-        PNG amount = c1 * (SUSHI amount ^ 0.8)<br />PNG amount = c2 * (UNI amount ^ 0.8)
+        PNG amount = 0.3 * (SUSHI amount ^ 0.8)<br />PNG amount = 0.7 * (UNI amount ^ 0.8)
       </code>
     </pre>
 
     <p>
-      where
-      <code>c1</code>
-      and
-      <code>c2</code>
-      are constants. These conversion rates are chosen in order to reduce wealth concentration onto large holders and redistribute
-      more evenly onto smaller holders of SUSHI and UNI. The precise values of
-      <code>c1</code>
-      and
-      <code>c2</code>
-      will be available on launch. 70% of the airdrop allocation -- or 18.2M PNG -- will be distributed to UNI holders and
+      These conversion rates were chosen in order to reduce wealth concentration onto large holders of SUSHI and UNI and redistribute
+      more evenly onto smaller holders of SUSHI and UNI. 70% of the airdrop allocation -- or 18.2M PNG -- will be distributed to UNI holders and
       30% -- or 7.8M PNG -- to SUSHI holders.
     </p>
 
