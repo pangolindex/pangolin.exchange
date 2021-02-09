@@ -80,7 +80,7 @@
     <p>
       If a token pair doesn’t exist, you must create a new liquidity pool. The price of the tokens will be determined by
       the ratio of what you deposit. For example, if you deposit 1 PNG and 5 DAI into this new liquidity pool, there
-      will be an initial price of 5 DAI per PNG or 0.2 PNG per UNI. These prices are dynamic and will change as
+      will be an initial price of 5 DAI per PNG or 0.2 PNG per DAI. These prices are dynamic and will change as
       liquidity is added or removed and the ratio of the pool adjusts.
     </p>
 
