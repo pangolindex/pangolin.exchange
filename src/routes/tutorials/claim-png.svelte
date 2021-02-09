@@ -46,7 +46,7 @@
         Access the bridge <a href="https://aeb.xyz/" target="_blank" class="hover:no-underline">here</a>
       </li>
       <li>
-        Select “Transfer”
+        Select "Transfer"
         <img src="/tutorials/claim-png/001.png" />
       </li>
       <li>Connect MetaMask with the wallet that held UNI or SUSHI on December 7th.</li>
@@ -67,7 +67,7 @@
         to send funds to my address". <strong>Note that the address starts with "0x".</strong>
         <img src="/tutorials/claim-png/003.png" />
       </li>
-      <li>Select “Start Transfer” and confirm the transaction</li>
+      <li>Select "Start Transfer" and confirm the transaction</li>
       <li>
         Go to the Pangolin app <a href="https://app.pangolin.exchange" target="_blank" class="hover:no-underline"
           >here</a
