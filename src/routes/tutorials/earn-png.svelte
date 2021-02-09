@@ -30,8 +30,8 @@
       are a representation of your ownership in a pool. You may use those PGL tokens to earn the PNG governance token by
       depositing them into one of your participating pools.
     </p>
-    
-        <p>
+
+    <p>
       <strong
         >Note: You may only receive PNG rewards from supported pools, which can be found under the following section on
         the <a href="/litepaper#distribution-breakdown" target="_blank" class="hover:no-underline">litepaper</a>:
