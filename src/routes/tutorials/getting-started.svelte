@@ -202,6 +202,37 @@
           <li><strong>Explorer</strong>: https://cchain.explorer.avax.network/</li>
         </ul>
       </li>
+      <li>
+        <h4 class="flex whitespace-pre-wrap group" id="add-png-to-metamask">
+          <a
+            href="#add-png-to-metamask"
+            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            aria-label="Anchor"
+            style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
+            >Add Pangolin (PNG) token to be displayed on your MetaMask</span
+          >
+        </h4>
+        <ol>
+          <li>
+            Select "Add Token"
+            <img src="/tutorials/getting-started/002.png" />
+          </li>
+          <li>
+            Select "Custom Token"
+            <img src="/tutorials/getting-started/003.png" />
+          </li>
+          <li>
+            Enter the following information into the available fields:
+            <ul>
+              <li>Token Contract Address: 0x60781C2586D68229fde47564546784ab3fACA982</li>
+              <li>Token Symbol: PNG</li>
+            </ul>
+          </li>
+          <li>Select "Next"</li>
+        </ol>
+
+        <p>You have now successfully added the Pangolin (PNG) token to be displayed on your MetaMask.</p>
+      </li>
     </ol>
 
     <h3 class="flex whitespace-pre-wrap group" id="fund-metamask">
@@ -232,11 +263,11 @@
       </li>
       <li>
         On the left, there is a list of options. Click "Cross-Chain"
-        <img src="/tutorials/getting-started/002.png" />
+        <img src="/tutorials/getting-started/004.png" />
       </li>
       <li>
         Choose the "C Chain (Contract)" as the destination chain
-        <img src="/tutorials/getting-started/003.png" />
+        <img src="/tutorials/getting-started/005.png" />
       </li>
       <li>Enter the amount you would like to transfer, and then click confirm</li>
       <li>
@@ -244,16 +275,16 @@
         <ol>
           <li>
             Select "Send"
-            <img src="/tutorials/getting-started/004.png" />
+            <img src="/tutorials/getting-started/006.png" />
           </li>
           <li>
             Select "C Contract" as the <i>Source Chain</i>
-            <img src="/tutorials/getting-started/005.png" />
+            <img src="/tutorials/getting-started/007.png" />
           </li>
           <li>
             Enter your MetaMask wallet address by copying and pasting it into the "To Address" field on your Avalanche
             wallet.
-            <img src="/tutorials/getting-started/006.png" />
+            <img src="/tutorials/getting-started/008.png" />
           </li>
           <li>Confirm and finalize the transaction.</li>
         </ol>
