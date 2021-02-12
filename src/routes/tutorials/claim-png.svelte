@@ -4,7 +4,7 @@
 
 <svelte:head>
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:url" content="https://pangolin.exchange/" />
+  <meta property="og:url" content="https://pangolin.exchange/tutorials/claim-png" />
   <meta property="og:type" content="article" />
   <meta name="twitter:image" content="https://pangolin.exchange/OGImage.png" />
   <meta property="og:image" content="https://pangolin.exchange/OGImage.png" />
