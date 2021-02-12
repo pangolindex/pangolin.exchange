@@ -57,7 +57,7 @@
       <li>Select the Destination Network as Avalanche</li>
       <li>Select either UNI or SUSHI as the token you would like to transfer</li>
       <li>
-        Enter at least 1 UNI or SUSHI. <strong>
+        Enter either 1 UNI or SUSHI. <strong>
           Note that you only need 1 UNI or SUSHI to be eligible for the PNG airdrop and you don’t need the original UNI
           or SUSHI token.
         </strong>
