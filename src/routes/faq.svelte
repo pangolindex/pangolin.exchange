@@ -6,15 +6,15 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content="https://pangolin.exchange/faq" />
   <meta property="og:type" content="article" />
-  <meta name="twitter:image" content="https://pangolin.exchange/LitepaperOGImage.png" />
-  <meta property="og:image" content="https://pangolin.exchange/LitepaperOGImage.png" />
+  <meta name="twitter:image" content="https://pangolin.exchange/OGImage.png" />
+  <meta property="og:image" content="https://pangolin.exchange/OGImage.png" />
   <meta
     name="twitter:description"
-    content="Learn more about Pangolin and the PNG token. Pangolin is a community-driven decentralized exchange for Avalanche and Ethereum assets."
+    content="A community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution–powered by Avalanche."
   />
   <meta
     property="og:description"
-    content="Learn more about Pangolin and the PNG token. Pangolin is a community-driven decentralized exchange for Avalanche and Ethereum assets."
+    content="A community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution–powered by Avalanche."
   />
   <meta name="twitter:title" content="FAQ - Pangolin" />
   <meta property="og:title" content="FAQ - Pangolin" />
