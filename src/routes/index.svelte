@@ -129,6 +129,7 @@
 
 <svelte:head>
   <link rel="preconnect" href="https://api.coingecko.com" crossorigin="true" />
+  <link rel="preconnect" href="https://graph-node.avax.network" crossorigin="true" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content="https://pangolin.exchange/" />
   <meta property="og:type" content="article" />
