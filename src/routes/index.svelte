@@ -181,13 +181,13 @@
     </div>
   </div>
 
-  <div class="flex text-center mt-16">
+  <div class="flex mt-16 text-center">
     <div class="w-1/2 flex flex-col">
-      <span class="tabular-nums text-4xl">${factoryData["totalVolume"]}M<span class="text-gray-400">+</span></span>
+      <span class="text-4xl tabular-nums">${factoryData["totalVolume"]}M<span class="text-gray-400">+</span></span>
       <span class="mt-2">Total Volume</span>
     </div>
     <div class="w-1/2 flex flex-col">
-      <span class="tabular-nums text-4xl">${factoryData["totalLiquidity"]}M<span class="text-gray-400">+</span></span>
+      <span class="text-4xl tabular-nums">${factoryData["totalLiquidity"]}M<span class="text-gray-400">+</span></span>
       <span class="mt-2">Total Liquidity</span>
     </div>
   </div>
