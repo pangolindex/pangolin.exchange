@@ -79,7 +79,7 @@
         )
           .then((res) => res.json())
           .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
-            if (i == 0) {
+            if (id == "avalanche-2") {
               avaxPrice = current_price.usd;
             }
             coins[i] = {
