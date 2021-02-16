@@ -65,10 +65,9 @@
     },
   ];
 
-  let factoryData = {
-    totalLiquidity: 0,
-    totalVolume: 0,
-  };
+  let totalLiquidityAVAX = 0;
+  let totalVolumeAVAX = 0;
+  let avaxPrice = 0;
 
   onMount(async () => {
     await Promise.all(
@@ -80,6 +79,9 @@
         )
           .then((res) => res.json())
           .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
+            if (i == 0) {
+              avaxPrice = current_price.usd;
+            }
             coins[i] = {
               ...coins[i],
               ...(!("img" in coins[i]) && {
@@ -105,7 +107,7 @@
       }
     `;
 
-    fetch("https://graph-node.avax.network/subgraphs/name/dasconnor/pangolindex", {
+    await fetch("https://graph-node.avax.network/subgraphs/name/dasconnor/pangolindex", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({query}),
@@ -117,11 +119,8 @@
             pangolinFactory: {totalLiquidityUSD, totalVolumeUSD},
           },
         }) => {
-          const avaxPrice = parseFloat(coins[0].price.substring(1));
-          factoryData = {
-            totalVolume: Math.floor((parseFloat(totalVolumeUSD) * avaxPrice) / 1e6),
-            totalLiquidity: Math.floor((parseFloat(totalLiquidityUSD) * avaxPrice) / 1e6),
-          };
+          totalLiquidityAVAX = totalLiquidityUSD;
+          totalVolumeAVAX = totalVolumeUSD;
         },
       );
   });
@@ -157,12 +156,18 @@
     </h1>
 
     <div class="flex space-x-6 my-10">
-      {#each ["Volume", "Liquidity"] as card}
-        <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
-          <span class="text-4xl font-semibold text-orange-500">${factoryData["total" + card]}M+</span>
-          <span class="mt-2 font-semibold text-gray-100">Total {card}</span>
-        </div>
-      {/each}
+      <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
+        <span class="text-4xl font-semibold text-orange-500"
+          >${Math.floor((parseFloat(totalVolumeAVAX) * avaxPrice) / 1e6)}M+</span
+        >
+        <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
+      </div>
+      <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
+        <span class="text-4xl font-semibold text-orange-500"
+          >${Math.floor((parseFloat(totalLiquidityAVAX) * avaxPrice) / 1e6)}M+</span
+        >
+        <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
+      </div>
     </div>
 
     <p class="mb-10 max-w-screen-lg text-lg font-medium text-gray-700 sm:mb-11 sm:text-2xl sm:leading-10">
