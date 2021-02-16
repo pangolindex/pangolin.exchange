@@ -155,14 +155,14 @@
       Scale Your DeFi Trading with Pangolin
     </h1>
 
-    <div class="flex space-x-6 my-10">
-      <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
+    <div class="flex my-10 space-x-6">
+      <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500"
           >${Math.floor((parseFloat(totalVolumeAVAX) * avaxPrice) / 1e6)}M+</span
         >
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
-      <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
+      <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500"
           >${Math.floor((parseFloat(totalLiquidityAVAX) * avaxPrice) / 1e6)}M+</span
         >
