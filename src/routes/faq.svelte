@@ -69,6 +69,13 @@
     </FAQItem>
 
     <FAQItem>
+      <span slot="question">Do I still get fees when staking PGL to mine PNG?</span>
+      <span slot="answer">
+        Yes. Fees are added to the pool and are extracted proportionally when you withdraw your PGL.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
       <span slot="question">
         Do I need to have the original SUSHI or UNI tokens from my wallet to claim the airdrop?
       </span>
