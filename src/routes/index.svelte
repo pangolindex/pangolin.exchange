@@ -155,6 +155,16 @@
     >
       Scale Your DeFi Trading with Pangolin
     </h1>
+
+    <div class="flex space-x-6 my-10">
+      {#each ["Volume", "Liquidity"] as card}
+        <div class="bg-gray-900 rounded-xl px-4 py-4 flex flex-col">
+          <span class="text-4xl font-semibold text-orange-500">${factoryData["total" + card]}M+</span>
+          <span class="mt-2 font-semibold text-gray-100">Total {card}</span>
+        </div>
+      {/each}
+    </div>
+
     <p class="mb-10 max-w-screen-lg text-lg font-medium text-gray-700 sm:mb-11 sm:text-2xl sm:leading-10">
       A community-driven decentralized exchange for Avalanche and Ethereum assets with
       <strong class="text-gray-900">fast settlement</strong>,
@@ -179,17 +189,6 @@
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
         href="/faq">FAQ</a
       >
-    </div>
-  </div>
-
-  <div class="flex mt-16 text-center">
-    <div class="w-1/2 flex flex-col">
-      <span class="text-4xl tabular-nums">${factoryData["totalVolume"]}M<span class="text-gray-400">+</span></span>
-      <span class="mt-2">Total Volume</span>
-    </div>
-    <div class="w-1/2 flex flex-col">
-      <span class="text-4xl tabular-nums">${factoryData["totalLiquidity"]}M<span class="text-gray-400">+</span></span>
-      <span class="mt-2">Total Liquidity</span>
     </div>
   </div>
 
