@@ -65,6 +65,11 @@
     },
   ];
 
+  let factoryData = {
+    totalLiquidity: 0,
+    totalVolume: 0,
+  };
+
   onMount(async () => {
     await Promise.all(
       coins.map(({id}, i) => {
@@ -90,6 +95,35 @@
           });
       }),
     );
+
+    const query = `
+      query {
+        pangolinFactory(id: "0xefa94DE7a4656D787667C749f7E1223D71E9FD88") {
+          totalVolumeUSD
+          totalLiquidityUSD
+        }
+      }
+    `;
+
+    fetch("https://graph-node.avax.network/subgraphs/name/dasconnor/pangolindex", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({query}),
+    })
+      .then((res) => res.json())
+      .then(
+        ({
+          data: {
+            pangolinFactory: {totalLiquidityUSD, totalVolumeUSD},
+          },
+        }) => {
+          const avaxPrice = parseFloat(coins[0].price.substring(1));
+          factoryData = {
+            totalVolume: Math.floor((parseFloat(totalVolumeUSD) * avaxPrice) / 1e6),
+            totalLiquidity: Math.floor((parseFloat(totalLiquidityUSD) * avaxPrice) / 1e6),
+          };
+        },
+      );
   });
 </script>
 
@@ -144,6 +178,17 @@
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
         href="/faq">FAQ</a
       >
+    </div>
+  </div>
+
+  <div class="flex text-center mt-16">
+    <div class="w-1/2 flex flex-col">
+      <span class="tabular-nums text-4xl">${factoryData["totalVolume"]}M<span class="text-gray-400">+</span></span>
+      <span class="mt-2">Total Volume</span>
+    </div>
+    <div class="w-1/2 flex flex-col">
+      <span class="tabular-nums text-4xl">${factoryData["totalLiquidity"]}M<span class="text-gray-400">+</span></span>
+      <span class="mt-2">Total Liquidity</span>
     </div>
   </div>
 
