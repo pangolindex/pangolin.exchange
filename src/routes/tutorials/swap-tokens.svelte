@@ -25,6 +25,13 @@
   <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
     <h2>Swap Tokens</h2>
 
+    <video controls>
+      <source src="/videos/swapping-tokens-on-pangolin.mp4" type="video/mp4" />
+      Your browser does not support the video tag. Click
+      <a href="https://www.youtube.com/watch?v=kNQp4t03lOQ" target="_blank" class="hover:no-underline">here</a> to watch
+      the video on YouTube.
+    </video>
+
     <p><i>Swap tokens on Pangolin</i></p>
 
     <h3 class="flex whitespace-pre-wrap group" id="swap-tokens">

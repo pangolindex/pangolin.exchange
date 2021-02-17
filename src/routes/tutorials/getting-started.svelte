@@ -45,6 +45,13 @@
 
     <h2>Getting Started on Pangolin</h2>
 
+    <video controls>
+      <source src="/videos/a-quick-overview-of-pangolin.mp4" type="video/mp4" />
+      Your browser does not support the video tag. Click
+      <a href="https://www.youtube.com/watch?v=OLas-XVmUOU" target="_blank" class="hover:no-underline">here</a> to watch
+      the video on YouTube.
+    </video>
+
     <p><i>Set up your MetaMask wallet, and fund it with AVAX</i></p>
     <p>
       Pangolin is a community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low
@@ -143,6 +150,13 @@
         >Set Up MetaMask with Avalanche</span
       >
     </h3>
+
+    <video controls>
+      <source src="/videos/setting-up-metamask-on-pangolin.mp4" type="video/mp4" />
+      Your browser does not support the video tag. Click
+      <a href="https://www.youtube.com/watch?v=DQlPi56lOks" target="_blank" class="hover:no-underline">here</a> to watch
+      the video on YouTube.
+    </video>
 
     <ol>
       <li>
