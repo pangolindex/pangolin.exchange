@@ -1,5 +1,6 @@
 <script>
   import {onMount} from "svelte";
+  import {getTotalStats} from "$utils";
 
   let coins = [
     {
@@ -65,8 +66,11 @@
     },
   ];
 
-  let totalLiquidityAVAX = 0;
-  let totalVolumeAVAX = 0;
+  let stats = {
+    totalLiquidityAVAX: 0,
+    totalVolumeAVAX: 0,
+  };
+
   let avaxPrice = 0;
 
   onMount(async () => {
@@ -98,31 +102,7 @@
       }),
     );
 
-    const query = `
-      query {
-        pangolinFactory(id: "0xefa94DE7a4656D787667C749f7E1223D71E9FD88") {
-          totalVolumeUSD
-          totalLiquidityUSD
-        }
-      }
-    `;
-
-    await fetch("https://graph-node.avax.network/subgraphs/name/dasconnor/pangolindex", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({query}),
-    })
-      .then((res) => res.json())
-      .then(
-        ({
-          data: {
-            pangolinFactory: {totalLiquidityUSD, totalVolumeUSD},
-          },
-        }) => {
-          totalLiquidityAVAX = totalLiquidityUSD;
-          totalVolumeAVAX = totalVolumeUSD;
-        },
-      );
+    stats = await getTotalStats();
   });
 </script>
 
@@ -158,13 +138,13 @@
     <div class="flex my-10 space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(totalVolumeAVAX) * avaxPrice) / 1e6)}M+</span
+          >${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice) / 1e6)}M+</span
         >
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(totalLiquidityAVAX) * avaxPrice) / 1e6)}M+</span
+          >${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice) / 1e6)}M+</span
         >
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
