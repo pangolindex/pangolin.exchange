@@ -1,6 +1,8 @@
+import {FACTORY_ADDRESS, PANGOLIN_SUBGRAPH_URL} from "./constants";
+
 const query = `
 	query {
-		pangolinFactory(id: "0xefa94DE7a4656D787667C749f7E1223D71E9FD88") {
+		pangolinFactory(id: "${FACTORY_ADDRESS}") {
 			totalVolumeUSD
 			totalLiquidityUSD
 		}
@@ -8,7 +10,7 @@ const query = `
 `;
 
 export async function getTotalStats() {
-  const req = await fetch("https://graph-node.avax.network/subgraphs/name/dasconnor/pangolindex", {
+  const req = await fetch(PANGOLIN_SUBGRAPH_URL, {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({query}),
