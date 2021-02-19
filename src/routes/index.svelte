@@ -62,15 +62,15 @@
 
     <div class="flex my-10 space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice.now) / 1e6)}M+</span
-        >
+        <span class="text-4xl font-semibold text-orange-500">
+          ${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice.now) / 1e6)}M+
+        </span>
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now) / 1e6)}M+</span
-        >
+        <span class="text-4xl font-semibold text-orange-500">
+          ${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now) / 1e6)}M+
+        </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
     </div>
@@ -87,18 +87,24 @@
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
         href="https://app.pangolin.exchange"
-        target="_blank">Launch App</a
+        target="_blank"
       >
+        Launch App
+      </a>
 
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
-        href="/litepaper">Litepaper</a
+        href="/litepaper"
       >
+        Litepaper
+      </a>
 
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
-        href="/faq">FAQ</a
+        href="/faq"
       >
+        FAQ
+      </a>
     </div>
   </div>
 
@@ -157,12 +163,12 @@
                             : 'M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z'}"
                           clip-rule="evenodd"></path>
                       </svg>
-                      <span
-                        >{Math.abs(
+                      <span>
+                        {Math.abs(
                           (100 * (price.now * avaxPrice.now - price.history * avaxPrice.history)) /
                             (price.history * avaxPrice.history),
-                        ).toFixed(2)}%</span
-                      >
+                        ).toFixed(2)}%
+                      </span>
                     </span>
                   </td>
                 </tr>
