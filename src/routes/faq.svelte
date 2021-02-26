@@ -48,7 +48,7 @@
         Please note, resetting your account <u>will not</u> disrupt your funds or wallet address.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Why are my fees displayed in ETH on MetaMask?</span>
       <span slot="answer">
