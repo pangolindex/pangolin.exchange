@@ -94,5 +94,27 @@
         >.
       </span>
     </FAQItem>
+    
+    
+    <FAQItem>
+      <span slot="question">Can I send my Avalanche assets from Metamask to an Exchange or an ETH address?</span>
+      <span slot="answer">
+        No, you cannot send assets across networks from Avalanche to Ethereum or vice versa. You need to use the <a
+          class="hover:no-underline"
+          href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
+        > every time you want to send assets between networks.
+      </span>
+    </FAQItem>
+    
+    <FAQItem>
+      <span slot="question">My transaction is pending on Metamask for some time now, what can I do?</span>
+      <span slot="answer">
+        First check that your gas fee is set to exactly: 470 gwei. If it is, retry the transaction. 
+        <br />
+        If it doesn’t go through, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask → Select Settings → Select Advanced → Scroll down and click Reset Account.
+        <br />
+        Please note, resetting your account <u>will not</u> disrupt your funds or wallet address.
+      </span>
+    </FAQItem>
   </section>
 </article>
