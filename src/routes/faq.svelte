@@ -50,6 +50,30 @@
     </FAQItem>
 
     <FAQItem>
+      <span slot="question">Why isn’t my ERC-20 token showing in my Metamask wallet?</span>
+      <span slot="answer">
+        This is due to the token address changing. When you transfer ERC-20’s across the <a
+          class="hover:no-underline"
+          href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
+        >, the Token contract address changes. Token contract addresses are different on Ethereum and Avalanche despite
+        being the same represented token.
+        <br />
+        <br />
+        To import the Avalanche token address of any Avalanche supported ERC-20 follow these steps:
+        <ol>
+          <li>Open Metamask</li>
+          <li>Scroll down to “Add Token”</li>
+          <li>Tap on the “Custom Token” tab</li>
+          <li>Navigate to: the Avalanche Token List</li>
+          <li>Find the token you wish to import and copy the contract address</li>
+          <li>Paste the contract address inside Metamask</li>
+          <li>Tap Next</li>
+          <li>Done!</li>
+        </ol>
+      </span>
+    </FAQItem>
+
+    <FAQItem>
       <span slot="question">Why are my fees displayed in ETH on MetaMask?</span>
       <span slot="answer">
         MetaMask is originally built for Ethereum and does not support the native tokens of other blockchain networks.
