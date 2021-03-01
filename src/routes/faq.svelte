@@ -62,8 +62,8 @@
         To import the Avalanche token address of any Avalanche supported ERC-20 follow these steps:
         <ol>
           <li>Open Metamask</li>
-          <li>Scroll down to “Add Token”</li>
-          <li>Tap on the “Custom Token” tab</li>
+          <li>Scroll down to "Add Token"</li>
+          <li>Tap on the "Custom Token" tab</li>
           <li>Navigate to: the Avalanche Token List</li>
           <li>Find the token you wish to import and copy the contract address</li>
           <li>Paste the contract address inside Metamask</li>

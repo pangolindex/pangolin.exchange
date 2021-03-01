@@ -112,17 +112,17 @@
         Access the bridge <a href="https://aeb.xyz/" target="_blank" class="hover:no-underline">here</a>
       </li>
       <li>
-        Make sure you are on the “Transfer” tab
+        Make sure you are on the "Transfer" tab
         <img src="/tutorials/claim-png/001.png" />
       </li>
-      <li>Select “Connect MetaMask” and make sure you are using the wallet that held UNI or SUSHI on December 7th.</li>
+      <li>Select "Connect MetaMask" and make sure you are using the wallet that held UNI or SUSHI on December 7th.</li>
       <li>
         Select "Ethereum Mainnet" network on your MetaMask wallet
         <img src="/tutorials/claim-png/002.png" />
       </li>
       <li>Select the Destination Network as Avalanche</li>
       <li>
-        Ensure that you have ETH on this wallet to pay for Ethereum gas fees, which will be noted as a “Bridge Fee”.
+        Ensure that you have ETH on this wallet to pay for Ethereum gas fees, which will be noted as a "Bridge Fee".
       </li>
       <li>Select either UNI or SUSHI as the token you would like to transfer</li>
       <li>
@@ -161,7 +161,7 @@
         >.
       </li>
       <li>
-        Connect your MetaMask to Pangolin by selecting “Connect to a wallet”.
+        Connect your MetaMask to Pangolin by selecting "Connect to a wallet".
         <img src="/tutorials/claim-png/004.png" />
       </li>
       <li>
