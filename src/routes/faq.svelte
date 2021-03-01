@@ -64,7 +64,13 @@
           <li>Open Metamask</li>
           <li>Scroll down to "Add Token"</li>
           <li>Tap on the "Custom Token" tab</li>
-          <li>Navigate to: the Avalanche Token List</li>
+          <li>
+            Navigate to: the <a
+              class="hover:no-underline"
+              href="https://tokenlists.org/token-list?url=https://raw.githubusercontent.com/pangolindex/tokenlists/main/aeb.tokenlist.json"
+              >Avalanche Token List</a
+            >
+          </li>
           <li>Find the token you wish to import and copy the contract address</li>
           <li>Paste the contract address inside Metamask</li>
           <li>Tap Next</li>
