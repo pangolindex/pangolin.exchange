@@ -68,7 +68,7 @@
           </svg>
         </button>
       </div>
-      <nav class="hidden space-x-10 md:flex">
+      <nav class="hidden space-x-6 lg:space-x-10 md:flex">
         <a
           href="https://app.pangolin.exchange"
           target="_blank"
@@ -84,6 +84,14 @@
         >
           Analytics
         </a>
+
+        <a
+        href="https://gov.pangolin.exchange"
+        target="_blank"
+        class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+      >
+        Governance
+      </a>
 
         <div class="relative" use:clickOutside on:click_outside="{() => (docs_open = false)}">
           <button
@@ -290,6 +298,29 @@
                 </svg>
                 <span class="ml-3 text-base font-medium text-gray-900">Analytics</span>
               </a>
+
+              <a
+              on:click="{() => (mobile_open = false)}"
+              href="https://gov.pangolin.exchange"
+              target="_blank"
+              class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
+            >
+              <svg
+                class="flex-shrink-0 w-6 h-6 text-gray-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+                ></path>
+              </svg>
+              <span class="ml-3 text-base font-medium text-gray-900">Governance</span>
+            </a>
 
               <a
                 on:click="{() => (mobile_open = false)}"
