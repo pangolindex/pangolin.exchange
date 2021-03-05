@@ -1,108 +1,33 @@
 <script>
   import {onMount} from "svelte";
-  import {getTotalStats} from "$utils";
+  import {getTotalStats, getTableData, getAvaxPriceStats} from "$utils";
 
-  let coins = [
-    {
-      symbol: "AVAX",
-      id: "avalanche-2",
-      name: "Avalanche",
-      img:
-        "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/ethereum-tokens/0x9dEbca6eA3af87Bf422Cea9ac955618ceb56EfB4/logo.png",
-    },
-    {
-      symbol: "ETH",
-      id: "ethereum",
-      name: "Ether (Wrapped)",
-      addr: "0xf20d962a6c8f70c731bd838a3a388D7d48fA6e15",
-    },
-    {
-      symbol: "USDT",
-      id: "tether",
-      name: "Tether USD",
-      addr: "0xde3A24028580884448a5397872046a019649b084",
-    },
-    {
-      symbol: "WBTC",
-      id: "wrapped-bitcoin",
-      name: "Wrapped BTC",
-      addr: "0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB",
-    },
-    {
-      symbol: "LINK",
-      id: "chainlink",
-      name: "Chainlink Token",
-      addr: "0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651",
-    },
-    {
-      symbol: "DAI",
-      id: "dai",
-      name: "Dai Stablecoin",
-      addr: "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
-    },
-    {
-      symbol: "UNI",
-      id: "uniswap",
-      name: "Uniswap",
-      addr: "0xf39f9671906d8630812f9d9863bBEf5D523c84Ab",
-    },
-    {
-      symbol: "SUSHI",
-      id: "sushi",
-      name: "SushiToken",
-      addr: "0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc",
-    },
-    {
-      symbol: "AAVE",
-      id: "aave",
-      name: "Aave Token",
-      addr: "0x8cE2Dee54bB9921a2AE0A63dBb2DF8eD88B91dD9",
-    },
-    {
-      symbol: "YFI",
-      id: "yearn-finance",
-      name: "yearn.finance",
-      addr: "0x99519AcB025a0e0d44c3875A4BbF03af65933627",
-    },
-  ];
+  const formatter = new Intl.NumberFormat(undefined, {
+    style: "currency",
+    currency: "USD",
+  });
 
   let stats = {
     totalLiquidityAVAX: 0,
     totalVolumeAVAX: 0,
   };
 
-  let avaxPrice = 0;
+  let avaxPrice = {
+    now: 0,
+    history: 0,
+  };
+
+  let tableData = [];
 
   onMount(async () => {
-    await Promise.all(
-      coins.map(({id}, i) => {
-        fetch(
-          "https://api.coingecko.com/api/v3/coins/" +
-            id +
-            "?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false",
-        )
-          .then((res) => res.json())
-          .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
-            if (id == "avalanche-2") {
-              avaxPrice = current_price.usd;
-            }
-            coins[i] = {
-              ...coins[i],
-              ...(!("img" in coins[i]) && {
-                img:
-                  "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/" +
-                  coins[i].addr +
-                  "/logo.png",
-              }),
-              price: "$" + current_price.usd.toLocaleString("en-US"),
-              price_change: price_change_percentage_24h,
-              volume: "$" + total_volume.usd.toLocaleString("en-US"),
-            };
-          });
-      }),
-    );
-
+    getAvaxPriceStats().then(({usd, usd_24h_change}) => {
+      avaxPrice = {
+        now: usd,
+        history: ((100 - usd_24h_change) * usd) / 100,
+      };
+    });
     stats = await getTotalStats();
+    tableData = await getTableData();
   });
 </script>
 
@@ -137,15 +62,15 @@
 
     <div class="flex my-10 space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice) / 1e6)}M+</span
-        >
+        <span class="text-4xl font-semibold text-orange-500">
+          ${Math.floor((parseFloat(stats.totalVolumeAVAX) * avaxPrice.now) / 1e6)}M+
+        </span>
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-4xl font-semibold text-orange-500"
-          >${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice) / 1e6)}M+</span
-        >
+        <span class="text-4xl font-semibold text-orange-500">
+          ${Math.floor((parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now) / 1e6)}M+
+        </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
     </div>
@@ -162,18 +87,24 @@
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
         href="https://app.pangolin.exchange"
-        target="_blank">Launch App</a
+        target="_blank"
       >
+        Launch App
+      </a>
 
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
-        href="/litepaper">Litepaper</a
+        href="/litepaper"
       >
+        Litepaper
+      </a>
 
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
-        href="/faq">FAQ</a
+        href="/faq"
       >
+        FAQ
+      </a>
     </div>
   </div>
 
@@ -195,45 +126,52 @@
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              {#each coins as coin}
-                {#if "volume" in coin}
-                  <tr>
-                    <td class="py-4 px-6 whitespace-nowrap">
-                      <div class="flex items-center space-x-4">
-                        <div class="flex-shrink-0 w-10 h-10">
-                          <img class="w-10 h-10 rounded-full" src="{coin.img}" alt="{coin.symbol}" />
-                        </div>
-                        <div>
-                          <div class="text-sm font-medium text-gray-900">{coin.symbol}</div>
-                          <div class="text-sm text-gray-500">{coin.name}</div>
-                        </div>
+              {#each tableData as {addr, name, symbol, price, volume}}
+                <tr>
+                  <td class="py-4 px-6 whitespace-nowrap">
+                    <div class="flex items-center space-x-4">
+                      <div class="flex-shrink-0 w-10 h-10">
+                        <img
+                          class="w-10 h-10 rounded-full"
+                          src="https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/{addr}/logo.png"
+                          alt="{symbol}"
+                        />
                       </div>
-                    </td>
-                    <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
-                      {coin.volume}
-                    </td>
-                    <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
-                      {coin.price}
-                    </td>
-                    <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
-                      <span
-                        class="{coin.price_change >= 0
-                          ? 'bg-green-100 text-green-800'
-                          : 'bg-red-100 text-red-800'} inline-flex items-center px-2 py-1 text-xs font-semibold leading-5 rounded-full space-x-1"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4" fill="currentColor">
-                          <path
-                            fill-rule="evenodd"
-                            d="{coin.price_change >= 0
-                              ? 'M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z'
-                              : 'M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z'}"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                        <span>{Math.abs(coin.price_change).toFixed(2)}%</span>
+                      <div>
+                        <div class="text-sm font-medium text-gray-900">{symbol}</div>
+                        <div class="text-sm text-gray-500">{name}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
+                    {formatter.format((volume * price.now * avaxPrice.now).toFixed(2))}
+                  </td>
+                  <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
+                    {formatter.format((price.now * avaxPrice.now).toFixed(2))}
+                  </td>
+                  <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
+                    <span
+                      class="{price.now * avaxPrice.now - price.history * avaxPrice.history >= 0
+                        ? 'bg-green-100 text-green-800'
+                        : 'bg-red-100 text-red-800'} inline-flex items-center px-2 py-1 text-xs font-semibold leading-5 rounded-full space-x-1"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4" fill="currentColor">
+                        <path
+                          fill-rule="evenodd"
+                          d="{price.now * avaxPrice.now - price.history * avaxPrice.history >= 0
+                            ? 'M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z'
+                            : 'M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z'}"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span>
+                        {Math.abs(
+                          (100 * (price.now * avaxPrice.now - price.history * avaxPrice.history)) /
+                            (price.history * avaxPrice.history),
+                        ).toFixed(2)}%
                       </span>
-                    </td>
-                  </tr>
-                {/if}
+                    </span>
+                  </td>
+                </tr>
               {/each}
             </tbody>
           </table>
