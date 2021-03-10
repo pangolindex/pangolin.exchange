@@ -5,7 +5,7 @@ module.exports = {
     mode: "all",
     content: ["./src/**/*.{html,svelte}"],
     options: {
-      safelist: [/^texture-/]
+      safelist: [/^texture-/, /svelte-announcer/]
     }
   },
   plugins: [require("@tailwindcss/typography")],
