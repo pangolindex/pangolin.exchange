@@ -28,7 +28,6 @@ jobs:
       - run: yarn build
         env:
           CI: true
-      - run: yarn adapt
       - run: npm i @cloudflare/wrangler@1.15.0 -g
       - run: wrangler publish
         env:
