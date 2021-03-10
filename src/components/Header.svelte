@@ -126,9 +126,9 @@
             outState="opacity-0 translate-y-1"
             outTransition="ease-in duration-150"
           >
-            <div class="absolute left-1/2 mt-3 px-2 w-screen max-w-md transform -translate-x-1/2 sm:px-0">
+            <div class="absolute z-50 left-1/2 mt-3 px-2 w-screen max-w-md transform -translate-x-1/2 sm:px-0">
               <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
-                <div class="grid relative z-20 gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
+                <div class="grid relative gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
                   <a
                     on:click="{() => (docs_open = false)}"
                     href="/litepaper"
