@@ -9,20 +9,20 @@
 		"format": "prettier --write '**/*.{svelte,js,html,md}' .github/**/*.yml --ignore-path .gitignore"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "1.0.0-next.2",
-		"@sveltejs/kit": "1.0.0-next.40",
+		"@sveltejs/adapter-static": "1.0.0-next.4",
+		"@sveltejs/kit": "1.0.0-next.72",
 		"@tailwindcss/typography": "0.4.0",
 		"autoprefixer": "10.2.5",
-		"cssnano": "4.1.10",
-		"postcss": "8.2.8",
+		"cssnano": "5.0.0",
+		"postcss": "8.2.10",
 		"postcss-cli": "8.3.1",
 		"prettier": "2.2.1",
 		"prettier-plugin-svelte": "2.2.0",
-		"rustywind": "0.8.0",
-		"svelte": "3.35.0",
+		"rustywind": "0.8.1",
+		"svelte": "3.37.0",
 		"svelte-class-transition": "1.0.4",
-		"tailwindcss": "2.0.3",
-		"vite": "2.0.5"
+		"tailwindcss": "2.1.1",
+		"vite": "2.1.5"
 	},
 	"type": "module"
 }

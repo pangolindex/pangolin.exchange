@@ -1,5 +1,5 @@
 <script>
-  import FAQItem from "$components/FAQItem.svelte";
+  import FAQItem from "$lib/components/FAQItem.svelte";
 </script>
 
 <svelte:head>

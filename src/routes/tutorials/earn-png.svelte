@@ -1,5 +1,5 @@
 <script>
-  import ContentsLayout from "$components/ContentsLayout.svelte";
+  import ContentsLayout from "$lib/components/ContentsLayout.svelte";
 </script>
 
 <svelte:head>

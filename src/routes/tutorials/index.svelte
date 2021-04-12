@@ -1,5 +1,5 @@
 <script>
-  import TutorialCard from "$components/TutorialCard.svelte";
+  import TutorialCard from "$lib/components/TutorialCard.svelte";
 </script>
 
 <svelte:head>

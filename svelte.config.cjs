@@ -1,5 +1,8 @@
+const pkg = require('./package.json');
+
+/** @type {import('@sveltejs/kit').Config} */
 module.exports = {
   kit: {
-    adapter: "@sveltejs/adapter-static",
-  },
+    adapter: require('@sveltejs/adapter-static')(),
+  }
 };

@@ -1,5 +1,5 @@
 <script>
-  import {clickOutside} from "$utils";
+  import {clickOutside} from "$lib/utils";
   import {onMount} from "svelte";
 
   let Transition;

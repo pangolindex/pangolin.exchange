@@ -1,6 +1,6 @@
 <script>
   import {onMount} from "svelte";
-  import {getTotalStats, getTableData, getAvaxPriceStats} from "$utils";
+  import {getTotalStats, getTableData, getAvaxPriceStats} from "$lib/utils";
 
   const formatter = new Intl.NumberFormat(undefined, {
     style: "currency",
