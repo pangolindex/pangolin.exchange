@@ -88,8 +88,7 @@ async function getHistoryTokens() {
 }
 
 export async function getTableData() {
-  const currentTokens = await getCurrentTokens();
-  const historyTokens = await getHistoryTokens();
+  const [currentTokens, historyTokens] = await Promise.all([getCurrentTokens(), getHistoryTokens()]);
 
   return Promise.all(
     TABLE_ADDRESSES.map((addr) => {
