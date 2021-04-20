@@ -42,7 +42,7 @@
   }
 
   onMount(async () => {
-    const module = await import("svelte-class-transition");
+    const module = await import("$lib/components/Transition.svelte");
     Transition = module.default;
   });
 </script>

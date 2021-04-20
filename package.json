@@ -20,7 +20,6 @@
 		"prettier-plugin-svelte": "2.2.0",
 		"rustywind": "0.8.1",
 		"svelte": "3.37.0",
-		"svelte-class-transition": "1.0.4",
 		"tailwindcss": "2.1.1",
 		"vite": "2.2.1"
 	},

@@ -1639,11 +1639,6 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-class-transition@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/svelte-class-transition/-/svelte-class-transition-1.0.4.tgz#dae7eb9cc45ff5fd429b187136e75c87ec4beeb5"
-  integrity sha512-00Rs6Ft5V9v4aqHIZKZHY2/OUQjFSNBXtG53ped3SEyl0kYiOyXu/16Ro3xsKMyaU4/xppoL8ef5uPoSP+BNPw==
-
 svelte-hmr@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.0.tgz#d11c6d2b53d1e7cde51b57cdb7e65c0e4415cb8d"
