@@ -1,6 +1,7 @@
 <!-- adapted from https://github.com/gawlk/svelte-class-transition/blob/master/Transition.svelte -->
 <script>
   import {onMount, tick} from "svelte";
+
   export let toggle = undefined;
   export let transitions = "";
   export let inTransition = "";
@@ -9,23 +10,29 @@
   export let onState = "";
   export let outState = inState;
   export let offVisible = false;
+
   let div;
   let slot;
   let parent;
   let mounted;
-  let hidden = false;
+
   const STATE = {
     IDLE: 0,
     ENTERING: 1,
     LEAVING: 2,
   };
+
   let state = STATE.IDLE;
+
   onMount(async () => {
     mounted = true;
+
     await tick();
+
     slot = div.nextElementSibling;
+
     if (toggle === undefined) {
-      hidden = true;
+      slot.hidden = true;
       if (document.readyState === "complete") {
         setTimeout(initTogglelessTransition, 50);
       } else {
@@ -41,16 +48,21 @@
       initTransition();
     }
   });
+
   const initTogglelessTransition = async () => {
     searchParentTransition();
+
     toggle = parent ? parent.toggle : false;
+
     initTransition();
+
     if (!parent) {
       setTimeout(() => {
         toggle = true;
       }, 200);
     }
   };
+
   const searchParentTransition = () => {
     let element = slot.parentElement;
     while (parent === undefined && element && document.body !== element) {
@@ -62,6 +74,7 @@
       }
     }
   };
+
   const parentObserver = () => {
     new MutationObserver((mutations) => {
       for (let mutation of mutations) {
@@ -72,6 +85,7 @@
       attributeFilter: ["class"],
     });
   };
+
   const setClasses = (...classes) => {
     const toRemove = clean(transitions, inTransition, outTransition, inState, onState, outState);
     slot.classList.value =
@@ -82,14 +96,17 @@
       " " +
       classes.join(" ");
   };
+
   const clean = (...args) => args.join(" ").replace(/\s+/g, " ").trim();
+
   const initTransition = () => {
     slot.toggle = toggle;
+
     if (toggle) {
       setClasses(transitions, outTransition, onState);
       transitionEndListener();
     } else {
-      hidden = !parent && !offVisible;
+      slot.hidden = !parent && !offVisible;
       setClasses(transitions, inState);
       setTimeout(() => {
         setClasses(transitions, inTransition, inState);
@@ -97,10 +114,11 @@
       }, 250);
     }
     if (!toggle) {
-      hidden = !parent && !offVisible;
+      slot.hidden = !parent && !offVisible;
     }
     transitionEndListener();
   };
+
   const transitionEndListener = () => {
     slot.addEventListener("transitionend", (event) => {
       if (
@@ -109,6 +127,7 @@
         ((toggle && state === STATE.ENTERING) || (!toggle && state === STATE.LEAVING))
       ) {
         state = STATE.IDLE;
+
         if (!toggle) {
           setClasses(transitions, inTransition, inState);
           slot.hidden = !parent && !offVisible;
@@ -116,14 +135,17 @@
       }
     });
   };
+
   let initialized = false;
   let firstToggleState = toggle;
   $: firstToggleState !== toggle && (initialized = true);
   $: initialized && event(toggle);
+
   const event = (toggle) => {
     slot.toggle = toggle;
     toggle ? enterEvent() : leaveEvent();
   };
+
   const enterEvent = () => {
     if (slot.hidden) {
       slot.hidden = false;
@@ -133,13 +155,14 @@
       setClasses(transitions, inTransition, onState);
     }
   };
+
   const leaveEvent = () => {
     state = STATE.LEAVING;
     setClasses(transitions, outTransition, outState);
   };
 </script>
 
-<div bind:this="{div}" class:hidden></div>
+<div bind:this="{div}" hidden></div>
 
 {#if mounted}
   <slot />

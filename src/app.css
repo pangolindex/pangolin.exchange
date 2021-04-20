@@ -38,3 +38,7 @@
 .texture-purty-wood {
   background-image: url("/textures/purty-wood.png");
 }
+
+:global([hidden]) {
+  display: none !important;
+}
