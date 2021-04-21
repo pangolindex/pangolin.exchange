@@ -21,7 +21,7 @@
 
   function formatStat(number) {
     if (number > 1e9) {
-      return Math.floor(number / 1e9) + "B+";
+      return Math.floor(number / 1e7) / 1e2 + "B+";
     } else if (number > 1e6) {
       return Math.floor(number / 1e6) + "M+";
     }
