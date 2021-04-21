@@ -71,19 +71,13 @@
 
     <div class="flex my-10 space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span
-          class="text-4xl font-semibold text-orange-500"
-          title="{formatter.format(parseFloat(stats.totalVolumeAVAX) * avaxPrice.now)}"
-        >
+        <span class="text-4xl font-semibold text-orange-500">
           ${formatStat(parseFloat(stats.totalVolumeAVAX) * avaxPrice.now)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span
-          class="text-4xl font-semibold text-orange-500"
-          title="{formatter.format(parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now)}"
-        >
+        <span class="text-4xl font-semibold text-orange-500">
           ${formatStat(parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
