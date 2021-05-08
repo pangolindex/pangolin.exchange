@@ -1,7 +1,11 @@
 import {STAKING_ADDRESSES} from "./constants";
 
 export async function getTotalStats() {
-  const aprs = await Promise.all(STAKING_ADDRESSES.map(async address => parseFloat(await (await fetch(`https://api.pangolin.exchange/pangolin/apr/${address}`)).text())))
+  const aprs = await Promise.all(
+    STAKING_ADDRESSES.map(async (address) =>
+      parseFloat(await (await fetch(`https://api.pangolin.exchange/pangolin/apr/${address}`)).text()),
+    ),
+  );
 
   return {
     maxAPR: Math.max(...aprs),

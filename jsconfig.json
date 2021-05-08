@@ -2,18 +2,8 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"$app/*": [
-				".svelte/dev/runtime/app/*",
-				".svelte/build/runtime/app/*"
-			],
-			"$lib/*": [
-				"src/lib/*"
-			]
+			"$lib/*": ["src/lib/*"]
 		}
 	},
-	"include": [
-		"src/**/*.d.ts",
-		"src/**/*.js",
-		"src/**/*.svelte"
-	]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
 }

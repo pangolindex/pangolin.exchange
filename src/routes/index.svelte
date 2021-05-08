@@ -10,7 +10,7 @@
   let stats = {
     totalLiquidity: 0,
     totalVolume: 0,
-    maxAPR: 0
+    maxAPR: 0,
   };
 
   let avaxPrice = {
