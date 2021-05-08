@@ -1,4 +1,3 @@
-export const FACTORY_ADDRESS = "0xefa94DE7a4656D787667C749f7E1223D71E9FD88";
 export const PANGOLIN_SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dasconnor/pangolin-dex";
 export const BLOCK_SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dasconnor/avalanche-blocks";
 
