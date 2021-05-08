@@ -10,6 +10,7 @@
   let stats = {
     totalLiquidity: 0,
     totalVolume: 0,
+    maxAPR: 0
   };
 
   let avaxPrice = {
@@ -81,6 +82,12 @@
           ${formatStat(stats.totalLiquidity)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
+      </div>
+      <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
+        <span class="text-4xl font-semibold text-orange-500">
+          {stats.maxAPR}%
+        </span>
+        <span class="mt-2 font-semibold text-gray-100">Earn up to</span>
       </div>
     </div>
 
