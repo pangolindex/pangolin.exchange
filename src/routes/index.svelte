@@ -8,8 +8,8 @@
   });
 
   let stats = {
-    totalLiquidityAVAX: 0,
-    totalVolumeAVAX: 0,
+    totalLiquidity: 0,
+    totalVolume: 0,
   };
 
   let avaxPrice = {
@@ -72,13 +72,13 @@
     <div class="flex my-10 space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500">
-          ${formatStat(parseFloat(stats.totalVolumeAVAX) * avaxPrice.now)}
+          ${formatStat(stats.totalVolume)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
         <span class="text-4xl font-semibold text-orange-500">
-          ${formatStat(parseFloat(stats.totalLiquidityAVAX) * avaxPrice.now)}
+          ${formatStat(stats.totalLiquidity)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
