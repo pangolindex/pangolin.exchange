@@ -92,9 +92,12 @@ export async function getTableData() {
 
   return Promise.all(
     TABLE_ADDRESSES.map((addr) => {
-      const {name, symbol, derivedETH: now, tradeVolume} = currentTokens.find(
-        ({id}) => id.toLowerCase() == addr.toLowerCase(),
-      );
+      const {
+        name,
+        symbol,
+        derivedETH: now,
+        tradeVolume,
+      } = currentTokens.find(({id}) => id.toLowerCase() == addr.toLowerCase());
 
       const {derivedETH: history, tradeVolume: historyVolume} = historyTokens.find(
         ({id}) => id.toLowerCase() == addr.toLowerCase(),
