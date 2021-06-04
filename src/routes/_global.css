@@ -12,7 +12,7 @@
 }
 
 .after\:hash::after {
-  content: '#';
+  content: "#";
 }
 
 .texture-black-felt {

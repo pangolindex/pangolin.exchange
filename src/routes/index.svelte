@@ -30,20 +30,21 @@
   }
 
   onMount(async () => {
-    getAvaxPriceStats().then(({usd, usd_24h_change}) => {
-      avaxPrice = {
+    [avaxPrice, stats, tableData] = await Promise.all([
+      getAvaxPriceStats().then(({usd, usd_24h_change}) => ({
         now: usd,
         history: ((100 - usd_24h_change) * usd) / 100,
-      };
-    });
-    stats = await getTotalStats();
-    tableData = await getTableData();
+      })),
+      getTotalStats(),
+      getTableData(),
+    ]);
   });
 </script>
 
 <svelte:head>
-  <link rel="preconnect" href="https://api.coingecko.com" crossorigin="true" />
-  <link rel="preconnect" href="https://graph-node.avax.network" crossorigin="true" />
+  <link rel="preconnect" href="https://api.coingecko.com" />
+  <link rel="preconnect" href="https://api.thegraph.com" crossorigin="true" />
+  <link rel="preconnect" href="https://api.pangolin.exchange" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content="https://pangolin.exchange/" />
   <meta property="og:type" content="article" />
