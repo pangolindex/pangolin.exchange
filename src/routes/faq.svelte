@@ -38,7 +38,7 @@
     <FAQItem>
       <span slot="question">My transaction is pending on Metamask for some time now, what can I do?</span>
       <span slot="answer">
-        First check that your gas fee is set to exactly: 470 gwei. If it is, retry the transaction.
+        First check that your gas fee is set to exactly: 225 gwei. If it is, retry the transaction.
         <br />
         <br />
         If it doesn’t go through, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask
@@ -129,14 +129,5 @@
       </span>
     </FAQItem>
 
-    <FAQItem>
-      <span slot="question">
-        Do I need to have the original SUSHI or UNI tokens from my wallet to claim the airdrop?
-      </span>
-      <span slot="answer">
-        No. You just need the wallet that held SUSHI or UNI on December 7th, 2020. However, in order to claim the
-        airdrop, you will only need one SUSHI or UNI.
-      </span>
-    </FAQItem>
   </section>
 </article>
