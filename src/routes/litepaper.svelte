@@ -305,17 +305,14 @@
       </li>
     </ul>
 
-    <p>The Pangolin governance thresholds are as follows:</p>
-
-    <ul>
-      <li>10% of PNG circulating supply (delegated) to submit a governance proposal</li>
-      <li>
-        During a voting period, a simple majority (&gt;50%) of ‘yes’ votes weighted by delegated PNG that totals at
-        least 15% of the circulating supply of PNG is required to reach quorum
-      </li>
-      <li>7 day voting period</li>
-      <li>2 day timelock delay on execution</li>
-    </ul>
+    <p>
+      Read more about governance in our <a
+        target="_blank"
+        href="https://gov.pangolin.exchange/t/how-governance-works/1082"
+      >
+        Governance Forum
+      </a>
+    </p>
 
     <h2 class="flex whitespace-pre-wrap group" id="conclusion">
       <a
