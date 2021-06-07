@@ -305,7 +305,14 @@
       </li>
     </ul>
 
-    <p>Read more about governance in our <a target="_blank" href="https://gov.pangolin.exchange/t/how-governance-works/1082"> Governance Forum </a></p>
+    <p>
+      Read more about governance in our <a
+        target="_blank"
+        href="https://gov.pangolin.exchange/t/how-governance-works/1082"
+      >
+        Governance Forum
+      </a>
+    </p>
 
     <h2 class="flex whitespace-pre-wrap group" id="conclusion">
       <a

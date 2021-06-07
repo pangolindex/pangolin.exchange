@@ -128,6 +128,5 @@
         Yes. Fees are added to the pool and are extracted proportionally when you withdraw your PGL.
       </span>
     </FAQItem>
-
   </section>
 </article>
