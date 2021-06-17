@@ -71,21 +71,21 @@
       Scale Your DeFi Trading with Pangolin
     </h1>
 
-    <div class="flex my-5 sm:my-10 space-x-2 sm:space-x-6">
+    <div class="flex my-5 space-x-2 sm:my-10 sm:space-x-6">
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-xl sm:text-4xl font-semibold text-orange-500">
+        <span class="text-xl font-semibold text-orange-500 sm:text-4xl">
           ${formatStat(stats.totalVolume)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Volume</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-xl sm:text-4xl font-semibold text-orange-500">
+        <span class="text-xl font-semibold text-orange-500 sm:text-4xl">
           ${formatStat(stats.totalLiquidity)}
         </span>
         <span class="mt-2 font-semibold text-gray-100">Total Liquidity</span>
       </div>
       <div class="flex flex-col py-4 px-4 bg-gray-900 rounded-xl">
-        <span class="text-xl sm:text-4xl font-semibold text-orange-500">
+        <span class="text-xl font-semibold text-orange-500 sm:text-4xl">
           {stats.maxAPR}%
         </span>
         <span class="mt-2 font-semibold text-gray-100">Earn up to</span>
