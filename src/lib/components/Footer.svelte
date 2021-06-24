@@ -5,7 +5,11 @@
       <ul>
         <li>
           <a href="https://www.avax.network/" target="_blank">
-            <img src="/PoweredbyAva_v1.3_Centered_BlackStroke.png" alt="Powered by Avalanche" style="display: inline-block; height: 95px; margin-top: -25px; margin-bottom: -25px;" />
+            <img
+              src="/PoweredbyAva_v1.3_Centered_BlackStroke.png"
+              alt="Powered by Avalanche"
+              style="display: inline-block; height: 95px; margin-top: -25px; margin-bottom: -25px;"
+            />
           </a>
         </li>
         <li>
