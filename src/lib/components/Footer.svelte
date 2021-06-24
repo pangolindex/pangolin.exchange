@@ -3,7 +3,16 @@
     <div class="order-2 col-span-3 sm:order-1 sm:col-span-1">
       <div><strong>Partners</strong></div>
       <ul>
-        <li><a href="https://www.avax.network/" target="_blank">Powered by Avalanche</a></li>
+        <li>
+          <a href="https://www.avax.network/" target="_blank">
+            <img src="/PoweredbyAva_v1.3_Centered_BlackStroke.png" alt="Powered by Avalanche" style="display: inline-block; height: 95px; margin-top: -25px; margin-bottom: -25px;" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.beefy.finance/" target="_blank">
+            <img src="/beefy.png" alt="Beefy finance" style="display: inline-block; height: 45px;" />
+          </a>
+        </li>
       </ul>
     </div>
     <div class="order-1 col-span-3 sm:order-2 sm:col-span-1">
