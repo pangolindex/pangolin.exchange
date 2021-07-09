@@ -14,6 +14,9 @@
       <a href="https://blockspot.io/coin/pangolin/" target="_blank">
         <img src="/blockspot.png" class="icon" alt="Blockspot logo" />
       </a>
+      <a href="https://defillama.com/protocol/pangolin" target="_blank">
+        <img src="/defillama.jpeg" class="icon" alt="Defi Llama logo" />
+      </a>
       <a href="https://www.gate.io/en/trade/PNG_USDT" target="_blank">
         <img src="/gateio.png" class="icon" alt="Gate.io logo" />
       </a>
