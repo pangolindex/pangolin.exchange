@@ -223,7 +223,7 @@
       </div>
       <div class="mr-5 ml-5">
         <a href="https://www.poolz.finance/" target="_blank">
-          <img class="object-scale-down" src="/poolz.webp" alt="Poolz" style="display: inline-block; height: 45px;" />
+          <img class="object-scale-down" src="/poolz.png" alt="Poolz" style="display: inline-block; height: 80px; margin-top: -15px" />
         </a>
       </div>
       <div>
