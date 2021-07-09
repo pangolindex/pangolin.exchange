@@ -196,4 +196,47 @@
       </div>
     </div>
   </div>
+
+  <div class="flex flex-col my-10">
+    <hr />
+    <div class="my-10 text-xl text-center"><strong>Our Partners</strong></div>
+    <div class="grid grid-cols-2 sm:grid-cols-4">
+      <div class="mb-5">
+        <a href="https://www.avax.network/" target="_blank">
+          <img
+            class="object-scale-down"
+            src="/PoweredbyAva_v1.3_Centered_StrokeWhite.png"
+            alt="Powered by Avalanche"
+            style="display: inline-block; height: 100px; margin-top: -25px; margin-bottom: -25px;"
+          />
+        </a>
+      </div>
+      <div class="mb-5">
+        <a href="https://www.beefy.finance/" target="_blank">
+          <img
+            class="object-scale-down"
+            src="/beefy.png"
+            alt="Beefy Finance"
+            style="display: inline-block; height: 45px;"
+          />
+        </a>
+      </div>
+      <div class="mr-5 ml-5">
+        <a href="https://www.poolz.finance/" target="_blank">
+          <img class="object-scale-down" src="/poolz.png" alt="Poolz" style="display: inline-block; height: 80px; margin-top: -15px" />
+        </a>
+      </div>
+      <div>
+        <a href="https://coin98.app/" target="_blank">
+          <img
+            class="object-scale-down"
+            src="/coin98.png"
+            alt="Coin 98 Wallet"
+            style="display: inline-block; height: 45px;"
+          />
+        </a>
+      </div>
+    </div>
+    <hr class="mt-10" />
+  </div>
 </section>
