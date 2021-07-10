@@ -114,7 +114,7 @@
     </FAQItem>
 
     <FAQItem>
-      <span slot="question">What is PNG ad what is it used for?</span>
+      <span slot="question">What is PNG and what is it used for?</span>
       <span slot="answer">
         PNG is the Pangolin governance token. PNG holders can use their tokens to provide liquidity in Pangolin's pools and vote on proposals.
         Learn more about PNG governance <a
