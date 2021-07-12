@@ -28,13 +28,11 @@
     <FAQItem>
       <span slot="question">I'm new here. How do I use Pangolin?</span>
       <span slot="answer">
-        Go to the tutorials page <a
-          class="hover:no-underline"
-          href="/tutorials">here</a
-        > to learn more about Pangolin and how it works.
+        Go to the tutorials page <a class="hover:no-underline" href="/tutorials">here</a> to learn more about Pangolin and
+        how it works.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Can I send my Avalanche assets from Metamask to an Exchange or an ETH address?</span>
       <span slot="answer">
@@ -116,11 +114,8 @@
     <FAQItem>
       <span slot="question">What is PNG and what is it used for?</span>
       <span slot="answer">
-        PNG is the Pangolin governance token. PNG holders can use their tokens to provide liquidity in Pangolin's pools and vote on proposals.
-        Learn more about PNG governance <a
-          class="hover:no-underline"
-          href="/litepaper">here</a
-        >.
+        PNG is the Pangolin governance token. PNG holders can use their tokens to provide liquidity in Pangolin's pools
+        and vote on proposals. Learn more about PNG governance <a class="hover:no-underline" href="/litepaper">here</a>.
       </span>
     </FAQItem>
 
@@ -139,58 +134,48 @@
         Yes. Fees are added to the pool and are extracted proportionally when you withdraw your PGL.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Can I stake my PNG on Pangolin?</span>
-      <span slot="answer">
-        You can't stake your PNG on Pangolin at the moment, but stay tuned! 
-      </span>
+      <span slot="answer"> You can't stake your PNG on Pangolin at the moment, but stay tuned! </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Is there a roadmap for Pangolin?</span>
       <span slot="answer">
         Yes, there is! And you can read it <a
           class="hover:no-underline"
-          href="https://pangolindex.medium.com/how-pangolin-becomes-a-premier-dex-in-defi-roadmap-for-2021-8303aca66f37">here</a
+          href="https://pangolindex.medium.com/how-pangolin-becomes-a-premier-dex-in-defi-roadmap-for-2021-8303aca66f37"
+          >here</a
         >.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">What is the expert mode? How can I toggle it?</span>
       <span slot="answer">
-        Expert mode bypasses confirmation modals and allows high slippage trades. So it's not recommended for unexperienced users.
-        You can toggle the expert mode by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
-        Use at your own risk. 
+        Expert mode bypasses confirmation modals and allows high slippage trades. So it's not recommended for
+        unexperienced users. You can toggle the expert mode by clicking on settings at the
+        <a class="hover:no-underline" href="https://app.pangolin.exchange/#/swap">swap page</a>
+        Use at your own risk.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">What is the slippage rate? How can I adjust it?</span>
       <span slot="answer">
-        The slippage rate is the percentage that will revert your transaction if the price changes unfavorably by more than this value.
-        You can adjust the slippage rate by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
+        The slippage rate is the percentage that will revert your transaction if the price changes unfavorably by more
+        than this value. You can adjust the slippage rate by clicking on settings at the
+        <a class="hover:no-underline" href="https://app.pangolin.exchange/#/swap">swap page</a>
       </span>
     </FAQItem>
 
     <FAQItem>
       <span slot="question">What is the transaction deadline? How can I adjust it?</span>
       <span slot="answer">
-        The transaction deadline is the value(represented in minutes) that will revert your tansaction if it is pending for more than this long.
-        You can adjust the slippage rate by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
+        The transaction deadline is the value(represented in minutes) that will revert your tansaction if it is pending
+        for more than this long. You can adjust the slippage rate by clicking on settings at the
+        <a class="hover:no-underline" href="https://app.pangolin.exchange/#/swap">swap page</a>
       </span>
     </FAQItem>
 
@@ -198,81 +183,64 @@
       <span slot="question">What exchanges is PNG listed on?</span>
       <span slot="answer">
         PNG is currently listed only on
-        <a
-          class="hover:no-underline"
-          href="https://www.gate.io/en/trade/PNG_USDT">Gate.io</a
-        >. However, we're in the works with Kucoin.
+        <a class="hover:no-underline" href="https://www.gate.io/en/trade/PNG_USDT">Gate.io</a>. However, we're in the
+        works with Kucoin.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Where can I check the analytics?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/">here</a
-        > to see the analytics for Pangolin.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/">here</a> to see the
+        analytics for Pangolin.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">How can I see the top pairs on Pangolin?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/">here</a
-        > to see top pairs on Pangolin.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/">here</a> to see top
+        pairs on Pangolin.
       </span>
     </FAQItem>
 
     <FAQItem>
       <span slot="question">How can I see the top tokens on Pangolin?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/">here</a
-        > to see the top tokens on Pangolin.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/">here</a> to see the
+        top tokens on Pangolin.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">I’m a liquidity provider(LP). How can I see my current holdings?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/#/accounts">here</a
-        >, enter your wallet address and click on "Load Account Details".
-        This will show you how much tokens you'd get if you were to withdraw your liquidity at this specific moment.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/#/accounts">here</a
+        >, enter your wallet address and click on "Load Account Details". This will show you how much tokens you'd get
+        if you were to withdraw your liquidity at this specific moment.
       </span>
     </FAQItem>
 
     <FAQItem>
       <span slot="question">How can I see how much I earned from the liquidity provider fees?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/#/accounts">here</a
-        >, enter your wallet address and click on "Load Account Details".
-        This will show you how much you earned from fees cumulatively.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/#/accounts">here</a
+        >, enter your wallet address and click on "Load Account Details". This will show you how much you earned from
+        fees cumulatively.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">How much trading happens on Pangolin?</span>
       <span slot="answer">
-        Go to the analytics page <a
-          class="hover:no-underline"
-          href="https://info.pangolin.exchange/">here</a
-        > to see the volume chart.
+        Go to the analytics page <a class="hover:no-underline" href="https://info.pangolin.exchange/">here</a> to see the
+        volume chart.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
       <span slot="question">Can I withdraw my liquidity and get my tokens back at any time I want?</span>
-      <span slot="answer">
-        Yes, you can withdraw your liquidity any time you want!
-      </span>
+      <span slot="answer"> Yes, you can withdraw your liquidity any time you want! </span>
     </FAQItem>
-    
   </section>
 </article>
