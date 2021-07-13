@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Transfer from Ethereum</h2>
 
     <p>
@@ -36,7 +36,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="transfer-eth">
       <a
         href="#transfer-eth"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Transferring Ethereum (ETH) to Avalanche</span
@@ -90,7 +90,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="transfer-erc-20s">
       <a
         href="#transfer-erc-20s"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Transferring Ethereum ERC-20s to Avalanche</span

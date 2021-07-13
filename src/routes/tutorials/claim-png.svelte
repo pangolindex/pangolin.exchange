@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Claiming your PNG Airdrop as an Ethereum UniSwap or SushiSwap Token Holder</h2>
 
     <h4>Requirements</h4>
@@ -57,7 +57,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="obtain-uni-or-sushi">
       <a
         href="#obtain-uni-or-sushi"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Obtain and own UNI or SUSHI on Avalanche
@@ -73,7 +73,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="buying-uni-or-sushi-on-pangolin">
       <a
         href="#buying-uni-or-sushi-on-pangolin"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Buying UNI or SUSHI with Pangolin on Avalanche
@@ -92,7 +92,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="transferring-uni-or-sushi-to-avalanche">
       <a
         href="#transferring-uni-or-sushi-to-avalanche"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Transferring UNI or SUSHI to Avalanche
@@ -142,7 +142,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="claiming-png">
       <a
         href="#claiming-png"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Claiming PNG
