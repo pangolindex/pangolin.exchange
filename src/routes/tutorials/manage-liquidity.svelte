@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Manage Liquidity on Pangolin</h2>
 
     <p><i>Create new liquidity pools, or add and remove liquidity on existing pools </i></p>
@@ -46,7 +46,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="add-liquidity">
       <a
         href="#add-liquidity"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Add Liquidity</span
@@ -70,7 +70,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="create-a-new-liquidity-pool">
       <a
         href="#create-a-new-liquidity-pool"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Create a New Liquidity Pool</span
@@ -101,7 +101,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="add-to-liquidity-pool">
       <a
         href="#add-to-liquidity-pool"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Add to an Existing Liquidity Pool
@@ -144,7 +144,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="managing-a-liquidity-pool">
       <a
         href="#managing-a-liquidity-pool"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Managing a Liquidity Pool
@@ -172,7 +172,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="removing-liquidity-from-a-liquidity-pool">
       <a
         href="#removing-liquidity-from-a-liquidity-pool"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Removing Liquidity from a Liquidity Pool</span
@@ -196,7 +196,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="adding-liquidity-to-a-liquidity-pool">
       <a
         href="#adding-liquidity-to-a-liquidity-pool"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Adding Liquidity to a Liquidity Pool</span

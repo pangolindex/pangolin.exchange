@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Considerations</h2>
     <p>
       <span><h4>Fees</h4></span>
@@ -71,7 +71,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="setting-up-avalanche-wallet">
       <a
         href="#setting-up-avalanche-wallet"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Setting Up and Funding Your Avalanche Wallet with AVAX</span
@@ -89,7 +89,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="create-an-avalanche-wallet">
           <a
             href="#create-an-avalanche-wallet"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Create an Avalanche Wallet</span
@@ -106,7 +106,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="get-avax">
           <a
             href="#get-avax"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Get AVAX</span
@@ -123,7 +123,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="transfer-to-your-avalanche-wallet">
           <a
             href="#transfer-to-your-avalanche-wallet"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Transfer to Your Avalanche Wallet</span
@@ -144,7 +144,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="set-up-metamask">
       <a
         href="#set-up-metamask"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Set Up MetaMask with Avalanche</span
@@ -163,7 +163,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="download-metamask">
           <a
             href="#download-metamask"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Download MetaMask</span
@@ -179,7 +179,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="create-a-wallet  ">
           <a
             href="#create-a-wallet  "
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Create a Wallet or Import an Existing Wallet</span
@@ -197,7 +197,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="connect-metamask">
           <a
             href="#connect-metamask"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Connect Metamask to Avalanche</span
@@ -220,7 +220,7 @@
         <h4 class="flex whitespace-pre-wrap group" id="add-png-to-metamask">
           <a
             href="#add-png-to-metamask"
-            class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+            class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
             aria-label="Anchor"
             style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
             >Add Pangolin (PNG) token to be displayed on your MetaMask</span
@@ -252,7 +252,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="fund-metamask">
       <a
         href="#fund-metamask"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Fund Your MetaMask Connected to Avalanche</span
@@ -262,7 +262,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="send-avax-to-metamask">
       <a
         href="#send-avax-to-metamask"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Send AVAX to Your MetaMask Connected to Avalanche</span

@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout selectors="h2, h3">
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h1>Introducing Pangolin and the PNG Token</h1>
 
     <figure><img src="/hero.png" alt="PNG hero" /></figure>
@@ -30,7 +30,7 @@
     <h2 class="flex whitespace-pre-wrap group" id="introduction">
       <a
         href="#introduction"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Introduction</span
@@ -68,7 +68,7 @@
     <h2 class="flex whitespace-pre-wrap group" id="png-distribution">
       <a
         href="#png-distribution"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >PNG Distribution: A 100% Community-Driven Governance Token</span
@@ -86,7 +86,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="distribution-breakdown">
       <a
         href="#distribution-breakdown"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Distribution Breakdown</span
@@ -269,7 +269,7 @@
     <h2 class="flex whitespace-pre-wrap group" id="png-governance">
       <a
         href="#png-governance"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >PNG Governance</span
@@ -317,7 +317,7 @@
     <h2 class="flex whitespace-pre-wrap group" id="conclusion">
       <a
         href="#conclusion"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Conclusion: A Public Good for Avalanche and Ethereum</span

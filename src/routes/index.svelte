@@ -66,7 +66,7 @@
 <section class="mt-8">
   <div>
     <h1
-      class="mt-10 mb-8 max-w-screen-lg text-4xl font-extrabold tracking-tight leading-none text-gray-900 sm:mb-10 sm:mt-14 sm:text-6xl lg:text-7xl"
+      class="mt-10 mb-8 max-w-screen-lg text-4xl font-extrabold tracking-tight leading-none text-gray-900 sm:mt-14 sm:mb-10 sm:text-6xl lg:text-7xl"
     >
       Scale Your DeFi Trading with Pangolin
     </h1>
@@ -100,9 +100,9 @@
       best trading opportunities to find and maximize your yield.
     </p>
 
-    <div class="flex flex-wrap space-y-4 text-center sm:space-x-4 sm:space-y-0">
+    <div class="flex flex-wrap space-y-4 text-center sm:space-y-0 sm:space-x-4">
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 hover:bg-orange-400 focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto"
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-orange-50 bg-orange-500 rounded-xl border border-transparent transition-colors duration-200 sm:inline sm:w-auto hover:bg-orange-400 focus:ring-2 focus:ring-orange-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
         href="https://app.pangolin.exchange"
         target="_blank"
       >
@@ -110,14 +110,14 @@
       </a>
 
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
         href="/litepaper"
       >
         Litepaper
       </a>
 
       <a
-        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:outline-none focus:ring-gray-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:w-auto"
+        class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
         href="/faq"
       >
         FAQ
@@ -200,12 +200,12 @@
   <div class="flex flex-col my-10">
     <hr />
     <div class="my-10 text-xl text-center"><strong>Our Partners</strong></div>
-    <div class="grid grid-cols-2 sm:grid-cols-4">
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
       <div class="mb-5">
-        <a href="https://www.avax.network/" target="_blank">
+        <a class="flex justify-center items-center" href="https://www.avax.network/" target="_blank">
           <img
-            class="object-scale-down"
-            src="/PoweredbyAva_v1.3_Centered_StrokeWhite.png"
+            class="object-scale-down object-center mx-auto w-48"
+            src="/avalanche.svg"
             alt="Powered by Avalanche"
             style="display: inline-block; height: 100px; margin-top: -25px; margin-bottom: -25px;"
           />

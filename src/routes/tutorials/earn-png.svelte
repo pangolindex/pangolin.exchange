@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Using your Liquidity Provider (PGL) Tokens to Earn the Pangolin (PNG) Governance Token</h2>
 
     <p>
@@ -42,7 +42,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="depositing-pgl-tokens">
       <a
         href="#depositing-pgl-tokens"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Depositing PGL Tokens
@@ -74,7 +74,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="claim-png-without-withdrawing">
       <a
         href="#claim-png-without-withdrawing"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Claiming PNG Tokens without Withdrawing PGL Tokens
@@ -110,7 +110,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="withdrawing-pgl-tokens">
       <a
         href="#withdrawing-pgl-tokens"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Withdrawing PGL Tokens

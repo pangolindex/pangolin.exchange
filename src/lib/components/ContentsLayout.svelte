@@ -50,13 +50,13 @@
   });
 </script>
 
-<div class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+<div class="flex-auto w-full min-w-0 lg:overflow-visible lg:static lg:max-h-full">
   <div class="flex justify-between w-full">
     <div class="flex-auto min-w-0">
       <slot name="content" />
     </div>
 
-    <div class="hidden flex-none pl-8 mr-8 w-64 xl:text-sm xl:block">
+    <div class="hidden flex-none pl-8 mr-8 w-64 xl:block xl:text-sm">
       <div class="flex overflow-y-auto sticky top-4 flex-col justify-between pt-10 pb-6 max-h-screen">
         <div class="mb-8">
           <h5 class="mb-3 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs">On this page</h5>

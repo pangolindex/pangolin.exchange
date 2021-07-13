@@ -56,7 +56,7 @@
         <button
           on:click="{() => (mobile_open = true)}"
           type="button"
-          class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset"
+          class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-inset focus:ring-gray-500 focus:outline-none"
         >
           <span class="sr-only">Open menu</span>
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -64,11 +64,11 @@
           </svg>
         </button>
       </div>
-      <nav class="hidden space-x-6 lg:space-x-10 md:flex">
+      <nav class="hidden space-x-6 md:flex lg:space-x-10">
         <a
           href="https://app.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
         >
           Exchange
         </a>
@@ -76,7 +76,7 @@
         <a
           href="https://info.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
         >
           Analytics
         </a>
@@ -84,7 +84,7 @@
         <a
           href="https://gov.pangolin.exchange"
           target="_blank"
-          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
         >
           Governance
         </a>
@@ -122,7 +122,7 @@
             outState="opacity-0 translate-y-1"
             outTransition="ease-in duration-150"
           >
-            <div class="absolute z-50 left-1/2 mt-3 px-2 w-screen max-w-md transform -translate-x-1/2 sm:px-0">
+            <div class="absolute left-1/2 z-50 px-2 mt-3 w-screen max-w-md transform -translate-x-1/2 sm:px-0">
               <div class="overflow-hidden rounded-lg ring-1 ring-black ring-opacity-5 shadow-lg">
                 <div class="grid relative gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
                   <a
@@ -238,7 +238,7 @@
               <button
                 on:click="{() => (mobile_open = false)}"
                 type="button"
-                class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset"
+                class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-inset focus:ring-gray-500 focus:outline-none"
               >
                 <span class="sr-only">Close menu</span>
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

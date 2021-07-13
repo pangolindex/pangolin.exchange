@@ -21,10 +21,10 @@
   <title>Tutorials - Pangolin</title>
 </svelte:head>
 
-<div class="mt-10 mb-8 sm:mb-10 sm:mt-14">
+<div class="mt-10 mb-8 sm:mt-14 sm:mb-10">
   <h2 class="text-2xl font-bold lg:text-4xl">Tutorials</h2>
 
-  <p class="mt-5 mb-8 max-w-2xl leading-8 text-gray-600 lg:mt-8 text-md lg:text-xl">
+  <p class="mt-5 mb-8 max-w-2xl leading-8 text-gray-600 lg:mt-8 lg:text-xl text-md">
     Here are some tutorials you might find helpful. Feel free to suggest new ones through any of the social channels!
   </p>
 

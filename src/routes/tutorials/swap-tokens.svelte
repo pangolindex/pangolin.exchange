@@ -22,7 +22,7 @@
 </svelte:head>
 
 <ContentsLayout>
-  <article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14">
+  <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
     <h2>Swap Tokens</h2>
 
     <video controls>
@@ -37,7 +37,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="swap-tokens">
       <a
         href="#swap-tokens"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Swap Tokens</span
@@ -62,7 +62,7 @@
     <h3 class="flex whitespace-pre-wrap group" id="interface-settings">
       <a
         href="#interface-settings"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Interface Settings</span
@@ -79,7 +79,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="transaction-settings">
       <a
         href="#transaction-settings"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Transaction Settings</span
@@ -96,7 +96,7 @@
     <h4 class="flex whitespace-pre-wrap group" id="interface-settings-2">
       <a
         href="#interface-settings-2"
-        class="absolute no-underline opacity-0 after:hash group-hover:opacity-100"
+        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
         >Interface Settings</span

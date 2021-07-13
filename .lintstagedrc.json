@@ -1,0 +1,4 @@
+{
+  "**/*.{svelte,html}": ["rustywind --write"],
+  "**/*.{json,cjs,md,html,ts,svelte,js,css}": ["prettier --write"]
+}
