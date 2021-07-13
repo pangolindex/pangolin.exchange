@@ -29,6 +29,29 @@
     return Math.floor(number / 1e3) + "k+";
   }
 
+  const PARTNERS = [
+    {
+      href: "https://www.avax.network",
+      src: "/avalanche.svg",
+      alt: "Powered by Avalanche",
+    },
+    {
+      href: "https://www.beefy.finance",
+      src: "/beefy.png",
+      alt: "Beefy Finance",
+    },
+    {
+      href: "https://www.poolz.finance",
+      src: "/poolz.png",
+      alt: "Poolz",
+    },
+    {
+      href: "https://coin98.app",
+      src: "/coin98.png",
+      alt: "Coin 98 Wallet",
+    },
+  ];
+
   onMount(async () => {
     [avaxPrice, stats, tableData] = await Promise.all([
       getAvaxPriceStats().then(({usd, usd_24h_change}) => ({
@@ -199,48 +222,13 @@
 
   <div class="flex flex-col my-10">
     <hr />
-    <div class="my-10 text-xl text-center"><strong>Our Partners</strong></div>
-    <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-      <div class="mb-5">
-        <a class="flex justify-center items-center" href="https://www.avax.network/" target="_blank">
-          <img
-            class="object-scale-down object-center mx-auto w-48"
-            src="/avalanche.svg"
-            alt="Powered by Avalanche"
-            style="display: inline-block; height: 100px; margin-top: -25px; margin-bottom: -25px;"
-          />
+    <div class="mt-10 mb-4 text-xl text-center"><strong>Our Partners</strong></div>
+    <div class="grid grid-cols-2 gap-y-4 gap-x-8 mx-8 sm:gap-x-16 md:grid-cols-4 md:gap-x-8 lg:gap-x-16 lg:mx-16">
+      {#each PARTNERS as {href, src, alt}}
+        <a class="flex justify-center items-center" href="{href}" target="_blank">
+          <img class="object-scale-down" alt="{alt}" src="{src}" />
         </a>
-      </div>
-      <div class="mb-5">
-        <a href="https://www.beefy.finance/" target="_blank">
-          <img
-            class="object-scale-down"
-            src="/beefy.png"
-            alt="Beefy Finance"
-            style="display: inline-block; height: 45px;"
-          />
-        </a>
-      </div>
-      <div class="mr-5 ml-5">
-        <a href="https://www.poolz.finance/" target="_blank">
-          <img
-            class="object-scale-down"
-            src="/poolz.png"
-            alt="Poolz"
-            style="display: inline-block; height: 80px; margin-top: -15px"
-          />
-        </a>
-      </div>
-      <div>
-        <a href="https://coin98.app/" target="_blank">
-          <img
-            class="object-scale-down"
-            src="/coin98.png"
-            alt="Coin 98 Wallet"
-            style="display: inline-block; height: 45px;"
-          />
-        </a>
-      </div>
+      {/each}
     </div>
     <hr class="mt-10" />
   </div>
