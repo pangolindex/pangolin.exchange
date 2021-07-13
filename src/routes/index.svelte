@@ -200,12 +200,12 @@
   <div class="flex flex-col my-10">
     <hr />
     <div class="my-10 text-xl text-center"><strong>Our Partners</strong></div>
-    <div class="grid grid-cols-2 sm:grid-cols-4">
+    <div class="grid gap-4 grid-cols-2 sm:grid-cols-4">
       <div class="mb-5">
-        <a href="https://www.avax.network/" target="_blank">
+        <a class="flex items-center justify-center" href="https://www.avax.network/" target="_blank">
           <img
-            class="object-scale-down"
-            src="/PoweredbyAva_v1.3_Centered_StrokeWhite.png"
+            class="object-scale-down w-48 object-center mx-auto"
+            src="/avalanche.svg"
             alt="Powered by Avalanche"
             style="display: inline-block; height: 100px; margin-top: -25px; margin-bottom: -25px;"
           />
