@@ -40,7 +40,7 @@
 
     <TutorialCard
       href="/tutorials/manage-liquidity"
-      class="bg-gradient-to-br from-cyan-400 to-light-blue-500"
+      class="bg-gradient-to-br from-cyan-400 to-sky-500"
       texture="cartographer"
     >
       <span slot="title">Manage Liquidity</span>
