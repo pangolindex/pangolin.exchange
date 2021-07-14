@@ -22,62 +22,35 @@
 </svelte:head>
 
 <article class="px-4 mt-12 mb-16 max-w-4xl prose lg:prose-lg">
-  <h3 class="mb-12">Frequently Asked Questions</h3>
+  <h3 class="mb-12">New Users</h3>
 
   <section class="divide-y-2 divide-solid">
     <FAQItem>
-      <span slot="question">I'm new here. How do I use Pangolin?</span>
+      <span slot="question">What is Pangolin Exchange and why should I use it?</span>
       <span slot="answer">
-        Go to the tutorials page <a
-          class="hover:no-underline"
-          href="/tutorials">here</a
-        > to learn more about Pangolin and how it works.
+        Pangolin largest DEX (Decentralized Exchange) on the Avalanche network. You can swap tokens with low costs and fast transaction speeds. You can also pool tokens to earn yield.
       </span>
     </FAQItem>
-    
     <FAQItem>
-      <span slot="question">What is Pangolin? What makes it special and why should I use it?</span>
+      <span slot="question">What is Pangolin's roadmap?</span>
       <span slot="answer">
-        Pangolin is the first and the most used DEX(decentralized exchange) built on top of Avalanche.
-        Since it's built on Avalanche, you get fast transactions and low transaction costs.
+        Check out our 2021 roadmap here <a
+              class="hover:no-underline"
+              href="https://pangolindex.medium.com/how-pangolin-becomes-a-premier-dex-in-defi-roadmap-for-2021-8303aca66f37">here</a
+      >.
       </span>
     </FAQItem>
-    
+
     <FAQItem>
-      <span slot="question">Are there any risks involved in being a liquidity provider(LP) on Pangolin?</span>
+      <span slot="question">Who is behind Pangolin Exchange?</span>
       <span slot="answer">
-        Yes, IL(impermanent loss) is one of the biggest risks of being a LP on any decentralized exchange.
-        In terms of security, Pangolin is a fork of Uniswap and Sushiswap: It uses the same code for the smart contracts.
+        Pangolin is a community-driven project originally created by AvaLabs and Connor Daly. Eventually, the project was transitioned to a community-hired core team.
       </span>
     </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">Who is behind Pangolin?</span>
-      <span slot="answer">
-        Pangolin is a community-driven project. It's created by people who have been around the Avalanche ecosystem for a while.
-        You can see the community elected core team by scrolling down to the footer.
-      </span>
-    </FAQItem>
- 
-    <FAQItem>
-      <span slot="question">How can I see the pools offered in Pangolin and their APYs?</span>
-      <span slot="answer">
-        Go to the New PNG page <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/png/1">here</a
-        > to see all the pools currently offered in Pangolin along with their APYs.
-        Keep in mind that the APY for a specific pool will go down as users bring in more liquidity. (and vice versa)
-        Also, Pangolin has limited the pools to PNG and AVAX pairs only.
-      </span>
-    </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">How can Pangolin offer such high APYs?</span>
-      <span slot="answer">
-        Rewards that the LPs(liquidity providers) get are paid in PNG.
-        Also, APYs go down as users bring in more liquidity.
-      </span>
-    </FAQItem>
+  </section>
+  <h3 class="mb-12">Swapping Tokens</h3>
+
+  <section class="divide-y-2 divide-solid">
     
     <FAQItem>
       <span slot="question">Why do I get quoted different prices when buying and selling a token?</span>
@@ -95,93 +68,78 @@
         You'll see the price impact your swap would cause on the swap page before you confirm your transaction. 
       </span>
     </FAQItem>
-    
+
     <FAQItem>
-      <span slot="question">Can I send my Avalanche assets from Metamask to an Exchange or an ETH address?</span>
+      <span slot="question">What is the expert mode? How can I toggle it?</span>
       <span slot="answer">
-        No, you cannot send assets across networks from Avalanche to Ethereum or vice versa. You need to use the <a
-          class="hover:no-underline"
-          href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
-        > every time you want to send assets between networks.
+        Expert mode bypasses confirmation modals and allows high slippage trades. So it's not recommended for unexperienced users.
+        You can toggle the expert mode by clicking on settings at the
+        <a
+                class="hover:no-underline"
+                href="https://app.pangolin.exchange/#/swap">swap page</a
+        >
+        Use at your own risk.
       </span>
     </FAQItem>
 
     <FAQItem>
-      <span slot="question">My transaction is pending on Metamask for some time now, what can I do?</span>
+      <span slot="question">What is the slippage rate? How can I adjust it?</span>
       <span slot="answer">
-        First check that your gas fee is set to exactly: 225 gwei. If it is, retry the transaction.
-        <br />
-        <br />
-        If it doesn’t go through, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask
-        → Select Settings → Select Advanced → Scroll down and click Reset Account.
-        <br />
-        <br />
-        Please note, resetting your account <u>will not</u> disrupt your funds or wallet address.
-      </span>
-    </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">Why did my transaction fail?</span>
-      <span slot="answer">
-        If your transaction failed, it's either because you don't have enough slippage or use enough gas. You'll have to increase your allowed slippage to account for the fee taken during the swap.
-        Click on the gear icon for settings and adjust slippage tolerance accordingly.
+        The slippage rate is the percentage that will revert your transaction if the price changes unfavorably by more than this value.
+        You can adjust the slippage rate by clicking on settings at the
+        <a
+                class="hover:no-underline"
+                href="https://app.pangolin.exchange/#/swap">swap page</a
+        >
       </span>
     </FAQItem>
 
     <FAQItem>
-      <span slot="question">Why isn’t my ERC-20 token showing in my Metamask wallet?</span>
+      <span slot="question">What is the transaction deadline? How can I adjust it?</span>
       <span slot="answer">
-        This is due to the token address changing. When you transfer ERC-20’s across the <a
-          class="hover:no-underline"
-          href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
-        >, the Token contract address changes. Token contract addresses are different on Ethereum and Avalanche despite
-        being the same represented token.
-        <br />
-        <br />
-        To import the Avalanche token address of any Avalanche supported ERC-20 follow these steps:
-        <ol>
-          <li>Open Metamask</li>
-          <li>Scroll down to "Add Token"</li>
-          <li>Tap on the "Custom Token" tab</li>
-          <li>
-            Navigate to: the <a
+        The transaction deadline is the value(represented in minutes) that will revert your tansaction if it is pending for more than this long.
+        You can adjust the slippage rate by clicking on settings at the
+        <a
+                class="hover:no-underline"
+                href="https://app.pangolin.exchange/#/swap">swap page</a
+        >
+      </span>
+    </FAQItem>
+  </section>
+  <h3 class="mb-12">Providing Liquidity</h3>
+
+  <section class="divide-y-2 divide-solid">
+    <FAQItem>
+      <span slot="question">Are there any risks involved in being a liquidity provider(LP) on Pangolin?</span>
+      <span slot="answer">
+        Yes, IL (impermanent loss) is one of the biggest risks of being a LP on any decentralized exchange.
+        In terms of security, Pangolin is a fork of Uniswap and Sushiswap: It uses the same code for the smart contracts.
+      </span>
+    </FAQItem>
+    <FAQItem>
+      <span slot="question">How can I see the pools offered in Pangolin and their APYs?</span>
+      <span slot="answer">
+        Go to the New PNG page <a
               class="hover:no-underline"
-              href="https://tokenlists.org/token-list?url=https://raw.githubusercontent.com/pangolindex/tokenlists/main/aeb.tokenlist.json"
-              >Avalanche Token List</a
-            >
-          </li>
-          <li>Find the token you wish to import and copy the contract address</li>
-          <li>Paste the contract address inside Metamask</li>
-          <li>Tap Next</li>
-          <li>Done!</li>
-        </ol>
+              href="https://app.pangolin.exchange/#/png/1">here</a
+      > to see all the pools currently offered in Pangolin along with their APYs.
+        Keep in mind that the APY for a specific pool will go down as users bring in more liquidity. (and vice versa)
+        Also, Pangolin has limited the pools to PNG and AVAX pairs only.
       </span>
     </FAQItem>
 
     <FAQItem>
-      <span slot="question">Why are my fees displayed in ETH on MetaMask?</span>
+      <span slot="question">How can Pangolin offer such high APYs?</span>
       <span slot="answer">
-        MetaMask is originally built for Ethereum and does not support the native tokens of other blockchain networks.
-        The ETH units displayed are actually AVAX units when on the Avalanche network. Therefore, to get the true cost
-        of transactions, you need to multiply the units by the current market rate of AVAX.
+        Rewards that the LPs(liquidity providers) get are paid in PNG.
+        Also, APYs go down as users bring in more liquidity.
       </span>
     </FAQItem>
+  </section>
 
-    <FAQItem>
-      <span slot="question">Why do I have to make two transactions sometimes using MetaMask?</span>
-      <span slot="answer">
-        MetaMask will ask you to first approve the Pangolin app to interact with your tokens. Afterwards, you will then
-        be able to confirm the transaction.
-      </span>
-    </FAQItem>
+  <h3 class="mb-12">PNG token</h3>
 
-    <FAQItem>
-      <span slot="question">Am I able to use my Ethereum wallet on Avalanche?</span>
-      <span slot="answer">
-        Yes - that is the power of Avalanche! It allows you to use your same wallet that you use on Ethereum.
-      </span>
-    </FAQItem>
-
+  <section class="divide-y-2 divide-solid">
     <FAQItem>
       <span slot="question">What is PNG and what is it used for?</span>
       <span slot="answer">
@@ -190,23 +148,6 @@
           class="hover:no-underline"
           href="/litepaper">here</a
         >.
-      </span>
-    </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">What is PGL?</span>
-      <span slot="answer">
-        PGL is Pangolin's liquidity token. Once you provide liquidity to Pangolin, the smart contract gives you PGL tokens in return, which represents your deposit.
-        And you need to deposit your PGL into the corresponding pool so that you can earn PNG rewards and fees.
-      </span>
-    </FAQItem>
-
-    <FAQItem>
-      <span slot="question">Why does my liquidity not show up on the pools page?</span>
-      <span slot="answer">
-        If you deposit your PGL tokens, your liquidity won’t show up on the pools page until you withdraw your PGL
-        tokens. Technically, you are handing ownership of your liquidity to the staking pools and you can’t claim your
-        liquidity until you withdraw your PGL tokens.
       </span>
     </FAQItem>
 
@@ -223,51 +164,12 @@
         You can't stake your PNG on Pangolin at the moment, but stay tuned! 
       </span>
     </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">Is there a roadmap for Pangolin?</span>
-      <span slot="answer">
-        Yes, there is! And you can read it <a
-          class="hover:no-underline"
-          href="https://pangolindex.medium.com/how-pangolin-becomes-a-premier-dex-in-defi-roadmap-for-2021-8303aca66f37">here</a
-        >.
-      </span>
-    </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">What is the expert mode? How can I toggle it?</span>
-      <span slot="answer">
-        Expert mode bypasses confirmation modals and allows high slippage trades. So it's not recommended for unexperienced users.
-        You can toggle the expert mode by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
-        Use at your own risk. 
-      </span>
-    </FAQItem>
-    
-    <FAQItem>
-      <span slot="question">What is the slippage rate? How can I adjust it?</span>
-      <span slot="answer">
-        The slippage rate is the percentage that will revert your transaction if the price changes unfavorably by more than this value.
-        You can adjust the slippage rate by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
-      </span>
-    </FAQItem>
 
     <FAQItem>
-      <span slot="question">What is the transaction deadline? How can I adjust it?</span>
+      <span slot="question">What is PGL?</span>
       <span slot="answer">
-        The transaction deadline is the value(represented in minutes) that will revert your tansaction if it is pending for more than this long.
-        You can adjust the slippage rate by clicking on settings at the 
-        <a
-          class="hover:no-underline"
-          href="https://app.pangolin.exchange/#/swap">swap page</a
-        >
+        PGL is Pangolin's liquidity token. Once you provide liquidity to Pangolin, the smart contract gives you PGL tokens in return, which represents your deposit.
+        And you need to deposit your PGL into the corresponding pool so that you can earn PNG rewards and fees.
       </span>
     </FAQItem>
 
@@ -276,12 +178,18 @@
       <span slot="answer">
         PNG is currently listed only on
         <a
-          class="hover:no-underline"
-          href="https://www.gate.io/en/trade/PNG_USDT">Gate.io</a
+                class="hover:no-underline"
+                href="https://www.gate.io/en/trade/PNG_USDT">Gate.io</a
         >, but stay tuned!
       </span>
     </FAQItem>
-    
+  </section>
+
+  <h3 class="mb-12">Pangolin Project</h3>
+
+  <section class="divide-y-2 divide-solid">
+
+
     <FAQItem>
       <span slot="question">Where can I check the analytics?</span>
       <span slot="answer">
@@ -415,7 +323,7 @@
     </FAQItem>
       
       <FAQItem>
-      <span slot="question">Is Pangolin safe? Is it auidited?</span>
+      <span slot="question">Is Pangolin safe? Is it audited?</span>
       <span slot="answer">
         Pangolin is a fork of Uniswap and Sushiswap, so it's using the same smart contract codes. Uniswap and Sushiswap have been audited multiple times.
         We're also planning to audit Pangolin once v2 is ready. In the meantime, use at your own risk.
@@ -455,7 +363,104 @@
         Pangolin currently supports MetaMask and MetaMask compatible devices like Ledger.
       </span>
     </FAQItem>
-    
+  </section>
+
+  <h3 class="mb-12">Troubleshooting</h3>
+
+  <section class="divide-y-2 divide-solid">
+    <FAQItem>
+      <span slot="question">Can I send my Avalanche assets from Metamask to an Exchange or an ETH address?</span>
+      <span slot="answer">
+        No, you cannot send assets across networks from Avalanche to Ethereum or vice versa. You need to use the <a
+              class="hover:no-underline"
+              href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
+      > every time you want to send assets between networks.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">My transaction is pending on Metamask for some time now, what can I do?</span>
+      <span slot="answer">
+        First check that your gas fee is set to exactly: 225 gwei. If it is, retry the transaction.
+        <br />
+        <br />
+        If it doesn’t go through, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask
+        → Select Settings → Select Advanced → Scroll down and click Reset Account.
+        <br />
+        <br />
+        Please note, resetting your account <u>will not</u> disrupt your funds or wallet address.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Why did my transaction fail?</span>
+      <span slot="answer">
+        If your transaction failed, it's either because you don't have enough slippage or use enough gas. You'll have to increase your allowed slippage to account for the fee taken during the swap.
+        Click on the gear icon for settings and adjust slippage tolerance accordingly.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Why isn’t my ERC-20 token showing in my Metamask wallet?</span>
+      <span slot="answer">
+        This is due to the token address changing. When you transfer ERC-20’s across the <a
+              class="hover:no-underline"
+              href="https://aeb.xyz/#/transfer">Avalanche-Ethereum Bridge</a
+      >, the Token contract address changes. Token contract addresses are different on Ethereum and Avalanche despite
+        being the same represented token.
+        <br />
+        <br />
+        To import the Avalanche token address of any Avalanche supported ERC-20 follow these steps:
+        <ol>
+          <li>Open Metamask</li>
+          <li>Scroll down to "Add Token"</li>
+          <li>Tap on the "Custom Token" tab</li>
+          <li>
+            Navigate to: the <a
+                  class="hover:no-underline"
+                  href="https://tokenlists.org/token-list?url=https://raw.githubusercontent.com/pangolindex/tokenlists/main/aeb.tokenlist.json"
+          >Avalanche Token List</a
+          >
+          </li>
+          <li>Find the token you wish to import and copy the contract address</li>
+          <li>Paste the contract address inside Metamask</li>
+          <li>Tap Next</li>
+          <li>Done!</li>
+        </ol>
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Why are my fees displayed in ETH on MetaMask?</span>
+      <span slot="answer">
+        MetaMask is originally built for Ethereum and does not support the native tokens of other blockchain networks.
+        The ETH units displayed are actually AVAX units when on the Avalanche network. Therefore, to get the true cost
+        of transactions, you need to multiply the units by the current market rate of AVAX.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Why do I have to make two transactions sometimes using MetaMask?</span>
+      <span slot="answer">
+        MetaMask will ask you to first approve the Pangolin app to interact with your tokens. Afterwards, you will then
+        be able to confirm the transaction.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Am I able to use my Ethereum wallet on Avalanche?</span>
+      <span slot="answer">
+        Yes - that is the power of Avalanche! It allows you to use your same wallet that you use on Ethereum.
+      </span>
+    </FAQItem>
+
+    <FAQItem>
+      <span slot="question">Why does my liquidity not show up on the pools page?</span>
+      <span slot="answer">
+        If you deposit your PGL tokens, your liquidity won’t show up on the pools page until you withdraw your PGL
+        tokens. Technically, you are handing ownership of your liquidity to the staking pools and you can’t claim your
+        liquidity until you withdraw your PGL tokens.
+      </span>
+    </FAQItem>
   </section>
 </article>
-{"mode":"full","isActive":false}
