@@ -1,5 +1,8 @@
 const colors = require("tailwindcss/colors");
 
+/**
+ * @type {import("@types/tailwindcss/tailwind-config").TailwindConfig }
+ */
 module.exports = {
   purge: {
     mode: "all",
@@ -15,7 +18,10 @@ module.exports = {
         orange: colors.orange,
         fuchsia: colors.fuchsia,
         cyan: colors.cyan,
-        "light-blue": colors.lightBlue,
+        sky: colors.sky,
+      },
+      screens: {
+        laptop: "940px",
       },
     },
   },

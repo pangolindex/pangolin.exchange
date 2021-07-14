@@ -55,14 +55,16 @@
 
 <div class="relative bg-white">
   <div class="mx-auto max-w-7xl">
-    <div class="flex justify-between items-center py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
+    <div
+      class="flex justify-between items-center py-6 border-b-2 border-gray-100 laptop:justify-start laptop:space-x-10"
+    >
       <div class="flex justify-start lg:flex-1 lg:w-0">
         <a href="/">
           <span class="sr-only">Pangolin</span>
           <img class="w-auto h-10 sm:h-14" src="/logo.svg" alt="Pangolin" />
         </a>
       </div>
-      <div class="-my-2 -mr-2 md:hidden">
+      <div class="-my-2 -mr-2 laptop:hidden">
         <button
           on:click="{() => (mobile_open = true)}"
           type="button"
@@ -74,7 +76,7 @@
           </svg>
         </button>
       </div>
-      <nav class="hidden space-x-6 md:flex lg:space-x-10">
+      <nav class="hidden space-x-6 lg:space-x-10 laptop:flex">
         <a
           href="https://app.pangolin.exchange"
           target="_blank"
@@ -212,7 +214,7 @@
           </svelte:component>
         </div>
       </nav>
-      <div class="hidden justify-end items-center space-x-4 md:flex md:flex-1 lg:w-0">
+      <div class="hidden justify-end items-center space-x-4 lg:w-0 laptop:flex laptop:flex-1">
         {#each socials as {name, href, d}}
           <a class="text-gray-400 transition-colors duration-200 hover:text-gray-500" href="{href}" target="_blank">
             <span class="sr-only">Pangolin on {name}</span>
@@ -238,7 +240,7 @@
     <div
       use:clickOutside
       on:click_outside="{() => (mobile_open = false)}"
-      class="absolute inset-x-0 top-0 z-50 p-2 transition transform origin-top-right md:hidden"
+      class="absolute inset-x-0 top-0 z-50 p-2 transition transform origin-top-right laptop:hidden"
     >
       <div class="bg-white rounded-lg divide-y-2 divide-gray-50 ring-1 ring-black ring-opacity-5 shadow-lg">
         <div class="px-5 pt-5 pb-6">
