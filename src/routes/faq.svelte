@@ -72,8 +72,8 @@
     <FAQItem>
       <span slot="question">What exchanges is PNG listed on?</span>
       <span slot="answer">
-        PNG is currently listed on
-        <a class="hover:no-underline" href="https://www.gate.io/en/trade/PNG_USDT">Gate.io</a>
+        A list of exchanges supporting PNG can be found
+        <a class="hover:no-underline" href="https://coinmarketcap.com/currencies/pangolin/markets/">here</a>.
       </span>
     </FAQItem>
   </section>
