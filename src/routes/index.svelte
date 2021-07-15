@@ -50,6 +50,11 @@
       src: "/coin98.png",
       alt: "Coin 98 Wallet",
     },
+    {
+      href: "https://dyp.finance/",
+      src: "/dyp.svg",
+      alt: "DeFi Yield Protocol",
+    },
   ];
 
   onMount(async () => {
