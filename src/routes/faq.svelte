@@ -37,8 +37,7 @@
     <FAQItem>
       <span slot="question">Who is behind Pangolin Exchange?</span>
       <span slot="answer">
-        Pangolin was originally created by AvaLabs. Eventually, the project was transitioned to a community-hired core
-        team.
+        Pangolin is a community-driven project. The initial development work was done by Ava Labs. A community-hired team are now the lead developers.
       </span>
     </FAQItem>
 
