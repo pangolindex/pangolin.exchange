@@ -105,9 +105,7 @@
       <span slot="question">How can I see the pools offered in Pangolin and their APYs?</span>
       <span slot="answer">
         Go to the New PNG page <a class="hover:no-underline" href="https://app.pangolin.exchange/#/png/1">here</a> to see
-        all the pools currently offered in Pangolin along with their APYs. Keep in mind that the APY for a specific pool
-        will go down as users bring in more liquidity. (and vice versa) Also, Pangolin has limited the pools to PNG and AVAX
-        pairs only.
+        all the PNG-incentivized pools offered in Pangolin along with their current APYs.
       </span>
     </FAQItem>
 
