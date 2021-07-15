@@ -114,8 +114,8 @@
     <FAQItem>
       <span slot="question">Are there any risks involved in being a liquidity provider on Pangolin?</span>
       <span slot="answer">
-        Yes, IL (impermanent loss) is one of the biggest risks of being a LP on any decentralized exchange. In terms of
-        security, Pangolin is a fork of Uniswap and Sushiswap: It uses the same code for the smart contracts.
+		No. Pangolin is a fork of Uniswap V2. You can find all our contracts <a class="hover:no-underline" href="https://github.com/pangolindex/exchange-contracts">here</a>.
+		Note that your overall position may decrease in value due to impermanent loss. Please do your own research before providing liquidity.
       </span>
     </FAQItem>
 
