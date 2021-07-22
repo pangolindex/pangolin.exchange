@@ -233,7 +233,10 @@
   <div class="flex flex-col my-10">
     <hr />
     <div class="mt-10 mb-4 text-xl text-center"><strong>Our Partners</strong></div>
-    <div class="grid grid-cols-2 gap-y-4 gap-x-8 mx-8 sm:gap-x-16 md:grid-cols-4 md:gap-x-8 lg:gap-x-16 lg:mx-16">
+    <div
+      style="grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));"
+      class="grid gap-y-4 gap-x-8 mx-8 sm:gap-x-16 md:gap-x-8 lg:gap-x-16 lg:mx-16 partners"
+    >
       {#each PARTNERS as {href, src, alt}}
         <a class="flex justify-center items-center" href="{href}" target="_blank">
           <img class="object-scale-down" alt="{alt}" src="{src}" />
