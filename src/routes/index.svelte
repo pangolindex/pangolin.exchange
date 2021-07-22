@@ -235,7 +235,7 @@
     <div class="mt-10 mb-4 text-xl text-center"><strong>Our Partners</strong></div>
     <div
       style="grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));"
-      class="grid gap-y-4 gap-x-8 mx-8 sm:gap-x-16 md:gap-x-8 lg:gap-x-16 lg:mx-16 partners"
+      class="grid gap-y-4 gap-x-8 mx-8 sm:gap-x-16 md:gap-x-8 lg:gap-x-16 lg:mx-16"
     >
       {#each PARTNERS as {href, src, alt}}
         <a class="flex justify-center items-center" href="{href}" target="_blank">
