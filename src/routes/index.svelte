@@ -55,6 +55,11 @@
       src: "/dyp.svg",
       alt: "DeFi Yield Protocol",
     },
+    {
+      href: "https://avme.io/",
+      src: "/avme.png",
+      alt: "AVME Wallet",
+    },
   ];
 
   onMount(async () => {
