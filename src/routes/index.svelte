@@ -183,7 +183,7 @@
                       <div class="flex-shrink-0 w-10 h-10">
                         <img
                           class="w-10 h-10 rounded-full"
-                          src="https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/{addr}/logo.png"
+                          src="https://raw.githubusercontent.com/pangolindex/tokens/main/assets/{addr}/logo.png"
                           alt="{symbol}"
                         />
                       </div>
