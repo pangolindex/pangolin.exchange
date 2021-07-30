@@ -60,6 +60,16 @@
       src: "/avme.png",
       alt: "AVME Wallet",
     },
+    {
+      href: "https://avalaunch.app/",
+      src: "/avalaunch.png",
+      alt: "Avalaunch",
+    },
+    {
+      href: "https://spore.earth/",
+      src: "/spore.png",
+      alt: "Spore",
+    },
   ];
 
   onMount(async () => {
