@@ -70,6 +70,16 @@
       src: "/spore.png",
       alt: "Spore",
     },
+    {
+      href: "https://markr.io/",
+      src: "/markr.png",
+      alt: "Markr.io",
+    },
+    {
+      href: "https://penguinfinance.io/",
+      src: "/penguin.png",
+      alt: "Penguin Finance",
+    },
   ];
 
   onMount(async () => {

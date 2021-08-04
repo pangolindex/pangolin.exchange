@@ -20,6 +20,9 @@
       <a href="https://www.gate.io/en/trade/PNG_USDT" target="_blank">
         <img src="/gateio.png" class="icon" alt="Gate.io logo" />
       </a>
+      <a href="https://nomics.com/assets/png2-pangolin" target="_blank">
+        <img src="/nomics.png" class="icon" alt="Nomics logo" />
+      </a>
     </div>
     <div class="order-3 col-span-3 sm:order-3 sm:col-span-1">
       <div><strong>Community Elected Core Team</strong></div>
