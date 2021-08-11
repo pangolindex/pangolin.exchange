@@ -37,7 +37,8 @@
     <FAQItem>
       <span slot="question">Who is behind Pangolin Exchange?</span>
       <span slot="answer">
-        Pangolin is a community-driven project. The initial development work was done by Ava Labs. A community-hired team are now the lead developers.
+        Pangolin is a community-driven project. The initial development work was done by Ava Labs. A community-hired
+        team are now the lead developers.
       </span>
     </FAQItem>
 
@@ -112,8 +113,11 @@
     <FAQItem>
       <span slot="question">Are there any risks involved in being a liquidity provider on Pangolin?</span>
       <span slot="answer">
-		No. Pangolin is a fork of Uniswap V2. You can find all our contracts <a class="hover:no-underline" href="https://github.com/pangolindex/exchange-contracts">here</a>.
-		Note that your overall position may decrease in value due to impermanent loss. Please do your own research before providing liquidity.
+        No. Pangolin is a fork of Uniswap V2. You can find all our contracts <a
+          class="hover:no-underline"
+          href="https://github.com/pangolindex/exchange-contracts">here</a
+        >. Note that your overall position may decrease in value due to impermanent loss. Please do your own research
+        before providing liquidity.
       </span>
     </FAQItem>
 

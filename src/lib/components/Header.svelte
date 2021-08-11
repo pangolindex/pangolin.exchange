@@ -94,6 +94,14 @@
         </a>
 
         <a
+          href="https://bridge.avax.network"
+          target="_blank"
+          class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
+        >
+          Bridge
+        </a>
+
+        <a
           href="https://gov.pangolin.exchange"
           target="_blank"
           class="inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md transition-colors hover:text-gray-900 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
@@ -328,7 +336,26 @@
                 </svg>
                 <span class="ml-3 text-base font-medium text-gray-900">Governance</span>
               </a>
-
+              <a
+                on:click="{() => (mobile_open = false)}"
+                href="https://bridge.avax.network"
+                target="_blank"
+                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
+              >
+                <svg
+                  class="flex-shrink-0 w-6 h-6 text-gray-600"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M512 351c0-11-5-21-13-29l-13-10v-79c0-4-1-8-4-11-19-17-39-31-62-42v-18a15 15 0 00-30 0v4a311 311 0 00-70-17v-15a15 15 0 00-30 0v11a459 459 0 00-69 1v-12a15 15 0 00-30 0v15a351 351 0 00-70 18v-5a15 15 0 00-30 0v18c-22 11-42 25-60 42-3 3-5 7-5 11v78l-13 11a41 41 0 00-2 58c15 17 41 18 57 3a280 280 0 01188-73 275 275 0 01188 73 41 41 0 0068-32zm-92-137c13 7 25 16 36 26v49c-11-8-23-15-36-21v-54zm-100-35c26 4 49 11 70 20v55c-22-9-46-16-70-20v-55zm-99-3a432 432 0 0169-1v55a362 362 0 00-69 0v-54zm-100 23c21-9 45-16 70-20v55c-24 4-48 11-70 20v-55zm-30 15v54c-12 6-24 13-35 21v-49c11-10 22-18 35-26zm388 146c-2 2-5 3-8 3s-5-1-7-3a310 310 0 00-208-80 305 305 0 00-208 80 11 11 0 01-15-15 328 328 0 01446 0 11 11 0 010 15z"
+                  ></path>
+                </svg>
+                <span class="ml-3 text-base font-medium text-gray-900">Bridge</span>
+              </a>
               <a
                 on:click="{() => (mobile_open = false)}"
                 href="/litepaper"
