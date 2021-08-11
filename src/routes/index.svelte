@@ -172,7 +172,7 @@
         href="https://bridge.avax.network"
         target="_blank"
       >
-        Bridge Tokens
+        Bridge
       </a>
 
       <a
