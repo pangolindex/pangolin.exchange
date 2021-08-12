@@ -246,10 +246,6 @@
     </ol>
 
     <p>
-      The details for this claim can be found <a href="/tutorials/claim-png" class="hover:no-underline">here</a>.
-    </p>
-
-    <p>
       The conversion formula from SUSHI or UNI onto PNG is not linear, but rather slightly quadratic. Specifically, PNG
       will be claimable pro-rata based on the following formula:
     </p>
