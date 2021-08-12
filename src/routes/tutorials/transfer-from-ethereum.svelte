@@ -51,10 +51,9 @@
         <img src="/tutorials/transfer-from-ethereum/001.png" />
       </li>
       <li>
-        Select the "Ethereum Mainnet" network on your MetaMask wallet
+        Ensure that the UI says "From Ethereum" as shown below. If it does not, press the "Switch" button and click "Switch Network" when Metamask prompts you to.
         <img src="/tutorials/transfer-from-ethereum/002.png" />
       </li>
-
       <li>
         Select the token you would like to bridge and enter the amount you would like to bridge.
         <img src="/tutorials/transfer-from-ethereum/003.png" />
