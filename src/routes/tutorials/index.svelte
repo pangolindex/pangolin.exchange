@@ -69,14 +69,5 @@
       <span slot="title">Earn PNG</span>
       <span slot="description">Learn what PGL tokens are and how to use them to earn PNG</span>
     </TutorialCard>
-
-    <TutorialCard
-      href="/tutorials/claim-png"
-      class="bg-gradient-to-br from-yellow-400 to-orange-500"
-      texture="purty-wood"
-    >
-      <span slot="title">Claim PNG</span>
-      <span slot="description">Claim your PNG airdrop tokens as a UniSwap or SushiSwap token holder</span>
-    </TutorialCard>
   </div>
 </div>

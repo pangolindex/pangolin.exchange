@@ -26,12 +26,11 @@
     <h2>Transfer from Ethereum</h2>
 
     <p>
-      If you have Ethereum (ETH) or Ethereum ERC-20 tokens, you can use the Avalanche-Ethereum bridge to bring them to
-      Avalanche and use Pangolin. The bridge allows you to transfer assets between both blockchain networks. The diagram
-      below illustrates how the assets flow from Ethereum to Avalanche to use for Pangolin.
+      If you have Wrapped Ether (WETH) or Ethereum ERC-20 tokens, you can use the <a href="https://bridge.avax.network/" target="_blank">Avalanche Bridge</a> to bring them to
+      Avalanche and use Pangolin. The bridge allows you to transfer assets between both blockchain networks.
     </p>
 
-    <img src="/tutorials/transfer-from-ethereum/001.png" />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RLnNMfINwS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h3 class="flex whitespace-pre-wrap group" id="transfer-eth">
       <a
@@ -39,91 +38,44 @@
         class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
-        >Transferring Ethereum (ETH) to Avalanche</span
+        >Transferring Ethereum ERC-20 Tokens to Avalanche</span
       >
     </h3>
 
     <ol>
       <li>
-        Access the bridge portal <a href="https://aeb.xyz/" target="_blank" class="hover:no-underline">here</a>
+        Access the <a href="https://bridge.avax.network/" target="_blank">Avalanche Bridge</a>
       </li>
       <li>
-        Select "Wrap Token"
-        <img src="/tutorials/transfer-from-ethereum/002.png" />
+        Select "Metamask" and login into your wallet
+        <img src="/tutorials/transfer-from-ethereum/010.png" />
       </li>
-      <li>Select "Connect Metamask" and sign into your wallet</li>
       <li>
         Select the "Ethereum Mainnet" network on your MetaMask wallet
         <img src="/tutorials/transfer-from-ethereum/003.png" />
       </li>
 
       <li>
-        Select Ethereum, enter the amount you would like to wrap and then select "Wrap Token". <strong
-          >Learn more about what wrapping means <a
-            href="https://support.avalabs.org/en/articles/4623667-what-is-weth-or-wrapped-eth"
-            target="_blank"
-            class="hover:no-underline">here</a
-          >.</strong
-        >
-        <img src="/tutorials/transfer-from-ethereum/004.png" />
+        Select the token you would like to bridge, enter the amount you would like to bridge.
+        <img src="/tutorials/transfer-from-ethereum/011.png" />
       </li>
       <li>
         Select "Transfer"
-        <img src="/tutorials/transfer-from-ethereum/005.png" />
+        <img src="/tutorials/transfer-from-ethereum/012.png" />
       </li>
-      <li>Select the Destination Network as "Avalanche"</li>
-      <li>Select WETH as the token you want to transfer to Avalanche</li>
-      <li>Enter the amount of WETH you want to transfer</li>
       <li>
-        Enter the destination address, which can be found on your MetaMask wallet or you may select the checkbox "I want
-        to send funds to my address". <strong>Note that the address starts with "0x".</strong>
-        <img src="/tutorials/transfer-from-ethereum/006.png" />
+        Wait for confirmations on the Ethereum network and Avalanche network
+        <img src="/tutorials/transfer-from-ethereum/013.png" />
       </li>
-      <li>Select "Start Transfer"</li>
+      <li>
+        After the transaction is complete, you can review the Transaction Details
+        <img src="/tutorials/transfer-from-ethereum/014.png" />
+      </li>
     </ol>
 
     <p>
-      Congratulations! You wrapped your Ethereum and transferred it to Avalanche, which can now be used to swap tokens
+      Congratulations! You bridged your ERC-20 tokens to Avalanche. These tokens can now be used to swap
       or add liquidity to a pool on Pangolin.
-    </p>
-
-    <h3 class="flex whitespace-pre-wrap group" id="transfer-erc-20s">
-      <a
-        href="#transfer-erc-20s"
-        class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
-        aria-label="Anchor"
-        style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
-        >Transferring Ethereum ERC-20s to Avalanche</span
-      >
-    </h3>
-    <ol>
-      <li>
-        Access the bridge portal <a href="https://aeb.xyz/" target="_blank" class="hover:no-underline">here</a>
-      </li>
-      <li>
-        Make sure you are on "Transfer" tab
-        <img src="/tutorials/transfer-from-ethereum/007.png" />
-      </li>
-      <li>Select "Connect Metamask" and sign into your wallet</li>
-      <li>
-        Select "Ethereum Mainnet" network on your MetaMask wallet
-        <img src="/tutorials/transfer-from-ethereum/008.png" />
-      </li>
-
-      <li>Select the Destination Network as "Avalanche"</li>
-      <li>Select the ERC-20 token that you would like to transfer</li>
-      <li>Enter the amount of the ERC-20 token</li>
-      <li>
-        Enter the destination address, which can be found on your MetaMask wallet or you may select the checkbox "I want
-        to send funds to my address". <strong>Note that the address starts with "0x".</strong>
-        <img src="/tutorials/transfer-from-ethereum/009.png" />
-      </li>
-      <li>Select "Start Transfer"</li>
-    </ol>
-
-    <p>
-      Congratulations! You transferred your ERC-20 token to Avalanche, which can now be used to swap tokens or add
-      liquidity to a pool on Pangolin.
     </p>
   </article>
 </ContentsLayout>
