@@ -74,7 +74,7 @@
     </ol>
 
     <p>
-      Congratulations! You bridged your ERC-20 tokens to Avalanche. These tokens can now be used to swap
+      Congratulations! You bridged your ERC-20 tokens to Avalanche. These tokens can now be used
       on Pangolin to swap for another token or add liquidity to a pool on Pangolin.
     </p>
   </article>
