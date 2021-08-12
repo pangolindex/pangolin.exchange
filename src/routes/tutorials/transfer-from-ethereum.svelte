@@ -68,7 +68,7 @@
         <img src="/tutorials/transfer-from-ethereum/013.png" />
       </li>
       <li>
-        After the transaction is complete, you can review the Transaction Details
+        After your tokens are successfully bridged, you can review the transaction details:
         <img src="/tutorials/transfer-from-ethereum/014.png" />
       </li>
     </ol>
