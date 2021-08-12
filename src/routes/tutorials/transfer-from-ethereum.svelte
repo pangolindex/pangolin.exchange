@@ -26,7 +26,7 @@
     <h2>Transfer from Ethereum</h2>
 
     <p>
-      If you have Wrapped Ether (WETH) or Ethereum ERC-20 tokens, you can use the <a href="https://bridge.avax.network/" target="_blank">Avalanche Bridge</a> to bring them to
+      If you have Ethereum ERC-20 tokens, you can use the <a href="https://bridge.avax.network/" target="_blank">Avalanche Bridge</a> to bring them to
       Avalanche and use Pangolin. The bridge allows you to transfer assets between both blockchain networks.
     </p>
 
