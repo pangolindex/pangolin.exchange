@@ -64,7 +64,7 @@
         <img src="/tutorials/transfer-from-ethereum/012.png" />
       </li>
       <li>
-        Wait for confirmations on the Ethereum network and Avalanche network
+        Wait for the Ethereum transaction and the Avalanche transaction to confirm.
         <img src="/tutorials/transfer-from-ethereum/013.png" />
       </li>
       <li>
