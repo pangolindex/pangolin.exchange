@@ -47,7 +47,7 @@
         Access the <a href="https://bridge.avax.network/" target="_blank">Avalanche Bridge</a>
       </li>
       <li>
-        Select "Metamask" and login into your wallet
+        Select "Metamask" and log in your wallet
         <img src="/tutorials/transfer-from-ethereum/001.png" />
       </li>
       <li>
