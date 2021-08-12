@@ -56,7 +56,7 @@
       </li>
 
       <li>
-        Select the token you would like to bridge, enter the amount you would like to bridge.
+        Select the token you would like to bridge and enter the amount you would like to bridge.
         <img src="/tutorials/transfer-from-ethereum/011.png" />
       </li>
       <li>
