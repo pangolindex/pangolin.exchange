@@ -48,28 +48,28 @@
       </li>
       <li>
         Select "Metamask" and login into your wallet
-        <img src="/tutorials/transfer-from-ethereum/010.png" />
+        <img src="/tutorials/transfer-from-ethereum/001.png" />
       </li>
       <li>
         Select the "Ethereum Mainnet" network on your MetaMask wallet
-        <img src="/tutorials/transfer-from-ethereum/003.png" />
+        <img src="/tutorials/transfer-from-ethereum/002.png" />
       </li>
 
       <li>
         Select the token you would like to bridge and enter the amount you would like to bridge.
-        <img src="/tutorials/transfer-from-ethereum/011.png" />
+        <img src="/tutorials/transfer-from-ethereum/003.png" />
       </li>
       <li>
         Select "Transfer"
-        <img src="/tutorials/transfer-from-ethereum/012.png" />
+        <img src="/tutorials/transfer-from-ethereum/004.png" />
       </li>
       <li>
         Wait for the Ethereum transaction and the Avalanche transaction to confirm.
-        <img src="/tutorials/transfer-from-ethereum/013.png" />
+        <img src="/tutorials/transfer-from-ethereum/005.png" />
       </li>
       <li>
         After your tokens are successfully bridged, you can review the transaction details:
-        <img src="/tutorials/transfer-from-ethereum/014.png" />
+        <img src="/tutorials/transfer-from-ethereum/006.png" />
       </li>
     </ol>
 
