@@ -88,13 +88,15 @@
   ];
 
   onMount(async () => {
-    [avaxPrice, stats, tableData] = await Promise.all([
-      getAvaxPriceStats().then(({usd, usd_24h_change}) => ({
-        now: usd,
-        history: ((100 - usd_24h_change) * usd) / 100,
-      })),
-      getTotalStats(),
-      getTableData(),
+    await Promise.all([
+      getAvaxPriceStats().then(({usd, usd_24h_change}) => {
+        avaxPrice = {
+          now: usd,
+          history: ((100 - usd_24h_change) * usd) / 100,
+        };
+      }),
+      getTotalStats().then(data => stats = data),
+      getTableData().then(data => tableData = data),
     ]);
   });
 </script>
