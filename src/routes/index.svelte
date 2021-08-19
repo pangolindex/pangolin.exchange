@@ -85,6 +85,21 @@
       src: "/velox.svg",
       alt: "Velox",
     },
+    {
+      href: "https://vee.finance/",
+      src: "/vee.png",
+      alt: "Vee Finance",
+    },
+    {
+      href: "https://allianceblock.io/",
+      src: "/allianceblock.png",
+      alt: "AllianceBlock",
+    },
+    {
+      href: "https://benqi.fi/",
+      src: "/benqi.svg",
+      alt: "Benqi Finance",
+    },
   ];
 
   onMount(async () => {
