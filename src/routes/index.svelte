@@ -100,6 +100,16 @@
       src: "/benqi.svg",
       alt: "Benqi Finance",
     },
+    {
+      href: "https://snowball.network/",
+      src: "/snowball.png",
+      alt: "Snowball",
+    },
+    {
+      href: "https://marginswap.finance/",
+      src: "/marginswap.png",
+      alt: "Marginswap",
+    },
   ];
 
   onMount(async () => {
