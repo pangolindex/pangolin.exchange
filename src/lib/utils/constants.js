@@ -1,5 +1,6 @@
 export const PANGOLIN_SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dasconnor/pangolin-dex";
 export const BLOCK_SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/dasconnor/avalanche-blocks";
+export const API_URL = "https://api.pangolin.exchange";
 
 export const TABLE_ADDRESSES = [
   "0x60781C2586D68229fde47564546784ab3fACA982", // PNG

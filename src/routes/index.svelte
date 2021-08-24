@@ -254,10 +254,10 @@
                     </div>
                   </td>
                   <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
-                    {formatter.format((volume * price.now * avaxPrice.now).toFixed(2))}
+                    {formatter.format(volume)}
                   </td>
                   <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
-                    {formatter.format((price.now * avaxPrice.now).toFixed(2))}
+                    {formatter.format(price.now * avaxPrice.now)}
                   </td>
                   <td class="py-4 px-6 text-sm tabular-nums text-gray-800 whitespace-nowrap">
                     <span
