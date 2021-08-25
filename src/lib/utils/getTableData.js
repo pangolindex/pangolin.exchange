@@ -6,7 +6,7 @@ const TokenFields = `
     name
     symbol
     derivedETH
-    tradeVolume
+    tradeVolumeUSD
   }
 `;
 
@@ -96,11 +96,11 @@ export async function getTableData() {
         name,
         symbol,
         derivedETH: now,
-        tradeVolume,
-      } = currentTokens.find(({id}) => id.toLowerCase() == addr.toLowerCase());
+        tradeVolumeUSD: currentVolume,
+      } = currentTokens.find(({id}) => id.toLowerCase() === addr.toLowerCase());
 
-      const {derivedETH: history, tradeVolume: historyVolume} = historyTokens.find(
-        ({id}) => id.toLowerCase() == addr.toLowerCase(),
+      const {derivedETH: history, tradeVolumeUSD: historyVolume} = historyTokens.find(
+        ({id}) => id.toLowerCase() === addr.toLowerCase(),
       );
 
       return {
@@ -108,10 +108,10 @@ export async function getTableData() {
         name,
         symbol,
         price: {
-          now,
-          history,
+          now: parseFloat(now),
+          history: parseFloat(history),
         },
-        volume: tradeVolume - historyVolume,
+        volume: parseFloat(currentVolume) - parseFloat(historyVolume),
       };
     }),
   );
