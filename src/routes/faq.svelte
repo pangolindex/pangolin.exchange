@@ -137,10 +137,7 @@
     <FAQItem>
       <span slot="question">My transaction is pending on Metamask for some time now, what can I do?</span>
       <span slot="answer">
-        First check that your gas fee is set to exactly: 225 gwei. If it is, retry the transaction.
-        <br />
-        <br />
-        If it doesn’t go through, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask
+        If your transaction is stuck, try resetting your Metamask by Clicking the account icon on the top-right corner of MetaMask
         → Select Settings → Select Advanced → Scroll down and click Reset Account.
         <br />
         <br />
