@@ -110,6 +110,26 @@
       src: "/marginswap.png",
       alt: "Marginswap",
     },
+    {
+      href: "https://www.yay.games/",
+      src: "/yay.png",
+      alt: "YAY Games",
+    },
+    {
+      href: "https://eleven.finance/",
+      src: "/eleven.png",
+      alt: "Eleven Finance",
+    },
+    {
+      href: "https://frax.finance/",
+      src: "/frax.png",
+      alt: "Frax Finance",
+    },
+    {
+      href: "https://starter.xyz/",
+      src: "/starter.png",
+      alt: "Starter",
+    },
   ];
 
   onMount(async () => {
