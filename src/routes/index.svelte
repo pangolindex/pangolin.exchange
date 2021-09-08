@@ -130,6 +130,21 @@
       src: "/starter.png",
       alt: "Starter",
     },
+    {
+      href: "https://www.trustswap.org/",
+      src: "/trustswap.png",
+      alt: "TrustSwap",
+    },
+    {
+      href: "https://xdollar.fi/",
+      src: "/xdollar.png",
+      alt: "XDollar",
+    },
+    {
+      href: "https://paraswap.io/",
+      src: "/paraswap.png",
+      alt: "ParaSwap",
+    },
   ];
 
   onMount(async () => {

@@ -69,5 +69,10 @@
       <span slot="title">Earn PNG</span>
       <span slot="description">Learn what PGL tokens are and how to use them to earn PNG</span>
     </TutorialCard>
+
+    <TutorialCard href="/tutorials/stake-png" class="bg-gradient-to-br from-red-400 to-orange-500" texture="purty-wood">
+      <span slot="title">Stake PNG</span>
+      <span slot="description">Stake PNG to earn AVAX</span>
+    </TutorialCard>
   </div>
 </div>
