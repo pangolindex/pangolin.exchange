@@ -145,6 +145,16 @@
       src: "/paraswap.png",
       alt: "ParaSwap",
     },
+    {
+      href: "https://openocean.finance/",
+      src: "/openocean.png",
+      alt: "OpenOcean",
+    },
+    {
+      href: "https://axelar.network/",
+      src: "/axelar.png",
+      alt: "Axelar",
+    },
   ];
 
   onMount(async () => {
