@@ -155,6 +155,26 @@
       src: "/axelar.png",
       alt: "Axelar",
     },
+    {
+      href: "https://www.ape.in/",
+      src: "/apein.png",
+      alt: "Ape Island",
+    },
+    {
+      href: "https://wowswap.io/",
+      src: "/wowswap.png",
+      alt: "WOWswap",
+    },
+    {
+      href: "https://www.evrt.app/",
+      src: "/everestdao.png",
+      alt: "Everest DAO",
+    },
+    {
+      href: "https://iron.finance/",
+      src: "/ironfinance.png",
+      alt: "Iron Finance",
+    },
   ];
 
   onMount(async () => {
