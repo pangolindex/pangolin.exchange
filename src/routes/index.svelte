@@ -175,6 +175,41 @@
       src: "/ironfinance.png",
       alt: "Iron Finance",
     },
+    {
+      href: "https://rometerminal.io/",
+      src: "/rome.png",
+      alt: "Rome Terminal",
+    },
+    {
+      href: "https://teddy.cash/",
+      src: "/Teddy.png",
+      alt: "Teddy Cash",
+    },
+    {
+      href: "https://oin.finance/",
+      src: "/oin.png",
+      alt: "OIN Finance",
+    },
+    {
+      href: "https://antimatter.finance/",
+      src: "/antimatter.png",
+      alt: "Antimatter Finance",
+    },
+    {
+      href: "https://www.insurace.io/",
+      src: "/insurace.png",
+      alt: "Insurace.io",
+    },
+    {
+      href: "https://www.autonomynetwork.io/",
+      src: "/autonomy.png",
+      alt: "Autonomy Network",
+    },
+    {
+      href: "https://nexusmutual.io/",
+      src: "/nexusmutual.png",
+      alt: "Nexus Mutual",
+    },
   ];
 
   onMount(async () => {
@@ -276,9 +311,9 @@
 
       <a
         class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
-        href="/faq"
+        href="https://docs.pangolin.exchange"
       >
-        FAQ
+        Docs
       </a>
     </div>
   </div>
