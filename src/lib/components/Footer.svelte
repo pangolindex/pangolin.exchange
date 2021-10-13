@@ -1,6 +1,6 @@
 <footer class="mt-4 mb-6 text-center text-gray-500">
-  <div class="grid grid-cols-2 gap-y-5 sm:gap-y-0">
-    <div class="order-1 col-span-3 sm:order-2 sm:col-span-1">
+  <div class="grid grid-cols-1 gap-y-5 sm:gap-y-0">
+    <div class="order-1 col-span-6 sm:order-2 sm:col-span-1">
       <div><strong>Find us on</strong></div>
       <a href="https://www.coingecko.com/en/coins/pangolin" target="_blank">
         <img src="/coingecko.png" class="icon" alt="CoinGecko logo" />
@@ -26,14 +26,6 @@
       <a href="https://www.bitmart.com/trade/en?symbol=PNG_USDT" target="_blank">
         <img src="/bitmart.png" class="icon" alt="BitMart logo" />
       </a>
-    </div>
-    <div class="order-3 col-span-3 sm:order-3 sm:col-span-1">
-      <div><strong>Community Elected Core Team</strong></div>
-      <ul>
-        <li><a href="mailto:justin@pangolin.exchange">Justin (Project Manager)</a></li>
-        <li><a href="mailto:leo@pangolin.exchange">Leo (Community Manager)</a></li>
-        <li><a href="mailto:brandon@pangolin.exchange">Brandon (Lead Developer)</a></li>
-      </ul>
     </div>
   </div>
 </footer>

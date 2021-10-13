@@ -200,7 +200,7 @@
 
                   <a
                     on:click="{() => (docs_open = false)}"
-                    href="/faq"
+                    href="https://docs.pangolin.exchange"
                     class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
                     <svg
@@ -218,7 +218,7 @@
                       ></path>
                     </svg>
                     <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">FAQ</p>
+                      <p class="text-base font-medium text-gray-900">Full Documentation</p>
                     </div>
                   </a>
                 </div>
