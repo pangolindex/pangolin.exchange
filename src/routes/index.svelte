@@ -182,7 +182,7 @@
     },
     {
       href: "https://teddy.cash/",
-      src: "/Teddy.png",
+      src: "/teddy.png",
       alt: "Teddy Cash",
     },
     {
