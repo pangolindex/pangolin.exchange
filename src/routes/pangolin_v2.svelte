@@ -53,7 +53,6 @@
 </div>
 <ContentsLayout selectors="h2, h3">
   <article slot="content" class="mt-10 mb-8 sm:mt-14 sm:mb-10 prose lg:prose-xl">
-    <figure><img width="400px" src="/logo.svg" alt="PNG logo" /></figure>
     <h1>Introducing Pangolin V2</h1>
 
     <iframe
@@ -75,14 +74,14 @@
       >
     </h2>
     <p>
-      Pangolin v1 was launched in February 2021 as a proven concept for automated market makers (AMMs), but native to
+      Pangolin V1 was launched in February 2021 as a proven concept for automated market makers (AMMs), native to
       the Avalanche network. Avalanche is the fastest smart contracts platform in the blockchain industry, as measured
-      by time-to-finality, it’s also low cost, and is environmentally friendly.
+      by time-to-finality. It is low cost and is environmentally friendly.
     </p>
     <p>
-      Since then, Pangolin has established itself as a safe, secure, and low-cost decentralized exchange and the premier
-      DEX on Avalanche. Less than one year since its launch, the Pangolin v1 DEX has facilitated over $8.7bn in trading
-      volume, and serves as a critical piece of DeFi infrastructure.
+      Since launching, Pangolin has established itself as a safe, secure, and low-cost decentralized exchange and the premier
+      DEX on Avalanche. Less than one year since its launch, the Pangolin V1 DEX has facilitated over $8.7 billion dollars in trading
+      volume, and serves as a central piece of DeFi infrastructure in the ecosystem.
     </p>
     <p>
       Today, we are excited to announce an overview of Pangolin V2. We are targeting the launch of our new smart
@@ -95,7 +94,7 @@
         class="absolute no-underline opacity-0 group-hover:opacity-100 after:hash"
         aria-label="Anchor"
         style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span
-        >Overview</span
+        >Overview of Pangolin 2.0</span
       >
     </h2>
     <ul>
