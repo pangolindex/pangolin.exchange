@@ -1,11 +1,11 @@
 import {API_URL} from "./constants";
 
 export async function getTotalStats() {
-  const stakingTokenAddresses = (await fetch(`${API_URL}/pangolin/stakingTokenAddresses`)).json();
+  const stakingTokenAddresses = await (await fetch(`${API_URL}/pangolin/stakingTokenAddresses`)).json();
 
   const [aprs, volume, liquidity] = await Promise.all([
     Promise.all(
-      stakingTokenAddresses.map(async (address, pid) => {
+      (stakingTokenAddresses || []).map(async (address, pid) => {
         return (await fetch(`${API_URL}/pangolin/apr2/${pid}`)).json();
       }),
     ),
