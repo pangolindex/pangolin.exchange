@@ -220,8 +220,8 @@
           history: ((100 - usd_24h_change) * usd) / 100,
         };
       }),
-      getTotalStats().then(data => stats = data),
-      getTableData().then(data => tableData = data),
+      getTotalStats().then((data) => (stats = data)),
+      getTableData().then((data) => (tableData = data)),
     ]);
   });
 </script>
@@ -343,7 +343,7 @@
                       <div class="flex-shrink-0 w-10 h-10">
                         <img
                           class="w-10 h-10 rounded-full"
-                          src="https://raw.githubusercontent.com/pangolindex/tokens/main/assets/{addr}/logo.png"
+                          src="https://raw.githubusercontent.com/pangolindex/tokens/main/assets/{addr}/logo_48.png"
                           alt="{symbol}"
                         />
                       </div>
