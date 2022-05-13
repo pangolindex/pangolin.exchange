@@ -113,61 +113,43 @@
     <h4>Community - Liquidity Mining Allocation (95% of PNG)</h4>
 
     <p>
-      The vesting schedule is algorithmically specified as follows: starting from 256 M tokens for the first four years,
-      the number of tokens distributed halves every additional four years, meaning that the next four years contribute
-      roughly a quarter, and so on. This pattern continues into perpetuity. For reference, during the first four years,
-      roughly 175,342 PNG will be distributed per day to liquidity miners. The full schedule of distribution of PNG in
-      the liquidity mining allocation is shown below:
+      Below are the emission rates. Token emissions began in Feb 2021 and will end in Oct 2024. The full schedule of
+      distribution of PNG in the liquidity mining allocation is shown below:
     </p>
 
     <table>
       <thead>
         <tr>
-          <th>Time</th>
-          <th>Total PNG Distributed</th>
+          <th>Date</th>
           <th>PNG / Day</th>
+          <th>Monthly reduction</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>0 - 4 years</td>
-          <td>256 M</td>
-          <td>~ 175 K</td>
+          <td>Feb 2021-Oct 2021</td>
+          <td>175,000</td>
+          <td>0</td>
         </tr>
         <tr>
-          <td>4 - 8 years</td>
-          <td>128 M</td>
-          <td>~ 87 K</td>
+          <td>Nov 2021-Aug 2022</td>
+          <td>174,340</td>
+          <td>1k</td>
         </tr>
         <tr>
-          <td>8 - 12 years</td>
-          <td>64 M</td>
-          <td>~ 44 K</td>
+          <td>Sep 2022-Jun 2023</td>
+          <td>165,340</td>
+          <td>2k</td>
         </tr>
         <tr>
-          <td>12 - 16 years</td>
-          <td>32 M</td>
-          <td>~ 22 K</td>
+          <td>Jul 2023-Apr 2024</td>
+          <td>145,340</td>
+          <td>3k</td>
         </tr>
         <tr>
-          <td>16 - 20 years</td>
-          <td>16 M</td>
-          <td>~ 11 K</td>
-        </tr>
-        <tr>
-          <td>20 - 24 years</td>
-          <td>8 M</td>
-          <td>~ 5 K</td>
-        </tr>
-        <tr>
-          <td>24 - 28 years</td>
-          <td>4 M</td>
-          <td>~ 2 K</td>
-        </tr>
-        <tr>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
+          <td>May 2024-Oct 2024</td>
+          <td>115,340</td>
+          <td>4k</td>
         </tr>
       </tbody>
     </table>
