@@ -343,7 +343,7 @@
                       <div class="flex-shrink-0 w-10 h-10">
                         <img
                           class="w-10 h-10 rounded-full"
-                          src="https://raw.githubusercontent.com/pangolindex/tokens/main/assets/{addr}/logo_48.png"
+                          src="https://raw.githubusercontent.com/pangolindex/tokens/main/assets/43114/{addr}/logo_48.png"
                           alt="{symbol}"
                         />
                       </div>
