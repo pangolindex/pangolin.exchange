@@ -1,19 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { PangolinProvider, useLibrary } from "@pangolindex/components";
+import React, { useContext } from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { ThemeContext } from "styled-components";
+import App from "./pages/App";
+import store, { AppContext } from "./state";
+import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from "./theme";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+const ComponentThemeProvider = () => {
+  const theme = useContext(ThemeContext);
+
+  const { library } = useLibrary();
+  const account = undefined;
+  const chainId = 43114;
+
+  return (
+    <PangolinProvider
+      library={library}
+      chainId={chainId}
+      account={account}
+      theme={theme as any}
+    >
+      <FixedGlobalStyle />
+      <ThemedGlobalStyle />
+      <App />
+    </PangolinProvider>
+  );
+};
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Provider store={store} context={AppContext}>
+      <ThemeProvider>
+        <ComponentThemeProvider />
+      </ThemeProvider>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById("root") as HTMLElement
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
