@@ -16,7 +16,7 @@ export default function Header() {
         </Button>
       </Box>
       <Links>
-        <Link href="/about">About us</Link>
+        <Link href="https://docs.pangolin.exchange/pangolin/all-chains/team">About us</Link>
         <Link href="/about">Exchange</Link>
         <Link href="https://info.pangolin.exchange/">Analytics</Link>
         <Link href="https://docs.pangolin.exchange/">Docs</Link>

@@ -60,26 +60,26 @@ export function colors(darkMode: boolean): Colors {
     text3: darkMode ? '#6C7284' : '#888D9B',
     text4: darkMode ? '#565A69' : '#C3C5CB',
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
-    text6: darkMode ? '#111111' : '#EDEEF2',
+    text6: darkMode ? chineseBlack : '#EDEEF2',
     text7: darkMode ? '#e6e9ec' : '#000000',
     text8: darkMode ? '#707070' : '#565A69',
     text9: '#282828',
-    text10: darkMode ? '#FAF9FD' : '#000000',
-    text11: '#18C145',
+    text10: darkMode ? ghostWhite1 : '#000000',
+    text11: oceanBlue,
     text12: '#E84142',
-    text13: darkMode ? '#A3A3A3' : '#000000',
+    text13: darkMode ? quickSilver : '#000000',
     text14: darkMode ? '#8C8D93' : '#000000',
     text15: darkMode ? '#FFC800' : '#000000',
 
     // backgrounds / greys
     bg1: darkMode ? '#212429' : '#FFFFFF',
-    bg2: darkMode ? '#111111' : '#F7F8FA',
+    bg2: darkMode ? chineseBlack : ghostWhite,
     bg3: darkMode ? '#40444F' : '#EDEEF2',
     bg4: darkMode ? '#565A69' : '#CED0D9',
     bg5: darkMode ? '#6C7284' : '#888D9B',
-    bg6: darkMode ? '#1c1c1c' : '#FFFFFF',
+    bg6: darkMode ? eerieBlack : '#FFFFFF',
     bg7: darkMode ? '#2C2D33' : '#FFFFFF',
-    bg8: darkMode ? '#212427' : '#FFFFFF',
+    bg8: darkMode ? darkGunmetal : '#FFFFFF',
     bg9: darkMode ? '#ffffff' : '#000000',
 
     //specialty colors
@@ -110,7 +110,7 @@ export function colors(darkMode: boolean): Colors {
     red3: '#E84142',
     red3Gradient: 'rgba(232, 65, 66, 0.3)',
     green1: '#27AE60',
-    green2: '#18C145',
+    green2: oceanBlue,
     green2Gradient: ' rgba(24, 193, 69, 0.3)',
     yellow1: '#FFE270',
     yellow2: '#FF6B00',
@@ -328,7 +328,7 @@ html {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
-  background-color: ${({ theme }) => theme.bg2};
+  background-color: ${({ theme }) => theme.color2};
 }
 
 body {
@@ -336,6 +336,6 @@ body {
   background-position: 0 -30vh;
   background-repeat: no-repeat;
   background-image: 'unset';
-  background-color:  ${({ theme }) => theme.bg6}
+  background-color:  ${({ theme }) => theme.color2}
 }
 `
