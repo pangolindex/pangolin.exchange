@@ -20,10 +20,7 @@ export default function Header() {
         <Link href="/about">Exchange</Link>
         <Link href="https://info.pangolin.exchange/">Analytics</Link>
         <Link href="https://docs.pangolin.exchange/">Docs</Link>
-        <Link
-          variant="primary"
-          href="https://app.pangolin.exchange"
-        >
+        <Link variant="primary" href="https://app.pangolin.exchange">
           Lauch App
         </Link>
       </Links>

@@ -11,7 +11,7 @@ export const Link = styled((props) => (
   <Button
     {...props}
     as="a"
-    variant={props.variant ? props.variant : "plain"}
+    variant={props.variant ?? "plain"}
     color={props.variant === "primary" ? "eerieBlack" : "text1"}
     target="_self"
     width="max-content"
