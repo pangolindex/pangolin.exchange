@@ -6,7 +6,7 @@ import {
   DefaultTheme
 } from 'styled-components'
 import { useIsDarkMode } from '../state/user/hooks'
-import { BetaColors, Colors } from './styled'
+import { Colors } from './styled'
 
 export const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
@@ -63,7 +63,7 @@ export function colors(darkMode: boolean): Colors {
     text6: darkMode ? '#111111' : '#EDEEF2',
     text7: darkMode ? '#e6e9ec' : '#000000',
     text8: darkMode ? '#707070' : '#565A69',
-    text9: darkMode ? '#A3A3A3' : '#000000',
+    text9: '#282828',
     text10: darkMode ? '#FAF9FD' : '#000000',
     text11: '#18C145',
     text12: '#E84142',
@@ -73,12 +73,12 @@ export function colors(darkMode: boolean): Colors {
 
     // backgrounds / greys
     bg1: darkMode ? '#212429' : '#FFFFFF',
-    bg2: darkMode ? '#2C2F36' : '#F7F8FA',
+    bg2: darkMode ? '#111111' : '#F7F8FA',
     bg3: darkMode ? '#40444F' : '#EDEEF2',
     bg4: darkMode ? '#565A69' : '#CED0D9',
     bg5: darkMode ? '#6C7284' : '#888D9B',
-    bg6: darkMode ? '#1c1c1c' : '#F7F8FA',
-    bg7: darkMode ? '#2C2D33' : '#F7F8FA',
+    bg6: darkMode ? '#1c1c1c' : '#FFFFFF',
+    bg7: darkMode ? '#2C2D33' : '#FFFFFF',
     bg8: darkMode ? '#212427' : '#FFFFFF',
     bg9: darkMode ? '#ffffff' : '#000000',
 
@@ -89,12 +89,12 @@ export function colors(darkMode: boolean): Colors {
     closeCircleBG: darkMode ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#FF6B00',
-    primary2: darkMode ? '#3680E7' : '#FF6B00',
-    primary3: darkMode ? '#4D8FEA' : '#FF6B00',
-    primary4: darkMode ? '#376bad70' : '#FF6B00',
-    primary5: darkMode ? '#153d6f70' : '#FF6B00',
-    primary6: darkMode ? '#2172E5' : '#FFFFFF',
+    primary1: '#ffc800',
+    primary2: '#FF6B00',
+    primary3: '#FF6B00',
+    primary4: '#FF6B00',
+    primary5: '#FF6B00',
+    primary6: darkMode ? '#FF6B00' : '#FFFFFF',
 
     // color text
     primaryText1: darkMode ? '#6da8ff' : '#ffffff',
@@ -113,7 +113,7 @@ export function colors(darkMode: boolean): Colors {
     green2: '#18C145',
     green2Gradient: ' rgba(24, 193, 69, 0.3)',
     yellow1: '#FFE270',
-    yellow2: '#F3841E',
+    yellow2: '#FF6B00',
     yellow3: '#FFC800',
     orange1: '#E6E9EC',
     blue1: '#2172E5',
@@ -156,74 +156,7 @@ export function colors(darkMode: boolean): Colors {
     color9: darkMode ? darkSilver : quickSilver,
     color10: darkMode ? eerieBlack : white,
     color11: darkMode ? white : black,
-    color12: darkMode ? darkSilver : platinum
-  }
-}
-
-export function theme(darkMode: boolean): DefaultTheme {
-  return {
-    ...colors(darkMode),
-
-    grids: {
-      sm: 8,
-      md: 12,
-      lg: 24
-    },
-
-    //shadows
-    shadow1: darkMode ? '#000' : '#2F80ED',
-
-    // media queries
-    mediaWidth: mediaWidthTemplates,
-
-    // css snippets
-    flexColumnNoWrap: css`
-      display: flex;
-      flex-flow: column nowrap;
-    `,
-    flexRowNoWrap: css`
-      display: flex;
-      flex-flow: row nowrap;
-    `
-  }
-}
-
-export function betaColors(darkMode: boolean): BetaColors {
-  return {
-    ...colors(darkMode),
-
-    // text
-    text7: darkMode ? '#e6e9ec' : '#000000',
-    text8: darkMode ? '#707070' : '#565A69',
-    text9: '#282828',
-
-    // backgrounds / greys
-    bg1: darkMode ? '#212429' : '#FFFFFF',
-    bg2: darkMode ? '#111111' : '#F7F8FA',
-    bg3: darkMode ? '#40444F' : '#EDEEF2',
-    bg4: darkMode ? '#565A69' : '#CED0D9',
-    bg5: darkMode ? '#6C7284' : '#888D9B',
-    bg6: darkMode ? '#1c1c1c' : '#FFFFFF',
-    bg7: darkMode ? '#2C2D33' : '#FFFFFF',
-    bg8: darkMode ? '#212427' : '#FFFFFF',
-
-    //primary colors
-    primary1: '#ffc800',
-    primary2: '#FF6B00',
-    primary3: '#FF6B00',
-    primary4: '#FF6B00',
-    primary5: '#FF6B00',
-    primary6: darkMode ? '#FF6B00' : '#FFFFFF',
-
-    // color text
-    primaryText1: darkMode ? '#6da8ff' : '#ffffff',
-
-    // secondary colors
-    secondary1: darkMode ? '#2172E5' : '#ff007a',
-    secondary2: darkMode ? '#17000b26' : '#F6DDE8',
-    secondary3: darkMode ? '#17000b26' : '#FDEAF1',
-
-    yellow2: '#FF6B00',
+    color12: darkMode ? darkSilver : platinum,
 
     swapWidget: {
       primary: darkMode ? white : black,
@@ -305,17 +238,45 @@ export function betaColors(darkMode: boolean): BetaColors {
   }
 }
 
-export function betaThemeFn(darkMode: boolean): DefaultTheme {
+export function theme(darkMode: boolean): DefaultTheme {
+  return {
+    ...colors(darkMode),
+
+    grids: {
+      sm: 8,
+      md: 12,
+      lg: 24
+    },
+
+    //shadows
+    shadow1: darkMode ? '#000' : '#2F80ED',
+
+    // media queries
+    mediaWidth: mediaWidthTemplates,
+
+    // css snippets
+    flexColumnNoWrap: css`
+      display: flex;
+      flex-flow: column nowrap;
+    `,
+    flexRowNoWrap: css`
+      display: flex;
+      flex-flow: row nowrap;
+    `
+  }
+}
+
+export function ThemeFn(darkMode: boolean): DefaultTheme {
   return {
     ...theme(darkMode),
-    ...betaColors(darkMode)
+    ...colors(darkMode)
   }
 }
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
   const darkMode = useIsDarkMode()
 
-  const betaThemeObject = useMemo(() => betaThemeFn(darkMode), [darkMode])
+  const betaThemeObject = useMemo(() => ThemeFn(darkMode), [darkMode])
 
   return <StyledComponentsThemeProvider theme={betaThemeObject}>{children}</StyledComponentsThemeProvider>
 }

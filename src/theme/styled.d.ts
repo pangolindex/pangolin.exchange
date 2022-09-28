@@ -101,9 +101,6 @@ export interface Colors {
   color10: Color
   color11: Color
   color12: Color
-}
-
-export interface BetaColors extends Colors {
   // theme color objects for components
   swapWidget?: {
     primary?: Color
@@ -190,7 +187,7 @@ export interface Grids {
 }
 
 declare module 'styled-components' {
-  export interface DefaultTheme extends Colors, BetaColors {
+  export interface DefaultTheme extends Colors {
     grids: Grids
 
     // shadows
