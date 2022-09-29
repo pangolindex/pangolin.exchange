@@ -9,7 +9,8 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "@typescript-eslint/parser": "^5.15.0",
+    "@typescript-eslint/eslint-plugin": "4.6.0",
+    "@typescript-eslint/parser": "4.6.0",
     "@types/jest": "27.5.2",
     "@types/node": "16.11.58",
     "@types/react": "18.0.19",
@@ -17,6 +18,15 @@
     "@types/react-redux": "7.1.23",
     "@types/styled-components": "5.1.26",
     "babel-plugin-styled-components": "2.0.6",
+    "eslint": "7.11.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "prettier": "1.19.1",
+    "npm-force-resolutions": "0.0.10",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-redux": "7.2.6",
@@ -32,12 +42,23 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
+    "prepare": "husky install",
+    "pre-commit-hook": "lint-staged",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "lint-staged": {
+    "*.{jsx,js,ts,tsx}": [
+      "bash -c 'npm run type-check'",
+      "npm run lint",
+      "git add ."
+    ]
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+    "extends": "react-app",
+    "ignorePatterns": [
+      "node_modules"
     ]
   },
   "browserslist": {
@@ -51,5 +72,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "license": "MIT"
 }
