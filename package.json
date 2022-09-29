@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@pangolindex/components": "4.2.0-rc.3",
+    "@pangolindex/components": "4.2.0",
     "@pangolindex/sdk": "3.1.3",
     "@reduxjs/toolkit": "1.8.0",
     "@testing-library/jest-dom": "5.16.5",
@@ -15,6 +15,7 @@
     "@types/react-dom": "18.0.6",
     "@types/react-redux": "7.1.23",
     "@types/styled-components": "5.1.26",
+    "babel-plugin-styled-components": "2.0.6",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-redux": "7.2.6",
