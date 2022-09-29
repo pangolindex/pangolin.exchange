@@ -9,6 +9,7 @@ export default function Header() {
       display="flex"
       justifyContent="space-between"
       paddingY="50px"
+      height="15vh"
     >
       <Box>
         <Button variant="plain" as="a" href="/" target="_self">
@@ -17,7 +18,7 @@ export default function Header() {
       </Box>
       <Links>
         <Link href="https://docs.pangolin.exchange/pangolin/all-chains/team">About us</Link>
-        <Link href="/about">Exchange</Link>
+        <Link href="https://app.pangolin.exchange">Exchange</Link>
         <Link href="https://info.pangolin.exchange/">Analytics</Link>
         <Link href="https://docs.pangolin.exchange/">Docs</Link>
         <Link variant="primary" href="https://app.pangolin.exchange">
