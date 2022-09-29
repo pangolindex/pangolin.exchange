@@ -2,14 +2,14 @@ import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { save, load } from 'redux-localstorage-simple'
 import { updateVersion } from './global/actions'
 import { createDispatchHook, createSelectorHook, createStoreHook } from 'react-redux'
-import user from "./user/reducer"
+import user from './user/reducer'
 import React from 'react'
 
 const PERSISTED_KEYS: string[] = ['user']
 
 const store = configureStore({
   reducer: {
-    user,
+    user
   },
   middleware: [...getDefaultMiddleware({ thunk: false }), save({ states: PERSISTED_KEYS })],
   preloadedState: load({ states: PERSISTED_KEYS })

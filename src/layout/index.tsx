@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "./Header";
-import { Body, Wrapper } from "./styled";
+import React from 'react'
+import Header from './Header'
+import { Body, Wrapper } from './styled'
 
 const Layout: React.FC<any> = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const Layout: React.FC<any> = ({ children }) => {
       <Header />
       <Body>{children}</Body>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

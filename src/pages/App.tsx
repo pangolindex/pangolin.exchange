@@ -1,7 +1,7 @@
-import { Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import Layout from "../layout";
+import React, { Suspense } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import Layout from '../layout'
 
 export default function App() {
   return (
@@ -15,5 +15,5 @@ export default function App() {
         </Router>
       </Layout>
     </Suspense>
-  );
+  )
 }

@@ -1,10 +1,5 @@
 import React, { useMemo } from 'react'
-import {
-  ThemeProvider as StyledComponentsThemeProvider,
-  createGlobalStyle,
-  css,
-  DefaultTheme
-} from 'styled-components'
+import { ThemeProvider as StyledComponentsThemeProvider, createGlobalStyle, css, DefaultTheme } from 'styled-components'
 import { useIsDarkMode } from '../state/user/hooks'
 import { Colors } from './styled'
 

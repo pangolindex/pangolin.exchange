@@ -1,6 +1,6 @@
-import { createReducer } from "@reduxjs/toolkit"
-import { updateVersion } from "../global/actions"
-import { updateMatchesDarkMode, updateUserDarkMode } from "./actions"
+import { createReducer } from '@reduxjs/toolkit'
+import { updateVersion } from '../global/actions'
+import { updateMatchesDarkMode, updateUserDarkMode } from './actions'
 
 const currentTimestamp = () => new Date().getTime()
 
@@ -16,14 +16,12 @@ export interface UserState {
 export const initialState: UserState = {
   userDarkMode: null,
   matchesDarkMode: false,
-  timestamp: currentTimestamp(),
-
+  timestamp: currentTimestamp()
 }
 
 export default createReducer(initialState, builder =>
   builder
     .addCase(updateVersion, state => {
-
       state.lastUpdateVersionTimestamp = currentTimestamp()
     })
     .addCase(updateUserDarkMode, (state, action) => {

@@ -1,16 +1,11 @@
-import { Box, Button } from "@pangolindex/components";
-import { ReactComponent as Logo } from "src/assets/svg/Logo.svg";
-import { Link, Links } from "./styled";
+import React from 'react'
+import { Box, Button } from '@pangolindex/components'
+import { ReactComponent as Logo } from 'src/assets/svg/Logo.svg'
+import { Link, Links } from './styled'
 
 export default function Header() {
   return (
-    <Box
-      width="100%"
-      display="flex"
-      justifyContent="space-between"
-      paddingY="50px"
-      height="15vh"
-    >
+    <Box width="100%" display="flex" justifyContent="space-between" paddingY="50px" height="15vh">
       <Box>
         <Button variant="plain" as="a" href="/" target="_self">
           <Logo />
@@ -26,5 +21,5 @@ export default function Header() {
         </Link>
       </Links>
     </Box>
-  );
+  )
 }

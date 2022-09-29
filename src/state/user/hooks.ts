@@ -1,7 +1,7 @@
-import { useCallback } from "react";
-import { shallowEqual } from "react-redux";
-import { useDispatch, useSelector } from "../index";
-import { updateUserDarkMode } from "./actions";
+import { useCallback } from 'react'
+import { shallowEqual } from 'react-redux'
+import { useDispatch, useSelector } from '../index'
+import { updateUserDarkMode } from './actions'
 
 export function useIsDarkMode(): boolean {
   const { userDarkMode, matchesDarkMode } = useSelector<{ userDarkMode: boolean | null; matchesDarkMode: boolean }>(
@@ -19,7 +19,6 @@ export function useIsDarkMode(): boolean {
 
   return userDarkMode === null ? matchesDarkMode : userDarkMode
 }
-
 
 export function useDarkModeManager(): [boolean, () => void] {
   const dispatch = useDispatch()
