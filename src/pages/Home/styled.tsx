@@ -12,12 +12,38 @@ export const Main = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  height: 55vh;
+  min-height: 55vh;
+
+  ${({ theme }) => theme.mediaWidth.upToLarge`
+    grid-template-columns: 1fr;
+    justify-items: center;
+  `};
+
+  ${({ theme }) => theme.mediaWidth.upToMedium`
+    img {
+      width: 100%;
+    }
+  `}
 `
 
-export const CTAText = styled(Text)`
+export const SectionText = styled(Text)`
   color: ${({ theme }) => theme.text1};
-  font-size: 26px;
   height: fit-content;
   align-self: center;
+`
+
+export const Section = styled(Box)`
+  background-color: ${({ theme }) => theme.color3};
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  border-radius: 20px;
+  aligh-items: center;
+  margin-bottom: 40px;
+
+  ${({ theme }) => theme.mediaWidth.upToMedium`
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+  `}
 `
