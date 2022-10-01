@@ -11,7 +11,7 @@ const ComponentThemeProvider = () => {
   const theme = useContext(ThemeContext)
 
   const { library } = useLibrary()
-  const account = undefined
+  const account: string | undefined = undefined
   const chainId = 43114
 
   return (
