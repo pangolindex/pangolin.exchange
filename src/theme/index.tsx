@@ -6,8 +6,8 @@ import { Colors } from './styled'
 export const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
   upToSmall: 720,
-  upToMedium: 960,
-  upToLarge: 1280
+  upToMedium: 1020,
+  upToLarge: 1340
 }
 
 const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } = Object.keys(MEDIA_WIDTHS).reduce(
@@ -328,9 +328,9 @@ html {
 
 body {
   min-height: unset;
-  background-position: 0 -30vh;
   background-repeat: no-repeat;
   background-image: 'unset';
-  background-color:  ${({ theme }) => theme.color2}
+  background-color:  ${({ theme }) => theme.color2};
+  overflow-x: hidden;
 }
 `

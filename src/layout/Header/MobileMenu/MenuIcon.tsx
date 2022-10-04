@@ -3,12 +3,12 @@ import { IconMenu } from './styled'
 
 interface Props {
   active: boolean
-  handleMobileMenu: () => void
+  onClick: () => void
 }
 
-export const MenuIcon: React.FC<Props> = ({ active, handleMobileMenu }) => {
+export const MenuIcon: React.FC<Props> = ({ active, onClick }) => {
   return (
-    <IconMenu className={active ? 'clicked' : undefined} onClick={handleMobileMenu}>
+    <IconMenu className={active ? 'clicked' : undefined} onClick={onClick}>
       <div className="dot" />
       <div className="dot" />
       <div className="dot" />
