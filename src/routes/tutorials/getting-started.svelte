@@ -60,9 +60,7 @@
     </p>
     <p>
       Avalanche supports the Ethereum Virtual Machine (EVM), which enables traders with Ethereum assets to instantly and
-      cheaply swap tokens. Learn more about Pangolin <a href="/litepaper" target="_blank" class="hover:no-underline"
-        >here</a
-      >.
+      cheaply swap tokens.
     </p>
     <p>
       <strong>Reminder: to use Pangolin, you will need AVAX to cover the gas fees to execute transactions.</strong>
