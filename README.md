@@ -7,13 +7,13 @@ The app's smart contract code can be found [here](http://github.com/pangolindex/
 First, install dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 Then, start the development server
 
 ```bash
-yarn dev
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -25,7 +25,7 @@ The page auto-updates as you edit the file.
 Generate the production build
 
 ```bash
-yarn build
+npm build
 ```
 
 This exports a static site into the `build` directory.
