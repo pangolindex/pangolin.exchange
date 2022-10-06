@@ -26,10 +26,10 @@ export default function Home() {
         <Box>
           <Box height="100%" display="flex" flexDirection="column" justifyContent="center">
             <Text color="primary" fontWeight="700" fontSize={[36, 50]}>
-              Your Gateway to A Multi-Chain Future
+              Your Digital Asset Gateway
             </Text>
             <Text color="text1" fontSize={[14, 18]}>
-              Pangolin is a multichain decentralized cryptocurrency exchange (DEX). Through advanced tooling, deep
+              Pangolin is a multichain decentralized digital assets exchange (DEX). Through advanced tooling, deep
               liquidity, and smooth onboarding, Pangolin offers easy swaps and great tools for projects and traders.
             </Text>
           </Box>
@@ -38,7 +38,7 @@ export default function Home() {
       </Main>
       <Section>
         <SectionText fontSize={[18, 26]} textAlign="center">
-          Try our one of a kind multi-chain experience in all Defi!
+          You have to see it to believe it
         </SectionText>
         <LauchAppButton />
       </Section>
