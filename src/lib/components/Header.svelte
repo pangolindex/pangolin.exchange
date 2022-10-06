@@ -152,30 +152,6 @@
                 <div class="grid relative gap-6 py-6 px-5 bg-white sm:gap-8 sm:p-8">
                   <a
                     on:click="{() => (docs_open = false)}"
-                    href="/litepaper"
-                    class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
-                  >
-                    <svg
-                      class="flex-shrink-0 w-6 h-6 text-gray-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-                      ></path>
-                    </svg>
-                    <div class="ml-4">
-                      <p class="text-base font-medium text-gray-900">Litepaper</p>
-                    </div>
-                  </a>
-
-                  <a
-                    on:click="{() => (docs_open = false)}"
                     href="/tutorials"
                     class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                   >
@@ -379,28 +355,6 @@
               </a>
               <a
                 on:click="{() => (mobile_open = false)}"
-                href="/litepaper"
-                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
-              >
-                <svg
-                  class="flex-shrink-0 w-6 h-6 text-gray-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-                  ></path>
-                </svg>
-                <span class="ml-3 text-base font-medium text-gray-900">Litepaper</span>
-              </a>
-
-              <a
-                on:click="{() => (mobile_open = false)}"
                 href="/tutorials"
                 class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
               >
@@ -443,13 +397,13 @@
                 <span class="ml-3 text-base font-medium text-gray-900">FAQ</span>
               </a>
               <a
-                      on:click="{() => (docs_open = false)}"
-                      href="/pangolin_v2"
-                      class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
+                on:click="{() => (docs_open = false)}"
+                href="/pangolin_v2"
+                class="flex items-center p-3 -m-3 rounded-md transition-colors hover:bg-gray-50"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path
-                          d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
+                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>

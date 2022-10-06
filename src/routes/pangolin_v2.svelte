@@ -2,18 +2,29 @@
   import ContentsLayout from "$lib/components/ContentsLayout.svelte";
   import {onMount} from "svelte";
   onMount(() => {
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    !(function (e, t, n, s, u, a) {
+      e.twq ||
+        ((s = e.twq =
+          function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+          }),
+        (s.version = "1.1"),
+        (s.queue = []),
+        (u = t.createElement(n)),
+        (u.async = !0),
+        (u.src = "//static.ads-twitter.com/uwt.js"),
+        (a = t.getElementsByTagName(n)[0]),
+        a.parentNode.insertBefore(u, a));
+    })(window, document, "script");
     // Insert Twitter Pixel ID and Standard Event data below
-    twq('init','o6stc');
-    twq('track','PageView');
-  })
+    twq("init", "o6stc");
+    twq("track", "PageView");
+  });
 </script>
 
 <svelte:head>
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:url" content="https://pangolin.exchange/litepaper" />
+  <meta property="og:url" content="https://pangolin.exchange" />
   <meta property="og:type" content="article" />
   <meta name="twitter:image" content="https://pangolin.exchange/LitepaperOGImage.png" />
   <meta property="og:image" content="https://pangolin.exchange/LitepaperOGImage.png" />
@@ -48,13 +59,6 @@
 
   <a
     class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
-    href="/litepaper"
-  >
-    Litepaper
-  </a>
-
-  <a
-    class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
     href="https://docs.pangolin.exchange"
   >
     Docs
@@ -83,14 +87,14 @@
       >
     </h2>
     <p>
-      Pangolin V1 was launched in February 2021 as a proven concept for automated market makers (AMMs), native to
-      the Avalanche network. Avalanche is the fastest smart contracts platform in the blockchain industry, as measured
-      by time-to-finality. It is low cost and is environmentally friendly.
+      Pangolin V1 was launched in February 2021 as a proven concept for automated market makers (AMMs), native to the
+      Avalanche network. Avalanche is the fastest smart contracts platform in the blockchain industry, as measured by
+      time-to-finality. It is low cost and is environmentally friendly.
     </p>
     <p>
-      Since launching, Pangolin has established itself as a safe, secure, and low-cost decentralized exchange and the premier
-      DEX on Avalanche. Less than one year since its launch, the Pangolin V1 DEX has facilitated over $8.7 billion dollars in trading
-      volume, and serves as a central piece of DeFi infrastructure in the ecosystem.
+      Since launching, Pangolin has established itself as a safe, secure, and low-cost decentralized exchange and the
+      premier DEX on Avalanche. Less than one year since its launch, the Pangolin V1 DEX has facilitated over $8.7
+      billion dollars in trading volume, and serves as a central piece of DeFi infrastructure in the ecosystem.
     </p>
     <p>
       Today, we are excited to announce an overview of Pangolin V2. We are targeting the launch of our new smart
@@ -153,13 +157,6 @@
     target="_blank"
   >
     Bridge
-  </a>
-
-  <a
-    class="flex-none py-3 px-6 w-full text-lg font-semibold leading-6 text-gray-900 bg-white rounded-xl border border-gray-900 transition-colors duration-200 sm:w-auto hover:text-gray-700 hover:bg-gray-50 hover:border-gray-700 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
-    href="/litepaper"
-  >
-    Litepaper
   </a>
 
   <a
