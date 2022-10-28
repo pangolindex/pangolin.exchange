@@ -1,4 +1,5 @@
 import { Box } from '@pangolindex/components'
+import { MEDIA_WIDTHS } from 'src/theme'
 import styled from 'styled-components'
 
 export const Wrapper = styled(Box)`
@@ -9,16 +10,38 @@ export const Wrapper = styled(Box)`
 export const Slider = styled(Box)<{ active: boolean }>`
   z-index: 2;
   position: absolute;
-  transform: ${({ active }) => (active ? 'translate3d(-200px, 0, 0)' : 'translate3d(0, 0, 0)')};
+
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    padding: 0px 20px;
+  `};
+
+  transform: ${({ active }) => (active ? 'translate(-90px, 0)' : 'translate(0, 0)')};
+
+  @media (max-width: ${MEDIA_WIDTHS.upToSmall}px) {
+    transform: ${({ active }) => (active ? 'translate(-190px, 0)' : 'translate(0, 0)')};
+  }
+
   transition: transform 0.8s;
 
   display: flex;
+`
 
-  > * {
-    &:first-child {
-      margin-right: ${({ active }) => (active ? '0px' : '25px')};
-    }
+export const Menu = styled(Box)<{ active: boolean }>`
+  background-color: ${({ theme }) => theme.color2};
+  height: 100vh;
+  width: 200px;
+
+  margin-left: ${({ active }) => (active ? '10px' : '110px')};
+
+  @media (max-width: ${MEDIA_WIDTHS.upToSmall}px) {
+    margin-left: ${({ active }) => (active ? '10px' : '30px')};
   }
+
+  transition: margin 0.8s;
+
+  ${({ theme }) => theme.mediaWidth.upToMedium`
+    left: 0px;
+  `};
 `
 
 //https://codepen.io/tt0113243/pen/oexJzE
@@ -30,6 +53,12 @@ export const IconMenu = styled.div`
   padding: 8px;
   background-color: ${({ theme }) => theme.primary1};
   cursor: pointer;
+
+  top: 12px;
+
+  &.clicked {
+    left: 0px;
+  }
 
   .dot {
     position: absolute;
