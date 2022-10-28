@@ -329,8 +329,6 @@ html {
 body {
   min-height: unset;
   background-repeat: no-repeat;
-  background-image: 'unset';
   background-color:  ${({ theme }) => theme.color2};
-  overflow-x: hidden;
 }
 `

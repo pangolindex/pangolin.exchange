@@ -27,13 +27,13 @@ export const Link = styled(props => (
 `
 
 export const Wrapper = styled(Box)`
-  padding: 50px 100px;
+  padding: 50px 0px;
   width: 100%;
   heigth: 15vh;
   display: flex;
   justify-content: space-between;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    padding: 50px 0px 50px 100px;
+    padding: 50px 0px 50px 0px;
   `};
 `
