@@ -6,6 +6,7 @@ export const Root = styled(Box)`
   gap: 40px;
   align-items: center;
   height: 100%;
+  margin-bottom: 50px;
 `
 
 export const Main = styled(Box)`
@@ -38,7 +39,7 @@ export const Section = styled(Box)`
   padding: 40px;
   justify-content: space-between;
   border-radius: 20px;
-  aligh-items: center;
+  align-items: center;
   margin-bottom: 40px;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
@@ -46,4 +47,11 @@ export const Section = styled(Box)`
     gap: 20px;
     justify-items: center;
   `}
+`
+
+export const PartnersSection = styled(Box)`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
 `
