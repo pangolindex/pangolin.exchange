@@ -1,8 +1,7 @@
-import { Box } from '@pangolindex/components'
 import React from 'react'
 import MenuItems from '../MenuItems'
 import { MenuIcon } from './MenuIcon'
-import { Slider, Wrapper } from './styled'
+import { Menu, Slider, Wrapper } from './styled'
 
 interface Props {
   active: boolean
@@ -14,9 +13,9 @@ export default function MobileMenu({ active, onChange }: Props) {
     <Wrapper>
       <Slider active={active}>
         <MenuIcon active={active} onClick={onChange} />
-        <Box bgColor="color2" paddingLeft="20px">
+        <Menu active={active}>
           <MenuItems />
-        </Box>
+        </Menu>
       </Slider>
     </Wrapper>
   )
