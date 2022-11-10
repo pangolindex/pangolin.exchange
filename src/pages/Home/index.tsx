@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box, Button, Text } from '@pangolindex/components'
-import { Main, PartnersSection, Root, Section, SectionText } from './styled'
+import { Item, Main, PartnersSection, Root, Section, SectionText } from './styled'
 import homeImage from 'src/assets/images/home.png'
 import { useGetPartners } from 'src/hooks'
 import { directusBaseURL } from 'src/constants'
+import { ALL_CHAINS } from '@pangolindex/sdk'
 
 export default function Home() {
   const { data: partners } = useGetPartners()
-  console.log(partners)
 
   const LauchAppButton = () => (
     <Button
@@ -54,16 +54,7 @@ export default function Home() {
         <PartnersSection>
           {partners &&
             partners.map((partner, index) => (
-              <Box
-                key={index}
-                display="flex"
-                flexDirection="row"
-                justifyContent="center"
-                alignItems="center"
-                bgColor="color3"
-                padding="20px"
-                borderRadius="10px"
-              >
+              <Item key={index}>
                 <img
                   src={`${directusBaseURL}/assets/${partner.logo}`}
                   style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }}
@@ -71,8 +62,23 @@ export default function Home() {
                 <Text color="text1" fontWeight="700" fontSize="24px">
                   {partner.name}
                 </Text>
-              </Box>
+              </Item>
             ))}
+        </PartnersSection>
+      </Box>
+      <Box width="100%" display="grid">
+        <Text color="text1" fontSize="32px" fontWeight="700" textAlign="center">
+          We are live on these networks
+        </Text>
+        <PartnersSection>
+          {ALL_CHAINS.filter(chain => chain.pangolin_is_live && chain.mainnet).map((chain, index) => (
+            <Item key={index}>
+              <img src={chain.logo} style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }} />
+              <Text color="text1" fontWeight="700" fontSize="24px">
+                {chain.name}
+              </Text>
+            </Item>
+          ))}
         </PartnersSection>
       </Box>
     </Root>

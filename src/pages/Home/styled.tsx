@@ -51,7 +51,18 @@ export const Section = styled(Box)`
 
 export const PartnersSection = styled(Box)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, 400px);
   gap: 40px;
   margin-top: 20px;
+  justify-content: center;
+`
+
+export const Item = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.color3};
+  padding: 20px;
+  border-radius: 10px;
 `
