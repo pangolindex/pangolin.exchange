@@ -18,6 +18,7 @@ export default function Home() {
       width="max-content"
       padding="0px 60px"
       href="https://app.pangolin.exchange"
+      id="lauch-app"
     >
       <Text color="eerieBlack" fontSize={[14, 18]}>
         Lauch App
