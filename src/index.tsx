@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { ThemeContext } from 'styled-components'
+import MixPanel from './components/MixPanel'
 import App from './pages/App'
 import store, { AppContext } from './state'
 import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
@@ -25,6 +26,7 @@ const ComponentThemeProvider = () => {
 
 ReactDOM.render(
   <React.StrictMode>
+    <MixPanel />
     <Provider store={store} context={AppContext}>
       <ThemeProvider>
         <ComponentThemeProvider />
