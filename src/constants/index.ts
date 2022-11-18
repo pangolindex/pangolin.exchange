@@ -8,7 +8,7 @@ export const directusPangoAPI = axios.create({
   timeout: 10000 // 10 seconds
 })
 
-export const chain_url: {
+export const chainUrl: {
   [x: number]: string | undefined
 } = {
   [ChainId.AVALANCHE]: 'https://www.avax.network/',
