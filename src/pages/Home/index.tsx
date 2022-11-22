@@ -9,7 +9,7 @@ import { ALL_CHAINS } from '@pangolindex/sdk'
 export default function Home() {
   const { data: partners } = useGetPartners()
 
-  const LauchAppButton = () => (
+  const LaunchAppButton = () => (
     <Button
       as="a"
       variant="primary"
@@ -20,7 +20,7 @@ export default function Home() {
       href="https://app.pangolin.exchange"
     >
       <Text color="eerieBlack" fontSize={[14, 18]}>
-        Lauch App
+        Launch App
       </Text>
     </Button>
   )
@@ -45,11 +45,11 @@ export default function Home() {
         <SectionText fontSize={[18, 26]} textAlign="center">
           You have to see it to believe it
         </SectionText>
-        <LauchAppButton />
+        <LaunchAppButton />
       </Section>
       <Box width="100%" display="grid">
         <Text color="text1" fontSize="32px" fontWeight="700" textAlign="center">
-          Backed By World-Class Partner
+          Backed By World-Class Partners
         </Text>
         <PartnersSection>
           {partners &&
