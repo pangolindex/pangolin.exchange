@@ -1,4 +1,5 @@
-import { Box, Text } from '@pangolindex/components'
+import React from 'react'
+import { Box, Button, Text } from '@pangolindex/components'
 import styled from 'styled-components'
 
 export const Root = styled(Box)`
@@ -57,7 +58,11 @@ export const PartnersSection = styled(Box)`
   justify-content: center;
 `
 
-export const Item = styled(Box)`
+export const Item = styled(props => (
+  <Button {...props} as="a" variant={'plain'} target="_self">
+    {props.children}
+  </Button>
+))`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -65,4 +70,5 @@ export const Item = styled(Box)`
   background-color: ${({ theme }) => theme.color3};
   padding: 20px;
   border-radius: 10px;
+  height: max-content;
 `
