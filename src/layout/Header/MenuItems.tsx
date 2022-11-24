@@ -16,8 +16,8 @@ export default function MenuItems() {
       <Link href="https://docs.pangolin.exchange/" id="menu-docs">
         Docs
       </Link>
-      <Link variant="primary" href="https://app.pangolin.exchange" id="menu-lauch-app">
-        Lauch App
+      <Link variant="primary" href="https://app.pangolin.exchange" id="menu-launch-app">
+        Launch App
       </Link>
     </Links>
   )
