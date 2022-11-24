@@ -5,7 +5,6 @@ import styled from 'styled-components'
 export const Links = styled(Box)`
   display: flex;
   gap: 40px;
-  align-items center;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
     flex-direction: column;
@@ -29,7 +28,6 @@ export const Link = styled(props => (
 export const Wrapper = styled(Box)`
   padding: 50px 0px;
   width: 100%;
-  heigth: 15vh;
   display: flex;
   justify-content: space-between;
 

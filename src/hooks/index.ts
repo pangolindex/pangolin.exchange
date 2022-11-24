@@ -7,6 +7,7 @@ interface Partner {
   date_created: string
   logo: string
   name: string
+  url: string
 }
 
 export function useGetPartners() {
