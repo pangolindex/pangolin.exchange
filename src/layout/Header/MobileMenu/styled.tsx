@@ -31,7 +31,7 @@ export const Menu = styled(Box)<{ active: boolean }>`
   height: 100vh;
   width: 200px;
 
-  margin-left: ${({ active }) => (active ? '10px' : '110px')};
+  margin-left: ${({ active }) => (active ? '10px' : '120px')};
 
   @media (max-width: ${MEDIA_WIDTHS.upToSmall}px) {
     margin-left: ${({ active }) => (active ? '10px' : '30px')};
