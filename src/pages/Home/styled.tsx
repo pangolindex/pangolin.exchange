@@ -44,9 +44,10 @@ export const Section = styled(Box)`
   margin-bottom: 40px;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    display: grid;
-    gap: 20px;
-    justify-items: center;
+    flex-direction: column;
+    a {
+      margin-top: 20px;
+    }
   `}
 `
 
@@ -56,6 +57,10 @@ export const PartnersSection = styled(Box)`
   gap: 40px;
   margin-top: 20px;
   justify-content: center;
+
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    grid-template-columns: repeat(auto-fit, 300px);
+  `}
 `
 
 export const Item = styled(props => (
@@ -65,10 +70,17 @@ export const Item = styled(props => (
 ))`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   background-color: ${({ theme }) => theme.color3};
   padding: 20px;
   border-radius: 10px;
   height: max-content;
+`
+
+export const ItemText = styled(Text)`
+  color: ${({ theme }) => theme.color1};
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
 `
