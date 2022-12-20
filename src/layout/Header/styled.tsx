@@ -8,6 +8,7 @@ export const Links = styled(Box)`
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
     flex-direction: column;
+    align-items: center;
   `};
 `
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box, Button, Text } from '@pangolindex/components'
-import { Item, Main, PartnersSection, Root, Section, SectionText } from './styled'
+import { Item, ItemText, Main, PartnersSection, Root, Section, SectionText } from './styled'
 import homeImage from 'src/assets/images/home.png'
-import { useGetPartners } from 'src/hooks'
-import { chainUrl, directusBaseURL } from 'src/constants'
-import { ALL_CHAINS } from '@pangolindex/sdk'
+import { useGetLiveChains, useGetPartners } from 'src/hooks'
+import { directusBaseURL } from 'src/constants'
 
 export default function Home() {
   const { data: partners } = useGetPartners()
+  const { data: chains } = useGetLiveChains()
 
   const LaunchAppButton = () => (
     <Button
@@ -60,9 +60,9 @@ export default function Home() {
                   src={`${directusBaseURL}/assets/${partner.logo}`}
                   style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }}
                 />
-                <Text color="text1" fontWeight="700" fontSize="24px">
+                <ItemText color="text1" fontWeight="700" fontSize="24px">
                   {partner.name}
-                </Text>
+                </ItemText>
               </Item>
             ))}
         </PartnersSection>
@@ -72,14 +72,18 @@ export default function Home() {
           We are live on these networks
         </Text>
         <PartnersSection>
-          {ALL_CHAINS.filter(chain => chain.pangolin_is_live && chain.mainnet).map((chain, index) => (
-            <Item href={chainUrl[chain.chain_id]} key={index} id={`chain-${chain.name.toLowerCase()}`}>
-              <img src={chain.logo} style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }} />
-              <Text color="text1" fontWeight="700" fontSize="24px">
-                {chain.name}
-              </Text>
-            </Item>
-          ))}
+          {chains &&
+            chains.map((chain, index) => (
+              <Item href={chain.url} key={index} id={`chain-${chain.name.toLowerCase()}`}>
+                <img
+                  src={`${directusBaseURL}/assets/${chain.logo}`}
+                  style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }}
+                />
+                <ItemText color="text1" fontWeight="700" fontSize="24px" textAlign="center">
+                  {chain.name}
+                </ItemText>
+              </Item>
+            ))}
         </PartnersSection>
       </Box>
     </Root>
