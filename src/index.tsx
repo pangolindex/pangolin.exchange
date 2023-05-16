@@ -7,6 +7,7 @@ import MixPanel from './components/MixPanel'
 import App from './pages/App'
 import store, { AppContext } from './state'
 import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
+import Intercom from './intercom'
 
 const ComponentThemeProvider = () => {
   const theme = useContext(ThemeContext)
@@ -26,6 +27,7 @@ const ComponentThemeProvider = () => {
 
 ReactDOM.render(
   <React.StrictMode>
+    <Intercom appID={'uj2kwt4z'} />
     <MixPanel />
     <Provider store={store} context={AppContext}>
       <ThemeProvider>
