@@ -4,8 +4,8 @@ import { Link, Links } from './styled'
 export default function MenuItems() {
   return (
     <Links>
-      <Link href="https://docs.pangolin.exchange/pangolin/all-chains/team" id="menu-about-us">
-        About us
+      <Link href="https://docs.pangolin.exchange/intro/dao" id="menu-about-dao">
+        About DAO
       </Link>
       <Link href="https://app.pangolin.exchange" id="menu-exchange">
         Exchange
