@@ -1,17 +1,21 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 interface IntercomProps {
   appID: string
-  email?: string
+  walletAddress?: string
+  onMessengerOpen?: () => void
 }
 
-const Intercom: React.FC<IntercomProps> = ({ appID, email }) => {
+const Intercom: React.FC<IntercomProps> = ({ appID, walletAddress, onMessengerOpen }) => {
   useEffect(() => {
     ;(window as any).Intercom('boot', {
       app_id: appID,
-      ...(email && { email: email })
+      ...(walletAddress && { user_id: walletAddress })
     })
-  }, [appID, email])
+    if (onMessengerOpen) {
+      ;(window as any).Intercom('onShow', onMessengerOpen)
+    }
+  }, [appID, walletAddress, onMessengerOpen])
 
   useEffect(() => {
     return () => {
