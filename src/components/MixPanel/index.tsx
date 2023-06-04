@@ -1,7 +1,7 @@
 import mixpanel from 'mixpanel-browser'
 
 export default function MixPanel(): null {
-  const mixpanelToken = process.env.REACT_APP_MIXPANEL_TOKEN
+  const mixpanelToken = import.meta.env.VITE_MIXPANEL_TOKEN
 
   if (mixpanelToken) {
     mixpanel.init(mixpanelToken, { debug: process.env.NODE_ENV !== 'production' })

@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <Suspense fallback={null}>
-      <Intercom appID={'uj2kwt4z'} walletAddress={account} onMessengerOpen={handleMessengerOpen} />
+      <Intercom appID={'uj2kwt4z'} walletAddress={account as string} onMessengerOpen={handleMessengerOpen} />
       {!account && (
         <WalletModal
           open={walletModalActive}

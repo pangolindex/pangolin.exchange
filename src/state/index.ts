@@ -1,6 +1,6 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { save, load } from 'redux-localstorage-simple'
-import { updateVersion } from './global/actions'
+import { updateVersion } from './application/actions'
 import { createDispatchHook, createSelectorHook, createStoreHook } from 'react-redux'
 import user from './user/reducer'
 import React from 'react'

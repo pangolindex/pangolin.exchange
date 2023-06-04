@@ -33,7 +33,7 @@ const ComponentThemeProvider = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Web3ReactProvider getLibrary={getLibrary}>
-        <PangolinProvider library={library} chainId={chainId} account={account} theme={theme as any}>
+        <PangolinProvider library={library} chainId={chainId} account={account as string} theme={theme as any}>
           <FixedGlobalStyle />
           <ThemedGlobalStyle />
           <App />
