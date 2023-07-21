@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Partner } from 'src/hooks/types'
+import { Chain, Partner } from 'src/hooks/types'
 import CoinbaseLogo from 'src/assets/images/coinbase.png'
 import ThorchainLogo from 'src/assets/svg/thorchain.svg'
 import AxelarLogo from 'src/assets/svg/axelar.svg'
@@ -64,3 +64,48 @@ export const partners = [
     status: ''
   }
 ] as Partner[]
+
+export const chains = [
+  {
+    date_created: '0',
+    id: 1,
+    logo: 'https://raw.githubusercontent.com/pangolindex/sdk/dev/src/images/chains/avax.png',
+    name: 'Avalanche',
+    url: 'https://www.avax.network/',
+    pangolin_is_live: true
+  },
+  {
+    date_created: '0',
+    id: 2,
+    logo: 'https://raw.githubusercontent.com/pangolindex/sdk/dev/src/images/chains/sgb.png',
+    name: 'Songbird',
+    url: 'https://flare.network/songbird/',
+    pangolin_is_live: true
+  },
+
+  {
+    date_created: '0',
+    id: 3,
+    logo: 'https://raw.githubusercontent.com/pangolindex/sdk/dev/src/images/chains/flare.png',
+    name: 'Flare',
+    url: 'https://flare.network/',
+    pangolin_is_live: true
+  },
+
+  {
+    date_created: '0',
+    id: 4,
+    logo: 'https://raw.githubusercontent.com/pangolindex/sdk/dev/src/images/chains/hedera.png',
+    name: 'Hedera',
+    url: 'https://hedera.com/',
+    pangolin_is_live: true
+  },
+  {
+    date_created: '0',
+    id: 5,
+    logo: 'https://raw.githubusercontent.com/pangolindex/sdk/dev/src/images/chains/evmos.png',
+    name: 'Evmos',
+    url: 'https://evmos.org/',
+    pangolin_is_live: true
+  }
+] as Chain[]

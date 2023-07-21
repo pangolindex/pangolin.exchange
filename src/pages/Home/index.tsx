@@ -2,12 +2,9 @@ import React from 'react'
 import { Box, Button, Text } from '@pangolindex/components'
 import { Item, ItemText, Main, PartnersSection, Root, Section, SectionText } from './styled'
 import homeImage from 'src/assets/images/home.png'
-import { useGetLiveChains } from 'src/hooks'
-import { directusBaseURL, partners } from 'src/constants'
+import { chains, partners } from 'src/constants'
 
 export default function Home() {
-  const { data: chains } = useGetLiveChains()
-
   const LaunchAppButton = () => (
     <Button
       as="a"
@@ -55,7 +52,7 @@ export default function Home() {
           {partners &&
             partners.map((partner, index) => (
               <Item href={partner.url} key={index} id={`partner-${partner.name.toLowerCase()}`}>
-                <img src={`${partner.logo}`} style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }} />
+                <img src={partner.logo} style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }} />
                 <ItemText color="text1" fontWeight="700" fontSize="24px">
                   {partner.name}
                 </ItemText>
@@ -68,18 +65,14 @@ export default function Home() {
           We are live on these networks
         </Text>
         <PartnersSection>
-          {chains &&
-            chains.map((chain, index) => (
-              <Item href={chain.url} key={index} id={`chain-${chain.name.toLowerCase()}`}>
-                <img
-                  src={`${directusBaseURL}/assets/${chain.logo}`}
-                  style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }}
-                />
-                <ItemText color="text1" fontWeight="700" fontSize="24px" textAlign="center">
-                  {chain.name}
-                </ItemText>
-              </Item>
-            ))}
+          {chains.map((chain, index) => (
+            <Item href={chain.url} key={index} id={`chain-${chain.name.toLowerCase()}`}>
+              <img src={chain.logo} style={{ height: '100px', marginRight: '10px', borderRadius: '50%' }} />
+              <ItemText color="text1" fontWeight="700" fontSize="24px" textAlign="center">
+                {chain.name}
+              </ItemText>
+            </Item>
+          ))}
         </PartnersSection>
       </Box>
     </Root>
