@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { updateVersion } from '../global/actions'
+import { updateVersion } from '../application/actions'
 import { updateMatchesDarkMode, updateUserDarkMode } from './actions'
 
 const currentTimestamp = () => new Date().getTime()

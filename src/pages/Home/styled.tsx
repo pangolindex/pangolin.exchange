@@ -52,8 +52,8 @@ export const Section = styled(Box)`
 `
 
 export const PartnersSection = styled(Box)`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 20px;
   justify-content: center;
@@ -64,7 +64,7 @@ export const PartnersSection = styled(Box)`
 `
 
 export const Item = styled(props => (
-  <Button {...props} as="a" variant={'plain'} target="_self">
+  <Button {...props} width="400px" as="a" variant="plain" target="_self">
     {props.children}
   </Button>
 ))`

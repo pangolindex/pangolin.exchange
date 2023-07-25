@@ -1,30 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "strict": false,
-    "alwaysStrict": false,
-    "strictNullChecks": false,
-    "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noImplicitReturns": true,
-    "moduleResolution": "node",
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react",
-    "downlevelIteration": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["react-spring", "jest"],
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "baseUrl": "."
   },
-  "exclude": ["node_modules", "node_modules/**/*.d.ts", "cypress", "./src/**/*.test.ts"],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src", "vite-env.d.ts", "index.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

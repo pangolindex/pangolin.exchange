@@ -1,24 +1,7 @@
 import qs from 'qs'
 import { useQuery } from 'react-query'
 import { directusPangoAPI } from 'src/constants'
-
-interface DirectusBase {
-  id: number
-  date_created: string
-}
-
-interface Info extends DirectusBase {
-  logo: string
-  name: string
-  url: string
-}
-interface Partner extends Info {
-  status: string
-}
-
-interface Chain extends Info {
-  pangolin_is_live: boolean
-}
+import { Chain, Partner } from './types'
 
 export function useGetPartners() {
   const query = qs.stringify(
