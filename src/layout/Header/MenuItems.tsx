@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Links } from './styled'
+import { LaunchAppButton } from 'src/components/LaunchAppButton'
 
 export default function MenuItems() {
   return (
@@ -16,9 +17,10 @@ export default function MenuItems() {
       <Link href="https://docs.pangolin.exchange/" id="menu-docs">
         Docs
       </Link>
-      <Link variant="primary" href="https://app.pangolin.exchange" id="menu-launch-app">
+      {/* <Link variant="primary" href="https://app.pangolin.exchange" id="menu-launch-app">
         Launch App
-      </Link>
+      </Link> */}
+      <LaunchAppButton />
     </Links>
   )
 }
