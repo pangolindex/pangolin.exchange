@@ -1,26 +1,27 @@
 import React from 'react'
-import { Box, Button, Text } from '@pangolindex/components'
+import { Box, Text } from '@pangolindex/components'
 import { Item, ItemText, Main, PartnersSection, Root, Section, SectionText } from './styled'
 import homeImage from 'src/assets/images/home.png'
 import { chains, partners } from 'src/constants'
+import { LaunchAppButton } from 'src/components/LaunchAppButton'
 
 export default function Home() {
-  const LaunchAppButton = () => (
-    <Button
-      as="a"
-      variant="primary"
-      color="eerieBlack"
-      target="_self"
-      width="max-content"
-      padding="0px 60px"
-      href="https://app.pangolin.exchange"
-      id="launch-app"
-    >
-      <Text color="eerieBlack" fontSize={[14, 18]}>
-        Launch App
-      </Text>
-    </Button>
-  )
+  // const LaunchAppButton = () => (
+  //   <Button
+  //     as="a"
+  //     variant="primary"
+  //     color="eerieBlack"
+  //     target="_self"
+  //     width="max-content"
+  //     padding="0px 60px"
+  //     href="https://app.pangolin.exchange"
+  //     id="launch-app"
+  //   >
+  //     <Text color="eerieBlack" fontSize={[14, 18]}>
+  //       Launch App
+  //     </Text>
+  //   </Button>
+  // )
 
   return (
     <Root>
