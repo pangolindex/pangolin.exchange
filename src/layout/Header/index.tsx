@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useMedia } from 'react-use'
 import { Box, Button } from '@pangolindex/components'
-import { ReactComponent as Logo } from 'src/assets/svg/Logo.svg'
+import logoUrl from 'src/assets/svg/new-logo-dark.svg'
 import MobileMenu from './MobileMenu'
 import MenuItems from './MenuItems'
 import { Wrapper } from './styled'
@@ -16,7 +16,7 @@ export default function Header() {
     <Wrapper>
       <Box mr="20px">
         <Button variant="plain" as="a" href="/" target="_self">
-          <Logo />
+          <img src={logoUrl} alt="Logo" style={{ height: '40px', objectFit: 'contain' }} />
         </Button>
       </Box>
       {isMobile ? <MobileMenu active={activeMobile} onChange={() => setActiveMobile(!activeMobile)} /> : <MenuItems />}
